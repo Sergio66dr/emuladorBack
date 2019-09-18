@@ -138,5 +138,10 @@ module.exports = {
     ACU003: {
         status: 1,
         payload: {}
-    }
+    },
+    OTP001: {
+        status: 1,
+        payload: {
+        }
+    },
 };
