@@ -144,4 +144,8 @@ module.exports = {
         payload: {
         }
     },
+    CLV001: {
+        status: 1,
+        payload: {}
+    }
 };

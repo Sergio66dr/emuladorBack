@@ -131,5 +131,9 @@ module.exports = {
    ACU003: {
         status: 1,
         payload: {}
-   }
+   },
+   CLV001: {
+        status: 1,
+        payload: {}
+   },
 };

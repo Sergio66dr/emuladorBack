@@ -11,7 +11,8 @@ module.exports = {
         VIN003: 'VIN004',
         VIN004: 'VIN005',
         VIN005: 'OTP001',
-        OTP001: 'OTP001'
+        OTP001: 'OTP001',
+        CLV001: 'CLV001'
     },
     ING001: {
         status: 1,
@@ -145,5 +146,11 @@ module.exports = {
    ACU003: {
         status: 1,
         payload: {}
+    },
+    CLV001: {
+        status: 1,
+        payload: {
+            noBanca: '123456789'
+        }
     }
 };
