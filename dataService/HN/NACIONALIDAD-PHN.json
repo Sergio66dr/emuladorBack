@@ -1,0 +1,1132 @@
+{
+    "label": "NICARAGUA",
+    "value": "00002"
+},
+{
+    "label": "HONDURAS",
+    "value": "00001"
+},
+{
+    "label": "EL SALVADOR",
+    "value": "00003"
+},
+{
+    "label": "GUATEMALA",
+    "value": "00004"
+},
+{
+    "label": "COSTA RICA",
+    "value": "00005"
+},
+{
+    "label": "PANAMA",
+    "value": "00006"
+},
+{
+    "label": "BELICE",
+    "value": "00007"
+},
+{
+    "label": "USA",
+    "value": "00008"
+},
+{
+    "label": "CANADA",
+    "value": "00009"
+},
+{
+    "label": "MEXICO",
+    "value": "00010"
+},
+{
+    "label": "COLOMBIA",
+    "value": "00011"
+},
+{
+    "label": "ECUADOR",
+    "value": "00012"
+},
+{
+    "label": "CHILE",
+    "value": "00013"
+},
+{
+    "label": "PERU",
+    "value": "00014"
+},
+{
+    "label": "ARGENTINA",
+    "value": "00015"
+},
+{
+    "label": "BOLIVIA",
+    "value": "00016"
+},
+{
+    "label": "BRASIL",
+    "value": "00017"
+},
+{
+    "label": "URUGUAY",
+    "value": "00018"
+},
+{
+    "label": "VENEZUELA",
+    "value": "00019"
+},
+{
+    "label": "PARAGUAY",
+    "value": "00020"
+},
+{
+    "label": "CUBA",
+    "value": "00021"
+},
+{
+    "label": "REPUBLICA DOMINICANA",
+    "value": "00022"
+},
+{
+    "label": "JAMAICA",
+    "value": "00023"
+},
+{
+    "label": "PUERTO RICO",
+    "value": "00024"
+},
+{
+    "label": "OTROS PAISES DEL CARIBE",
+    "value": "00025"
+},
+{
+    "label": "COREA DEL SUR",
+    "value": "00026"
+},
+{
+    "label": "COREA DEL NORTE",
+    "value": "00027"
+},
+{
+    "label": "TAIWAN",
+    "value": "00028"
+},
+{
+    "label": "CHINA CONTINENTAL",
+    "value": "00029"
+},
+{
+    "label": "JAPON",
+    "value": "00030"
+},
+{
+    "label": "FILIPINAS",
+    "value": "00031"
+},
+{
+    "label": "AUSTRALIA",
+    "value": "00032"
+},
+{
+    "label": "INDIA",
+    "value": "00033"
+},
+{
+    "label": "RUSIA",
+    "value": "00034"
+},
+{
+    "label": "PALESTINA",
+    "value": "00035"
+},
+{
+    "label": "TURQUIA",
+    "value": "00036"
+},
+{
+    "label": "LIBANO",
+    "value": "00037"
+},
+{
+    "label": "JORDANIA",
+    "value": "00038"
+},
+{
+    "label": "ARABIA SAUDITA",
+    "value": "00039"
+},
+{
+    "label": "IRAN",
+    "value": "00040"
+},
+{
+    "label": "SIRIA",
+    "value": "00041"
+},
+{
+    "label": "ISRAEL",
+    "value": "00042"
+},
+{
+    "label": "OTROS PAISES DE ASIA",
+    "value": "00043"
+},
+{
+    "label": "ITALIA",
+    "value": "00044"
+},
+{
+    "label": "INGLATERRA",
+    "value": "00045"
+},
+{
+    "label": "ALEMANIA",
+    "value": "00046"
+},
+{
+    "label": "SUIZA",
+    "value": "00047"
+},
+{
+    "label": "ESPAÑA",
+    "value": "00048"
+},
+{
+    "label": "FRANCIA",
+    "value": "00049"
+},
+{
+    "label": "BELGICA",
+    "value": "00050"
+},
+{
+    "label": "HOLANDA",
+    "value": "00051"
+},
+{
+    "label": "FINLANDIA",
+    "value": "00052"
+},
+{
+    "label": "SUECIA",
+    "value": "00053"
+},
+{
+    "label": "ESCOCIA",
+    "value": "00054"
+},
+{
+    "label": "AUSTRIA",
+    "value": "00055"
+},
+{
+    "label": "PORTUGAL",
+    "value": "00056"
+},
+{
+    "label": "DINAMARCA",
+    "value": "00057"
+},
+{
+    "label": "NORUEGA",
+    "value": "00058"
+},
+{
+    "label": "GRECIA",
+    "value": "00059"
+},
+{
+    "label": "IRLANDA",
+    "value": "00060"
+},
+{
+    "label": "POLONIA",
+    "value": "00061"
+},
+{
+    "label": "OTROS PAISES DE EUROPA",
+    "value": "00062"
+},
+{
+    "label": "SUDAFRICA",
+    "value": "00063"
+},
+{
+    "label": "MARRUECOS",
+    "value": "00064"
+},
+{
+    "label": "EGIPTO",
+    "value": "00065"
+},
+{
+    "label": "OTROS PAISES DE AFRICA",
+    "value": "00066"
+},
+{
+    "label": "INTERNATIONAL ORGANIZATION",
+    "value": "00067"
+},
+{
+    "label": "TUNISIA",
+    "value": "00068"
+},
+{
+    "label": "IS. MALVINAS",
+    "value": "00069"
+},
+{
+    "label": "GUYANA",
+    "value": "00070"
+},
+{
+    "label": "GUYANA FRANCESA",
+    "value": "00071"
+},
+{
+    "label": "ST HELENA & DEP",
+    "value": "00072"
+},
+{
+    "label": "ST. PIERRE & MIQUELON",
+    "value": "00073"
+},
+{
+    "label": "BELARUS",
+    "value": "00074"
+},
+{
+    "label": "LATVIA",
+    "value": "00075"
+},
+{
+    "label": "NUEVA ZELANDIA",
+    "value": "00076"
+},
+{
+    "label": "ISLAS COOK",
+    "value": "00077"
+},
+{
+    "label": "FIJI",
+    "value": "00078"
+},
+{
+    "label": "KIRIBATI (EX. GILBERT IS.)",
+    "value": "00079"
+},
+{
+    "label": "POLINESIA FRANCESA",
+    "value": "00080"
+},
+{
+    "label": "NAURU, REP. OF",
+    "value": "00081"
+},
+{
+    "label": "NUEVA CALEDONIA (FR)",
+    "value": "00082"
+},
+{
+    "label": "VANUATU (EX. NEW HEBRIDES)",
+    "value": "00083"
+},
+{
+    "label": "NIUE IS.",
+    "value": "00084"
+},
+{
+    "label": "PACIFIC IS.(US)",
+    "value": "00085"
+},
+{
+    "label": "SOLOMON IS. (BR)",
+    "value": "00086"
+},
+{
+    "label": "TOKELAU IS.",
+    "value": "00087"
+},
+{
+    "label": "ALBANIA",
+    "value": "00088"
+},
+{
+    "label": "ARGELIA",
+    "value": "00089"
+},
+{
+    "label": "AFGANISTAN",
+    "value": "00090"
+},
+{
+    "label": "ANGOLA",
+    "value": "00091"
+},
+{
+    "label": "DEMOCRATIC AND POPULAR REP. OF ALGERIA",
+    "value": "00092"
+},
+{
+    "label": "ARMENIA",
+    "value": "00093"
+},
+{
+    "label": "ANDORRA",
+    "value": "00094"
+},
+{
+    "label": "COMMONWEALTH OF AUSTRALIA",
+    "value": "00095"
+},
+{
+    "label": "AZERBAIJAIN",
+    "value": "00096"
+},
+{
+    "label": "BAHAREIN",
+    "value": "00097"
+},
+{
+    "label": "BARBADOS",
+    "value": "00098"
+},
+{
+    "label": "BANGLADESH",
+    "value": "00099"
+},
+{
+    "label": "PEOPLE REPUBLIC OF BANGLADESH",
+    "value": "00100" 
+},
+{
+    "label": "COMMONWEALTH OF THE BAHAMAS",
+    "value": "00101" 
+},
+{
+    "label": "BAHAMAS",
+    "value": "00102" 
+},
+{
+    "label": "BIRMANIA o MYANMAR",
+    "value": "00103" 
+},
+{
+    "label": "BULGARIA",
+    "value": "00104" 
+},
+{
+    "label": "KINGDOM OF BELGIUM",
+    "value": "00105" 
+},
+{
+    "label": "BENIN",
+    "value": "00106" 
+},
+{
+    "label": "BIELORRUSO",
+    "value": "00107" 
+},
+{
+    "label": "BHUTAN",
+    "value": "00108" 
+},
+{
+    "label": "BIRUNDI",
+    "value": "00109" 
+},
+{
+    "label": "BOTSWANA",
+    "value": "00110" 
+},
+{
+    "label": "BOSNIA HERZEGOVINA",
+    "value": "00111" 
+},
+{
+    "label": "CHINA",
+    "value": "00112" 
+},
+{
+    "label": "REPUBLICA CHECA",
+    "value": "00113" 
+},
+{
+    "label": "COSTA DE MARFIL",
+    "value": "00114" 
+},
+{
+    "label": "CONGO",
+    "value": "00115" 
+},
+{
+    "label": "CAMERUM",
+    "value": "00116" 
+},
+{
+    "label": "CHIPRE",
+    "value": "00117" 
+},
+{
+    "label": "CROACIA",
+    "value": "00118" 
+},
+{
+    "label": "CAYMAN ISLANDS",
+    "value": "00119" 
+},
+{
+    "label": "CAMBOYA",
+    "value": "00120" 
+},
+{
+    "label": "CZECHOSLOVAC SOCIALIST REPUBLIC",
+    "value": "00121" 
+},
+{
+    "label": "EMIRATOS RABES UNIDOS",
+    "value": "00122" 
+},
+{
+    "label": "ESLOVENIA",
+    "value": "00123" 
+},
+{
+    "label": "ETIOPIA",
+    "value": "00124" 
+},
+{
+    "label": "ESTONIA",
+    "value": "00125" 
+},
+{
+    "label": "GAMBIA",
+    "value": "00126" 
+},
+{
+    "label": "GUINEA ECUATORIAL",
+    "value": "00127" 
+},
+{
+    "label": "GEORGIA",
+    "value": "00128" 
+},
+{
+    "label": "GHANA",
+    "value": "00129" 
+},
+{
+    "label": "GUINEA",
+    "value": "00130" 
+},
+{
+    "label": "GABOM",
+    "value": "00131" 
+},
+{
+    "label": "GUINEA BISSAU",
+    "value": "00132" 
+},
+{
+    "label": "HAITI",
+    "value": "00133" 
+},
+{
+    "label": "HUNGRIA",
+    "value": "00134" 
+},
+{
+    "label": "ISLANDIA",
+    "value": "00135" 
+},
+{
+    "label": "INDONESIA",
+    "value": "00136" 
+},
+{
+    "label": "IRAQ",
+    "value": "00137" 
+},
+{
+    "label": "KIRGUISTAN",
+    "value": "00138" 
+},
+{
+    "label": "KAZAJISTAN",
+    "value": "00139" 
+},
+{
+    "label": "KUWAIT",
+    "value": "00140" 
+},
+{
+    "label": "KENYA",
+    "value": "00141" 
+},
+{
+    "label": "LIBIA",
+    "value": "00142" 
+},
+{
+    "label": "PRINCIPALILY OF LIECHTEINSTIN",
+    "value": "00143" 
+},
+{
+    "label": "LETONIA",
+    "value": "00144" 
+},
+{
+    "label": "LIBERIA",
+    "value": "00145" 
+},
+{
+    "label": "LAOS",
+    "value": "00146" 
+},
+{
+    "label": "LEICHTENTEIN",
+    "value": "00147" 
+},
+{
+    "label": "LITUANIA",
+    "value": "00148" 
+},
+{
+    "label": "LUXEMBURGO",
+    "value": "00149" 
+},
+{
+    "label": "MONACO",
+    "value": "00150" 
+},
+{
+    "label": "MOLDOVA",
+    "value": "00151" 
+},
+{
+    "label": "MADAGASCAR",
+    "value": "00152" 
+},
+{
+    "label": "MALI",
+    "value": "00153" 
+},
+{
+    "label": "MACEDONIA",
+    "value": "00154" 
+},
+{
+    "label": "MONGOLIA",
+    "value": "00155" 
+},
+{
+    "label": "NEPAL",
+    "value": "00156" 
+},
+{
+    "label": "KINGDOM OF MOROCCO",
+    "value": "00157" 
+},
+{
+    "label": "MALASIA",
+    "value": "00158" 
+},
+{
+    "label": "MALTA",
+    "value": "00159" 
+},
+{
+    "label": "MAIRITANIA",
+    "value": "00160" 
+},
+{
+    "label": "MALAWI",
+    "value": "00161" 
+},
+{
+    "label": "MOZAMBIQUE",
+    "value": "00162" 
+},
+{
+    "label": "NIGER",
+    "value": "00163" 
+},
+{
+    "label": "KINGDOM OF NORWAY",
+    "value": "00164" 
+},
+{
+    "label": "NIGERIA",
+    "value": "00165" 
+},
+{
+    "label": "KINGDOM OF THE NETHERLANDS",
+    "value": "00166" 
+},
+{
+    "label": "NUEVA ZEALAND",
+    "value": "00167" 
+},
+{
+    "label": "POLISH PEOPLES REPUBLIC (POLAND)",
+    "value": "00168" 
+},
+{
+    "label": "PAQUISTAN",
+    "value": "00169" 
+},
+{
+    "label": "REPUBLICA CENTROAFRICANA",
+    "value": "00170" 
+},
+{
+    "label": "RUANDA",
+    "value": "00171" 
+},
+{
+    "label": "RUMANIA",
+    "value": "00172" 
+},
+{
+    "label": "SUDAN",
+    "value": "00173" 
+},
+{
+    "label": "SENEGA",
+    "value": "00174" 
+},
+{
+    "label": "SURINAM",
+    "value": "00175" 
+},
+{
+    "label": "SOMALI",
+    "value": "00176" 
+},
+{
+    "label": "KINDOM OD SWEDEN",
+    "value": "00177" 
+},
+{
+    "label": "TADJIKISTAN",
+    "value": "00178" 
+},
+{
+    "label": "KINDON OF THAILAND",
+    "value": "00179" 
+},
+{
+    "label": "TURKMENIA",
+    "value": "00180" 
+},
+{
+    "label": "TAILANDIA",
+    "value": "00181" 
+},
+{
+    "label": "TUNEZ",
+    "value": "00182" 
+},
+{
+    "label": "TRINIDAD Y TOBAGO",
+    "value": "00183" 
+},
+{
+    "label": "TANZANIA",
+    "value": "00184" 
+},
+{
+    "label": "UCRANIA",
+    "value": "00185" 
+},
+{
+    "label": "UGANDA",
+    "value": "00186" 
+},
+{
+    "label": "UZBEKISTAN",
+    "value": "00187" 
+},
+{
+    "label": "VIETNAN",
+    "value": "00188" 
+},
+{
+    "label": "VATICANO",
+    "value": "00189" 
+},
+{
+    "label": "YUGOSLAVIA",
+    "value": "00190" 
+},
+{
+    "label": "YEMEN",
+    "value": "00191" 
+},
+{
+    "label": "ZAMBIA",
+    "value": "00192" 
+},
+{
+    "label": "ZAIRE",
+    "value": "00193" 
+},
+{
+    "label": "CHIPRE",
+    "value": "00194" 
+},
+{
+    "label": "KOSOVO",
+    "value": "00195" 
+},
+{
+    "label": "SERBIA",
+    "value": "00196" 
+},
+{
+    "label": "SUDAN DEL SUR",
+    "value": "00198" 
+},
+{
+    "label": "ZIMBABWE",
+    "value": "00199" 
+},
+{
+    "label": "NAURU",
+    "value": "00200" 
+},
+{
+    "label": "SAO TOME Y PRINCIPE",
+    "value": "00201" 
+},
+{
+    "label": "ANTIGUA Y BARBUDA",
+    "value": "00202" 
+},
+{
+    "label": "BRUNEI DARUSSALAM",
+    "value": "00203" 
+},
+{
+    "label": "QATAR",
+    "value": "00205" 
+},
+{
+    "label": "SRI LANKA",
+    "value": "00240" 
+},
+{
+    "label": "MONTENEGRO",
+    "value": "00241" 
+},
+{
+    "label": "NAMIBIA",
+    "value": "00242" 
+},
+{
+    "label": "PAPUA NUEVA GUINEA",
+    "value": "00243" 
+},
+{
+    "label": "ANGUILA",
+    "value": "00244" 
+},
+{
+    "label": "ANTARTIDA",
+    "value": "00245" 
+},
+{
+    "label": "GRANADA",
+    "value": "00255" 
+},
+{
+    "label": "DOMINICA",
+    "value": "00259" 
+},
+{
+    "label": "ARUBA",
+    "value": "00260" 
+},
+{
+    "label": "BERMUDAS",
+    "value": "00261" 
+},
+{
+    "label": "BURQUINA FASO",
+    "value": "00262" 
+},
+{
+    "label": "CABO VERDE",
+    "value": "00263" 
+},
+{
+    "label": "CHAD",
+    "value": "00264" 
+},
+{
+    "label": "ISLAS COCOS",
+    "value": "00265" 
+},
+{
+    "label": "COMORAS",
+    "value": "00266" 
+},
+{
+    "label": "CURAZAO",
+    "value": "00267" 
+},
+{
+    "label": "ERITREA",
+    "value": "00268" 
+},
+{
+    "label": "ESLOVAQUIA",
+    "value": "00269" 
+},
+{
+    "label": "ISLAS FAROE",
+    "value": "00270" 
+},
+{
+    "label": "GIBRALTAR",
+    "value": "00271" 
+},
+{
+    "label": "GROENLANDIA",
+    "value": "00272" 
+},
+{
+    "label": "GUAM",
+    "value": "00273" 
+},
+{
+    "label": "GUERNSEY",
+    "value": "00274" 
+},
+{
+    "label": "HONG KONG",
+    "value": "00275" 
+},
+{
+    "label": "JERSEY",
+    "value": "00276" 
+},
+{
+    "label": "KENYA",
+    "value": "00277" 
+},
+{
+    "label": "LESOTHO",
+    "value": "00278" 
+},
+{
+    "label": "MACAO",
+    "value": "00279" 
+},
+{
+    "label": "MALDIVAS",
+    "value": "00280" 
+},
+{
+    "label": "ISLAS MARIANAS DEL NORTE",
+    "value": "00281" 
+},
+{
+    "label": "ISLAS MARSHALL",
+    "value": "00282" 
+},
+{
+    "label": "MAURICIO",
+    "value": "00283" 
+},
+{
+    "label": "ESTADOS FEDERADOS MICRONESIA",
+    "value": "00284" 
+},
+{
+    "label": "ISLA MONSERRAT",
+    "value": "00285" 
+},
+{
+    "label": "ISLA NAVIDAD (CHRISMAS)",
+    "value": "00286" 
+},
+{
+    "label": "ISLAS NORFOLK",
+    "value": "00287" 
+},
+{
+    "label": "ISLAS PALAU",
+    "value": "00288" 
+},
+{
+    "label": "ISLA PITCAIRN",
+    "value": "00289" 
+},
+{
+    "label": "SAHARA OCCIDENTAL",
+    "value": "00290" 
+},
+{
+    "label": "SAMOA",
+    "value": "00291" 
+},
+{
+    "label": "SAN CRISTOBAL Y NIEVES",
+    "value": "00292" 
+},
+{
+    "label": "SAN VICENTE Y LAS GRANADINAS",
+    "value": "00293" 
+},
+{
+    "label": "SANTA LUCIA",
+    "value": "00294" 
+},
+{
+    "label": "SEYCHELLES",
+    "value": "00295" 
+},
+{
+    "label": "SIERRA LEONA",
+    "value": "00296" 
+},
+{
+    "label": "SAINT MAARTEN",
+    "value": "00297" 
+},
+{
+    "label": "SWASILANDIA",
+    "value": "00298" 
+},
+{
+    "label": "TIMOR DEL ESTE",
+    "value": "00299" 
+},
+{
+    "label": "TOGO",
+    "value": "00300" 
+},
+{
+    "label": "ISLAS TURCAS Y CAICOS",
+    "value": "00301" 
+},
+{
+    "label": "TUVALU",
+    "value": "00302" 
+},
+{
+    "label": "ISLAS VIRGENES BRITANICAS",
+    "value": "00303" 
+},
+{
+    "label": "ISLAS VIRGENES ESTADOUNIDENSE",
+    "value": "00304" 
+},
+{
+    "label": "ISLAS WALLIS Y FOTUNA",
+    "value": "00305" 
+},
+{
+    "label": "ISLAS DE ALAND",
+    "value": "00306" 
+},
+{
+    "label": "ANTILLAS HOLANDESAS",
+    "value": "00307" 
+},
+{
+    "label": "SAMOA AMERICANA",
+    "value": "00308" 
+},
+{
+    "label": "ANTARTIDA",
+    "value": "00309" 
+},
+{
+    "label": "TERRITORIOS AUTRALES Y ANTART",
+    "value": "00310" 
+},
+{
+    "label": "SAN BARTOLOME",
+    "value": "00311" 
+},
+{
+    "label": "ISLA BOUVET",
+    "value": "00312" 
+},
+{
+    "label": "REPUBLICA DEMOCRATICA DEL CONGO",
+    "value": "00313" 
+},
+{
+    "label": "DJIBUTI (YIBUTI)",
+    "value": "00314" 
+},
+{
+    "label": "GUADALUPE",
+    "value": "00315" 
+},
+{
+    "label": "ISLAS HARD Y MCDONALD",
+    "value": "00316" 
+},
+{
+    "label": "ISLA DE MAN",
+    "value": "00317" 
+},
+{
+    "label": "TERRITORIO BRITANICO DEL OCEANO",
+    "value": "00318" 
+},
+{
+    "label": "SAN MARTIN (FRANCIA)",
+    "value": "00319" 
+},
+{
+    "label": "MARTINICA",
+    "value": "00320" 
+},
+{
+    "label": "MAYOTTE",
+    "value": "00321" 
+},
+{
+    "label": "REUNION",
+    "value": "00322" 
+},
+{
+    "label": "ISLAS GEORGIAS DEL SUR Y SANDW",
+    "value": "00323" 
+},
+{
+    "label": "SVALBARD Y JAN MAYEN",
+    "value": "00324" 
+},
+{
+    "label": "TONGA",
+    "value": "00325" 
+},
+{
+    "label": "ISLAS ULTRAMARINAS MENORES DE",
+    "value": "00326" 
+},
+{
+    "label": "EMIRATOS ARABES",
+    "value": "00513" 
+},
+{
+    "label": "KAMPUCHEA",
+    "value": "00522" 
+},
+{
+    "label": "OMAN",
+    "value": "00531" 
+},
+{
+    "label": "SINGAPUR",
+    "value": "00533" 
+},
+{
+    "label": "SAN MARINO",
+    "value": "00629" 
+},
