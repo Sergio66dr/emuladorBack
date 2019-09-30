@@ -10,7 +10,8 @@ module.exports = {
         VIN002: 'VIN003',
         VIN003: 'VIN004',
         VIN004: 'VIN005',
-        VIN005: 'OTP001',
+        VIN005: 'VIN006',
+        VIN006: 'OTP001',
         OTP001: 'OTP001'
     },
     ING001: {
@@ -133,10 +134,18 @@ module.exports = {
     },
     ACU002: {
         status: 1,
-        payload: {}
+        payload: {
+            tipoCuenta: "Cuenta Maestra Planilla",
+            cobroAnual: "$0"
+        }
     },
     ACU003: {
         status: 1,
-        payload: {}
+        payload: {
+            producto: "Cuenta de Ahorros",
+            numeroCuenta: "1234567890",
+            numeroIBAN: "0987654321",
+            fechaHora: "08/04/2019 15:42"
+        }
     }
 };

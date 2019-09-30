@@ -10,8 +10,10 @@ module.exports = {
         VIN002: 'VIN003',
         VIN003: 'VIN004',
         VIN004: 'VIN005',
-        VIN005: 'OTP001',
-        OTP001: 'OTP001'
+        VIN005: 'VIN006',
+        VIN006: 'OTP001',
+        OTP001: 'OTP001',
+        CLV001: 'CLV001'
    },
     ING001: {
         status: 1,
@@ -136,7 +138,10 @@ module.exports = {
     },
    ACU002: {
         status: 1,
-        payload: {}
+        payload: {
+            tipoCuenta: "Cuenta de Ahorros Móvil Regular",
+            cobroAnual: "$2.600 + ITBMS / Anual"
+        }
     },
    OTP001: {
         status: 1,
@@ -144,6 +149,10 @@ module.exports = {
     },
    ACU003: {
         status: 1,
-        payload: {}
+        payload: {
+            producto: "Cuenta de Ahorros Móvil Regular",
+            numeroCuenta: "1234567890",
+            fechaHora: "08/04/2019 15:42"
+        }
     }
 };
