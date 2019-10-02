@@ -151,7 +151,11 @@ module.exports = {
         status: 1,
         payload: {
             producto: "Cuenta de Ahorros Móvil Regular",
-            numeroCuenta: "1234567890",
+            numCuenta: "1234567890",
+            numCuentaColones: "111222333",
+            numCuentaDolares: "444555666",
+            numIbanColones: "777888999",
+            numIbanDolares: "000111222",
             fechaHora: "08/04/2019 15:42"
         }
     }
