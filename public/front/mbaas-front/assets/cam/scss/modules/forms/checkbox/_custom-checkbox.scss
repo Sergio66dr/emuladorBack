@@ -30,6 +30,20 @@ input[type="checkbox"]
 	display: flex;
 	align-items: center;
 	margin: auto;
+	&--small{
+		@include media(md)
+		{
+			width: 25% !important;
+		}
+		@include media(lg)
+		{
+			width: 25% !important;
+		}
+		@include media(xlg)
+		{
+			width: 20% !important;
+		}
+	}
 	&::before
 	{
 		content: 'No';
@@ -137,7 +151,7 @@ input[type="checkbox"]
 	line-height: normal;
 	background-color: transparent !important;
 	width: 100%;
-	margin: 0.5rem 0;
+	margin: em(10) em(10) em(10) 0;
 	&--blocks
 	{
 		width: 50%;

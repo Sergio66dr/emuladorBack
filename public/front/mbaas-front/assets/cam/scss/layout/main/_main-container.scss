@@ -10,7 +10,6 @@
     position: relative;
     padding: em(32) em(20);
     min-height: 100vh;
-    font-family: $font__family;
     @include prefix((
         box-sizing: border-box,
         display: flex,
