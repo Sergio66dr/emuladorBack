@@ -15,6 +15,36 @@
     &__item
     {
         padding: em(3) 0;
+        @include prefix((
+            box-sizing: border-box,
+            display: flex,
+            justify-content: flex-start,
+            align-items: center,
+            flex-direction: row, 
+        ), webkit moz o ms);
+        .okIcon
+        {
+            width: 30px;
+            height: 30px;
+            margin-right: em(10);
+            @include prefix((
+                box-sizing: border-box,
+                display: flex,
+                justify-content: flex-start,
+                align-items: center,
+            ), webkit moz o ms);
+            img
+            {
+                width: 19px;
+            }
+        }
+        .okLabel
+        {
+            line-height: 1.4rem;
+            @include prefix((
+                flex: 1
+            ), webkit moz o ms);
+        }
         div
         {
             @include prefix((

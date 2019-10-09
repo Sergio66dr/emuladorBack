@@ -13,6 +13,7 @@
 		right: em(20);
 		top: em(57);
 		position: relative;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
 		cursor: pointer;
 		@include prefix((
 			box-sizing: border-box,
@@ -29,6 +30,14 @@
 				transform: translateY(0),
 			), webkit moz o ms);
 		}
+		&--info
+		{
+			background-color: #D4D4D4;
+			color: #EE3124 !important;
+			width: em(30);
+			height: em(30);
+			top: 0;
+		}
 	}
 	&__message
 	{
@@ -36,13 +45,13 @@
 		padding: em(28);
 		background-color: $color__lightgray;
 		position: absolute;
-		top: em(60);
+		top: em(95);
 		right: 0;
 		border-radius: em(15);
 		font-size: em(15);
 		line-height: em(21);
 		font-weight: 500;
-		z-index: 10;
+		z-index: auto;
 		@include prefix((
 			box-sizing: border-box,
 			opacity: 0,
@@ -50,5 +59,8 @@
 			pointer-events: none,
 			transform: translateY(2em),
 			), webkit moz o ms);
+		&--info{
+			top: em(40);
+		}
 	}
 }
