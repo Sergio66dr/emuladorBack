@@ -22,7 +22,7 @@ module.exports = {
     ACU001: {
         status: 1,
         payload: {
-            nombre: 'ERROR2'
+            nombre: 'Sergio'
         }
     },
     VIN006: {

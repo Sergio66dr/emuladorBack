@@ -64,41 +64,6 @@ ul li
     @include text(15, 16, 7, 0, $weight: 200)
 }
 
-ol 
-{
-    list-style: none;
-    counter-reset: my-awesome-counter;
-    padding-left: 0;
-    margin-bottom: em(28);
-    li 
-    {
-        @include text(18, 18, 30, 0, $weight: 200);
-        counter-increment: my-awesome-counter;
-        padding-left: em(35);
-        position: relative;
-        &:before 
-        {
-            content: counter(my-awesome-counter);
-            position: absolute;
-            top: -3px;
-            left: 0;
-            background-color: red;
-            font-weight: bold;
-            width: 28px;
-            height: 28px;
-            color: white;
-            font-weight: 300;
-            font-size: 15px;
-            @include prefix((
-                border-radius: 50%,
-                display: flex,
-                justify-content: center,
-                align-items: center
-            ), webkit moz o ms);
-        }
-    }
-}
-
 em
 {
     @include text(11, 15, 10, 0, $weight: 300)
