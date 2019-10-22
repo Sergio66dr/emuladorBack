@@ -12,6 +12,7 @@
     border: none;
     text-align: center;
     width: 80%;
+    cursor: pointer;
 	@include prefix((
         box-sizing: border-box,
         display: flex,
@@ -27,11 +28,6 @@
     	@include prefix((
 	        opacity: 0.3,
 	    ), webkit moz o ms);	
-    }
-    &--small
-    {
-        width: em(200) !important;
-        margin: auto;
     }
     &__label
     {
@@ -86,9 +82,6 @@
     &--primary
     {
     	background-color: $color__primary;
-    }
-    &--gray{
-        background-color: $color__lightgray;
     }
     @include media(sm)
     {

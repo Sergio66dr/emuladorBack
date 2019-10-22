@@ -10,15 +10,14 @@ $font__base: 21 !default;
 // Font family - variables
 // =============================================================================
 
-$font__family: "MyriadPro";
+$font__family: "MyriadPro" !important;
 
 // =============================================================================
 // Color variables
 // =============================================================================
 $color__text--dark: #22262a; 
 $color__text: #323c47; 
-$color__text--light: #2F3337;
-$color__gray: #8E8E8E;
+$color__text--light: #2F3337; 
 
 $color__primary: #EE3124; 
 

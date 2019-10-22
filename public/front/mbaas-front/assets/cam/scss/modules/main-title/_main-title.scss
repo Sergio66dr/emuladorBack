@@ -7,29 +7,11 @@
  {
     padding: 0 10%;
     text-align: center;
-    &--center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h3
-        {
-            margin: 0;
-        }
-    }
     &--isHidden
     {
         display: none;
         @include media(lg){
             display: block;
-        }
-    }
-    &--isHiddenSmall{
-        display: block;
-        @include media(lg){
-            display: none;
-        }
-        @include media(xlg){
-            display: none;
         }
     }
     h2
@@ -108,18 +90,6 @@
             ), webkit moz o ms);
             @include media(md){
                 font-size: 30px;
-            }
-        }
-        .bar{
-            border: 3px solid $color__lightgray;
-            width: 25%;
-            margin: 0.5rem;
-            @include media(lg)
-            {
-                width: 10%;
-            }
-            &--active{
-                border: 3px solid $color__primary;
             }
         }
     }

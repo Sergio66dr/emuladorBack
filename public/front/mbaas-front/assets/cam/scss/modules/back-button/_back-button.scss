@@ -24,8 +24,8 @@
         width: 20px;
     }
     span{
+        font-family: $font__family;
         font-weight: bold;
-        font-family: $font__family !important;
         font-size: em(18);
         color: $color__text--dark;
         margin: 0 em(7);

@@ -8,15 +8,16 @@
     padding: em(16);
     border-radius: em(20);
     height: em(80);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     margin-bottom: em(20);
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
+    background-size: 110%;
+    background-position: center center;
     @include prefix((
         box-sizing: border-box,
         display: flex,
-        flex-direction: row, 
+        flex-direction: row,
         align-items: center,
         justify-content: center,
     ), webkit moz o ms);
@@ -24,17 +25,25 @@
         border-radius: em(35);
         height: em(120);
     }
+    &:nth-child(1){
+        background-image: URL("/assets/cam/img/layout/credito_movil.png");
+    }
+    &:nth-child(2){
+        background-image: URL("/assets/cam/img/layout/cuenta_movil.png");
+    }
+    &:nth-child(3){
+        background-image: URL("/assets/cam/img/layout/tarjeta_movil.png");
+    }
     &__content{
         flex-grow: 12;
         position: relative;
         margin: 0 em(5) 0 30px;
         padding: 0 em(7);
         text-align: center;
-        z-index: 10;
         @include prefix((
             box-sizing: border-box,
             display: flex,
-            flex-direction: column, 
+            flex-direction: column,
             align-items: center,
             justify-content: center,
             flex: 1
@@ -50,18 +59,7 @@
             margin-bottom: em(3);
         }
     }
-    .icon{
+    img{
         width: 25px;
-        z-index: 10;
-    }
-    .background
-    {
-        width: 110%;
-        position: absolute;
-        left: -5%;
-        top: 0;
-        bottom: 0;
-        z-index: 0;
-        margin: auto auto;
     }
 }

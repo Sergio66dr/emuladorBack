@@ -14,7 +14,7 @@
 		padding: em(32) 0;
 		border: solid 1px $color__lightgray;
 		padding: em(35) em(40);
-		background-image: url(/assets/cam/img/layout/curve_bg.png);
+		background-image: url(src/assets/cam/img/layout/curve_bg.png);
 		background-position: right bottom;
 		background-repeat: no-repeat;
 		background-color: rgba($color__lightgray, 0.04);
@@ -72,7 +72,7 @@
 			{
 				border-bottom: solid 3px $color__primary;
 				width: 100%;
-				h4
+				h3
 				{
 					font-weight: bold;
 					strong

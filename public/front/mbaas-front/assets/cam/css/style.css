@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/* 
     Comentarios del autor
 */
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
@@ -432,20 +432,19 @@ body {
   font-family: "MyriadPro";
   font-style: italic;
   font-weight: 100;
-  src: url("../fonts/MyriadPro-It.eot?") format("eot"), url("../fonts/MyriadPro-It.woff") format("woff"), url("../fonts/MyriadPro-It.ttf") format("truetype"), url("../fonts/MyriadPro-It.svg#MyriadPro") format("svg");
+  src: url("./assets/cam/fonts/MyriadPro-It.eot?") format("eot"), url("./assets/cam/fonts/MyriadPro-It.woff") format("woff"), url("./assets/cam/fonts/MyriadPro-It.ttf") format("truetype"), url("./assets/cam/fonts/MyriadPro-It.svg#MyriadPro") format("svg");
 }
 @font-face {
   font-family: "MyriadPro";
   font-style: normal;
   font-weight: 100;
-  src: url("../fonts/MyriadPro-Regular.eot?") format("eot"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro") format("svg");
+  src: url("./assets/cam/fonts/MyriadPro-Regular.eot?") format("eot"), url("./assets/cam/fonts/MyriadPro-Regular.woff") format("woff"), url("./assets/cam/fonts/MyriadPro-Regular.ttf") format("truetype"), url("./assets/cam/fonts/MyriadPro-Regular.svg#MyriadPro") format("svg");
 }
-
 @font-face {
   font-family: "MyriadPro";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/MyriadPro-Bold.eot?") format("eot"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro") format("svg");
+  src: url("./assets/cam/fonts/MyriadPro-Bold.eot?") format("eot"), url("./assets/cam/fonts/MyriadPro-Bold.woff") format("woff"), url("./assets/cam/fonts/MyriadPro-Bold.ttf") format("truetype"), url("./assets/cam/fonts/MyriadPro-Bold.svg#MyriadPro") format("svg");
 }
 /**
  * Text elements - styles.
@@ -1038,13 +1037,13 @@ em {
   }
 }
 .mainMenu:nth-child(1) {
-  background-image: URL("assets/cam/img/layout/credito_movil.png");
+  background-image: URL("./assets/cam/img/layout/credito_movil.png");
 }
 .mainMenu:nth-child(2) {
-  background-image: URL("assets/cam/img/layout/cuenta_movil.png");
+  background-image: URL("./assets/cam/img/layout/cuenta_movil.png");
 }
 .mainMenu:nth-child(3) {
-  background-image: URL("assets/cam/img/layout/tarjeta_movil.png");
+  background-image: URL("./assets/cam/img/layout/tarjeta_movil.png");
 }
 .mainMenu__content {
   flex-grow: 12;
@@ -1082,7 +1081,6 @@ em {
   -o-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  cursor: pointer;
 }
 @media (min-width: 992px) {
   .mainMenu__content {

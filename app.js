@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 const cors = require('cors');
 const helmet = require('helmet');
-const frameguard = require('frameguard')
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
@@ -23,8 +22,7 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 app.disable('x-powered-by');
-// app.use(helmet());
-app.use(helmet({frameguard: false}));
+app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
