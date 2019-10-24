@@ -32,6 +32,10 @@ module.exports = {
     },
     SIM002: {
         status: 1,
-        payload: { }
+        payload: {
+            valor: 50000,
+            meses: 12,
+            cuotaMensual: 450
+        }
     }
 };

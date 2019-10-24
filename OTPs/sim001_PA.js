@@ -22,9 +22,9 @@ module.exports = {
     SIM001: {
         status: 1,
         payload: {
-            valorDeseado: 500,
-            maxValorDeseado: 10000,
-            minValorDeseado: 500,
+            valorDeseado: 500000,
+            maxValorDeseado: 10000000,
+            minValorDeseado: 500000,
             plazo: 12,
             minPlazo: 12,
             maxPlazo: 96
@@ -32,6 +32,10 @@ module.exports = {
     },
     SIM002: {
         status: 1,
-        payload: { }
+        payload: {
+            valor: 50000,
+            meses: 12,
+            cuotaMensual: 450
+        }
     }
 };
