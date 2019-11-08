@@ -29,7 +29,8 @@ module.exports = {
             comision: 44,
             plazo: 24 ,
             cuota: 44,
-            tasaInteres:14
+            tasaInteres:14,
+            montoEnLinea: 0
         }
     },
     // Preaprobación crédito
@@ -40,7 +41,8 @@ module.exports = {
             comision: 44,
             plazo: 24 ,
             cuota: 44,
-            tasaInteres:14
+            tasaInteres:14,
+            montoEnLinea: 0
         }
     },
     // Contra oferta crédito
@@ -51,7 +53,8 @@ module.exports = {
             comision: 44,
             plazo: 24 ,
             cuota: 44,
-            tasaInteres:14
+            tasaInteres:14,
+            montoEnLinea: 0
         }
     },
     // Contra oferta crédito
@@ -62,7 +65,8 @@ module.exports = {
             comision: 44,
             plazo: 24 ,
             cuota: 44,
-            tasaInteres:14
+            tasaInteres:14,
+            montoEnLinea: 0
         }
     }
 };
