@@ -16,7 +16,7 @@ module.exports = {
             "canal":"48",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"HN"
         }
     },
     ACU001: {
