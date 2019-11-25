@@ -13,7 +13,7 @@ countrie = (req, res, next) => {
 
 router.post('/workflow', (req, res) => {
   console.clear();
-  console.log(req.body.stepId);
+  console.log(req.body);
   var paso = req.body.stepId;
   var response = {
     data: {
