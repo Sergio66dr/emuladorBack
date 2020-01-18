@@ -12,9 +12,9 @@
     "express": "~4.16.1",
     "helmet": "^3.19.0",
     "http-errors": "~1.6.3",
+    "ipware": "^2.0.0",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "request": "^2.81.0",
-    "nodemon": "^1.19.4"
+    "request": "^2.81.0"
   }
 }

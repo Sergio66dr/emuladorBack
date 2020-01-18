@@ -7,13 +7,13 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'VIN002',
-        VIN002: 'VIN005'
+        VIN002: 'ING001'
     },
     ING001: {
         status: 1,
         payload: {
             "aliado":"LM",
-            "canal":"48",
+            "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
             "pais":"HN"

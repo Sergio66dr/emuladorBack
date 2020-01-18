@@ -7,21 +7,26 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'PCL001',
-        PCL001: 'VIN005'
+        PCL001: 'ING001'
     },
     ING001: {
         status: 1,
         payload: {
             "aliado":"LM",
-            "canal":"48",
+            "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"SV"
         }
     },
     PCL001: {
         status: 1,
-        payload: {}
+        payload: {
+            documento: {
+                tipo: '',
+                numero: ''
+            }
+        }
     },
     VIN005: {
         status: 1,

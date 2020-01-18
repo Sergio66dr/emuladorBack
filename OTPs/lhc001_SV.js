@@ -13,9 +13,9 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
+            canal: '1',
             idModulo: 'cam',
-            lenguaje: 'es',
+            lenguaje: 'ES',
             pais: 'SV'
         }
     },

@@ -13,21 +13,16 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
-            idModulo: 'cam',
-            lenguaje: 'es',
-            pais: 'SV'
+            canal: 'q',
+            idModulo: 'CTACAM',
+            lenguaje: 'ES',
+            pais: 'PA'
         }
     },
     CUE001: {
         status: 1,
         payload: {
-            valorDeseado: 500000,
-            maxValorDeseado: 10000000,
-            minValorDeseado: 500000,
-            plazo: 12,
-            minPlazo: 12,
-            maxPlazo: 96
+            tieneCuentaDigital: true
         }
     },
     SIM002: {
