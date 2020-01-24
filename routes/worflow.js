@@ -1,15 +1,19 @@
 var express = require('express');
+const uuidv1 = require('uuid/v1');
 var router = express.Router();
 var datos = null;
 var flujo = '';
 var n = 0;
+var reAuth = 0;
+var _reAuth = Infinity;
 
 countrie = (req, res, next) => {
-  //console.clear();
+  console.clear();
   flujo = req.body.assertion;
   datos = require(`../OTPs/${req.body.assertion}`);
   console.log('pais:XXX::::::',);
-  req.body = { token: req.body.grant_type === 'refresh_token' ? 'eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbWJhYXMuZGVzYS5jby5kYXZpdmllbmRhLmNvbS9hdXRoL3YxL2tleXN0b3JlLy53ZWxsLWtub3duL2p3a3MuanNvbiIsImtpZCI6IjE1NzY2MzM4MTIifQ.eyJhdWQiOiJEQVY6Q0xPVUQ6QVVUSCIsImV4cCI6MTU3OTAzOTAxNCwiaWF0IjoxNTc5MDM3MjE0LCJpc3MiOiJEQVY6Q0xPVUQ6QVVUSCIsInN1YiI6Ijk0NTIzMmYwLTM3MTQtMTFlYS05MWFlLThmMTkxOGM3NGFkOCIsInVzZSI6InIiLCJwcm9kdWN0IjoiTU5VSU5HX0NSXzEiLCJqdGkiOiI5NjJlMWVlMC0zNzE0LTExZWEtODQ3Yy1hOWIwZTNjNzM5NWIifQ.K6yil8Q9AuR8cagCwMdN_S1OurSwkbHirWoswtBQ2LlHapSoqasdwyAiOhbMh9tZU5lMEr3e_avtnvJQMdEpmNjWB3GgEmzpDoquwOUScNsPVG524Zjb9mMb1BSW75q1W1j5FdSNXcW_RDHm2pa7ikDKlGHVg_wgKImzoMiXiTMKZDMJfCsN_btEdNaEN5viWV_-fi3ozsTX-pzW-jqO-htkOMtKb3N2qUKrx5dk5zNnIToqfgRfDDpUoC0chl7vyG6ZZV0B3mQ0XQlbsg3Yz-qe0D10b1cbK4g3nK7Ok1BlEje2bEzXWbYWXXW6ciT09iy4O1uCcge81tR6xGqlmA' :datos.token}
+  req.body = { token: req.body.grant_type === 'refresh_token' ? 'miFefreshToken' :datos.token}
+  _reAuth = datos.reAuth === undefined ? 3 : datos.reAuth
   next();
 };
 
@@ -66,10 +70,22 @@ router.post('/workflow', (req, res) => {
 
 router.post('/auth', countrie, (req, res) => {
   console.log('XXXXXXXXX:::::::::::::',req.body);
+  let response = {
+    state: 1,
+    access_token: req.body.token
+  };
+  reAuth = 0;
+  res.json(response);
+});
+
+
+router.post('/reAuth', (req, res) => {
+  reAuth = reAuth + 1;
+  if ( reAuth === _reAuth ) {
+    res.status(500).json(response);
+  }
   res.json({
-    state:1, 
-    access_token: req.body.token,
-    refresh_token:'abslslRSkskED2233ksksk82sss7jjsjjsRRksksF92DDD'
+    access_token: uuidv1()
   });
 });
 

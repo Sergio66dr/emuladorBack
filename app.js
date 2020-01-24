@@ -12,6 +12,7 @@ var dataRouter = require('./routes/data');
 var dataFilter = require('./routes/dataFilter');
 var jwks = require('./routes/jwks');
 var ip = require('./routes/ip');
+var upload = require('./routes/upload');
 var app = express();
 
 // view engine setup
@@ -43,6 +44,7 @@ app.use('/data', dataRouter);
 app.use('/auth/v1/keystore', jwks);
 app.use('/ip', ip);
 app.use('/dataFilter', dataFilter);
+app.use('/upload', upload);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

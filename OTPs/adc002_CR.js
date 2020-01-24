@@ -23,7 +23,7 @@ module.exports = {
         status: 1,
         payload: {
             tieneProducto: true,
-            esCliente: true
+            esCliente: false
          }
     },
     CRE002: {

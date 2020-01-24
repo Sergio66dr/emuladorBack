@@ -43,10 +43,10 @@ module.exports = {
                 noTelefono: ''
               },
               hn: {
-                departamento: '',
-                municipio: '',
-                colonia: '',
-                escolaridad: ''
+                departamento: '01',
+                municipio: '002',
+                colonia: '999',
+                escolaridad: '1'
               },
               cr: {
                 escolaridad: '' 

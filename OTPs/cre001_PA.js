@@ -13,7 +13,7 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
+            canal: '1',
             idModulo: 'cam',
             lenguaje: 'ES',
             pais: 'PA'
@@ -38,9 +38,9 @@ module.exports = {
                 escolaridad: ''
               },
               pa: {
-                correo: '',
-                ciudad: '',
-                noTelefono: ''
+                correo: 'schacon7@dxc.com',
+                ciudad: '0001',
+                noTelefono: '3111968134'
               },
               hn: {
                 departamento: '',

@@ -6,56 +6,54 @@ module.exports = {
     token: 'eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbWJhYXMuZGVzYS5jby5kYXZpdmllbmRhLmNvbS9hdXRoL3YxL2tleXN0b3JlLy53ZWxsLWtub3duL2p3a3MuanNvbiIsImtpZCI6IjE1Njc3MzYzNzAifQ.eyJhdWQiOiJEQVY6Q0xPVUQ6QVVUSCIsImV4cCI6MTU2ODY0OTM5NCwiaWF0IjoxNTY4NjQ4Nzk0LCJpc3MiOiJEQVY6Q0xPVUQ6QVVUSCIsInN1YiI6IjI2NmE1NzEwLWQ4OTktMTFlOS05NjFjLTQ3Nzc2MTFlOTA5NSIsInVzZSI6ImEiLCJwcm9kdWN0IjoiTU5VSU5HX1NWXzQ4IiwianRpIjoiMjkxZWExYTAtZDg5OS0xMWU5LTkzYzktMWQ1OWYzY2Q2OTczIn0.ZkeBZi1bELE7hDRIndfsRlPIPa14Hm_zxxiZ1MkT7EOqspbQucDaUIA594YAmV4f-zHDWqRRzxwrx7CB-2KaxNJaebwLrDlj3cIksnLZGaZ9n9wiQdmHmoZbuFTNhQimBQvKRZCMuemkPYMHrXkIyu967P23gQ-1U5iD-mSX-Teqg37f71nOYDX7H_FNqc8W9SRWfuoT0ZakyoF20DdjaIt8kkI3mCmrC7k5VEFYHDgj-6wDgwAE3vPjvwD2Y2QHPBnGiLnk6Nnu91LnGPweTX908uQG81tgi97uxFzl3jY1ciGf1E4pTEqmhygfZm5jMbxcbF12F0xY9rC-fhiT1w',
     workflow: {
         APPBOOT: 'ING001',
-        ING001: 'CRE006',
-        CRE006: 'CRE007',
-        CRE007: 'CRE008',
-        CRE008: 'CRE009',
-        CRE009: 'CRE010',
-        CRE010: 'CRE011',
+        ING001: 'CRE009',
+        CRE009: 'ING001'
     },
     ING001: {
         status: 1,
         payload: {
-            aliado: 'ML',
-            canal: '1',
-            idModulo: 'cam',
-            lenguaje: 'ES',
-            pais: 'CR'
+            "aliado":"LM",
+            "canal":"1",
+            "idModulo":"MNUING",
+            "lenguaje":"ES",
+            "pais":"SV"
+        }
+    },
+    CRE004: {
+        status: 1,
+        payload: {
+            esCliente: false
+        }
+    },
+    CRE005: {
+        status: 1,
+        payload: {
+            esCliente: false
         }
     },
     CRE006: {
         status: 1,
         payload: {
-            tieneProducto: true,
-            esCliente: true
-         }
+            esCliente: false
+        }
     },
     CRE007: {
         status: 1,
         payload: {
-            tieneProducto: true,
-            esCliente: true
-         }
+            esCliente: false
+        }
     },
     CRE008: {
         status: 1,
         payload: {
-            tieneProducto: true,
-            esCliente: true
-         }
+            esCliente: false
+        }
     },
     CRE009: {
         status: 1,
         payload: {
-            tieneProducto: true,
+            tieneProducto: false,
             esCliente: true
-         }
-    },
-    CRE010: {
-        status: 1,
-        payload: {
-            tieneProducto: true,
-            esCliente: true
-         }
+        }
     }
 };

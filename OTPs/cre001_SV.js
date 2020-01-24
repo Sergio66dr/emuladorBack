@@ -23,22 +23,7 @@ module.exports = {
         status: 1,
         payload: {
 
-            sv: {
-                esCliente: true,
-                fechaNacimiento: {
-                         dia: '',
-                         mes: '',
-                         anio: ''
-                },
-                estadoFamiliar: '',
-                nacionalidad: '',
-                sexo: '',
-                correo: '',
-                noTelefono: '',
-                departamento: '',
-                municipio: '',
-                escolaridad: ''
-            },
+            sv: {"correo":"rocio.huezo@davivienda.com.sv","departamento":"6","escolaridad":"","estadoFamiliar":"1","fechaNacimiento":{"anio":"1983","dia":"24","mes":"04"},"municipio":"17","nacionalidad":"SV","noTelefono":"79223902","sexo":"M"},
             pa: {
             correo: '',
             ciudad: '',
