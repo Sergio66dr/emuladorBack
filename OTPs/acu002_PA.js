@@ -22,6 +22,7 @@ module.exports = {
     CUE005: {
         status: 1,
         payload: {
+            codSubProducto: '0',
             codigoVendedor: [{ label: '2', value: '2'}]
         }
     },

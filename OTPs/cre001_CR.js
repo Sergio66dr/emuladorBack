@@ -16,13 +16,15 @@ module.exports = {
             canal: '1',
             idModulo: 'cam',
             lenguaje: 'ES',
-            pais: 'CR'
+            pais: 'CR',
+            zona: true
         }
     },
     CRE004: {
         status: 1,
         payload: {
             sv: {
+                esCliente: true,
                 fechaNacimiento: {
                          dia: '',
                          mes: '',

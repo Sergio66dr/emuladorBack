@@ -22,21 +22,27 @@ module.exports = {
     VIN002: {
         status: 1,
         payload: {
-            estadoCivil: "1",
+            fechaNacimiento: "18/04/1995",
+            nombre: "Sergio Rafael Manjarrez Chacón",
+            estadoCivil: '',
+            nit: '12341236541232',
             expedicion: {
-                ciudad: "",
-                departamento: "",
-                municipio: "",
-                fechaExpedicion: "01/01/1990",
-                fechaVencimiento: "02/12/2222"
+                ciudad:'',
+                departamento: '',
+                municipio: '',
+                fechaExpedicion: "18/05/2013",
+                fechaVencimiento: "18/05/2023"
             },
-            fechaNacimiento: "12/12/1988",
-            nit: "",
-            nombres: {
-                primerApellido: "Primer Apellido",
-                primerNombre: "Primer Nombre",
-                segundoApellido: "Segundo Apellido",
-                segundoNombre: "Segundo Nombre"
+            sv: {
+                nacionalidad: undefined,
+                correo: 'schaocn7@dxc.com',
+                noCelular: '3111968134',
+                residencia: {
+                    departamento: '1',
+                    municipio: '2',
+                    direccion: '11111'
+                },
+                noDependientes: '3'
             }
         }
     },

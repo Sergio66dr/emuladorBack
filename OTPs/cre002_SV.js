@@ -13,10 +13,11 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
+            canal: '1',
             idModulo: 'CRECAM',
             lenguaje: 'ES',
-            pais: 'SV'
+            pais: 'SV',
+            zona: true
         }
     },
     CRE012: {

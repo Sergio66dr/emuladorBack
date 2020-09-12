@@ -26,7 +26,8 @@ module.exports = {
             cuentas: [{
                 valCodigoProducto: 'HCL',
                 valCodigoSubProducto: 'HCL002',
-                valNumeroProducto: '0000012345'
+                valNumeroProducto: '0000012345',
+                valAliasProducto: 'PORN-HUB'
             }]
         }
     }

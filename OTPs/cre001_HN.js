@@ -7,7 +7,7 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CRE004',
-        CRE003: 'ING001'
+        CRE004: 'VIN003'
     },
     ING001: {
         status: 1,
@@ -16,10 +16,54 @@ module.exports = {
             canal: '1',
             idModulo: 'cam',
             lenguaje: 'ES',
-            pais: 'HN'
+            pais: 'HN',
+            zona: true
         }
     },
     CRE004: {
+        status: 1,
+        payload: {
+            sv: {
+                fechaNacimiento: {
+                         dia: '',
+                         mes: '',
+                         anio: ''
+                },
+                estadoFamiliar: '',
+                nacionalidad: '',
+                sexo: '',
+                correo: '',
+                noTelefono: '',
+                departamento: '',
+                municipio: '',
+                escolaridad: ''
+            },
+            pa: {
+              correo: '',
+              ciudad: '',
+              noTelefono: ''
+            },
+            hn: {
+              departamento: '01',
+              municipio: '002',
+              colonia: '999',
+              escolaridad: '1'
+            },
+            cr: {
+              escolaridad: '' 
+            },
+            esCreditoPreaprobado: true
+        }
+    },
+    CRE002: {
+        status: 1,
+        payload: {
+            valor: 50000,
+            meses: 12,
+            cuotaMensual: 450
+        }
+    },
+    VIN003: {
         status: 1,
         payload: {
             sv: {
@@ -51,14 +95,6 @@ module.exports = {
               cr: {
                 escolaridad: '' 
               }
-        }
-    },
-    CRE002: {
-        status: 1,
-        payload: {
-            valor: 50000,
-            meses: 12,
-            cuotaMensual: 450
         }
     }
 };

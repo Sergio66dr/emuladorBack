@@ -7,25 +7,27 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CUE001',
-        CUE001: 'ING001'
+        CUE001: 'BIO001',
+        BIO001: 'ING001'
     },
     ING001: {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'q',
-            idModulo: 'CTACAM',
+            canal: '1',
+            idModulo: 'CRECAM',
             lenguaje: 'ES',
-            pais: 'PA'
+            pais: 'CR'
         }
     },
     CUE001: {
         status: 1,
         payload: {
-            tieneCuentaDigital: true
+            tieneCuentaDigital: true,
+            esCliente: false
         }
     },
-    SIM002: {
+    BIO001: {
         status: 1,
         payload: {
             valor: 50000,

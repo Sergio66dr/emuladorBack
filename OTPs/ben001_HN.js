@@ -13,15 +13,17 @@ module.exports = {
         status: 1,
         payload: {
             "aliado":"LM",
-            "canal":"48",
+            "canal":"2",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"HN"
+            "pais":"HN",
+            "zona": true
         }
     },
     BEN001: {
         status: 1,
         payload: {
+            esCreditoPreaprobado: false,
             esCliente: false,
             esFatca: false,
             codigoVendedor: [{ label: '2', value: '2'}]

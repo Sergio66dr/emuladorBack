@@ -28,7 +28,7 @@ module.exports = {
                 departamento: "",
                 municipio: "",
                 fechaExpedicion: "01/01/1990",
-                fechaVencimiento: "02/12/22"
+                fechaVencimiento: "02/12/2020"
             },
             fechaNacimiento: "12/12/1988",
             nit: "",

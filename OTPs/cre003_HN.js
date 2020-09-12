@@ -16,14 +16,17 @@ module.exports = {
             canal: '1',
             idModulo: 'CRECAM',
             lenguaje: 'ES',
-            pais: 'HN'
+            pais: 'HN',
+            zona: true
         }
     },
     CRE005: {
         status: 1,
         payload: {
-            valor: 500000,
-            meses: 5
+            esCliente: true,
+            tieneProductos: false,
+            valor: '22500',
+            meses: '12'
         }
     }
 };

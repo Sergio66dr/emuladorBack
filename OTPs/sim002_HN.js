@@ -13,10 +13,11 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
+            canal: '1',
             idModulo: 'cam',
-            lenguaje: 'es',
-            pais: 'HN'
+            lenguaje: 'ES',
+            pais: 'HN',
+            zona: true
         }
     },
     SIM001: {
@@ -33,9 +34,10 @@ module.exports = {
     CRE002: {
         status: 1,
         payload: {
-            valor: 50000,
+            valor: 500000000,
             meses: 12,
-            cuotaMensual: 450
+            cuotaMensual: 450,
+            esCreditoPreaprobado: true
         }
     }
 };

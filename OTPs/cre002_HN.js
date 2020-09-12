@@ -13,10 +13,11 @@ module.exports = {
         status: 1,
         payload: {
             aliado: 'ML',
-            canal: 'web',
+            canal: '1',
             idModulo: 'CRECAM',
             lenguaje: 'ES',
-            pais: 'HN'
+            pais: 'HN',
+            zona: true
         }
     },
     CRE012: {
@@ -26,10 +27,12 @@ module.exports = {
             comisionDesembolso: 1000000,
             montoDesembolsar: 200000,
             plazoCredito: 12,
-            producto: {numProducto: '987698670987', codProducto: '1233'},
-            fechaHora: 'FECHA_XXXXX',
+            producto: {numProducto: '987698670987', codProducto: '1233', nombreProducto: 'CREDITO'},
+            fechaHora: new Date(),
             numeroAprobacion: '234234',
-            costoTransaccion: 90000
+            costoTransaccion: 90000,
+            aplicaRetanqueo: true,
+            esCreditoPreaprobado: true
         }
     }
 };

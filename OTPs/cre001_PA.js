@@ -16,7 +16,8 @@ module.exports = {
             canal: '1',
             idModulo: 'cam',
             lenguaje: 'ES',
-            pais: 'PA'
+            pais: 'PA',
+            zona: true
         }
     },
     CRE004: {
@@ -36,21 +37,21 @@ module.exports = {
                 departamento: '',
                 municipio: '',
                 escolaridad: ''
-              },
-              pa: {
-                correo: 'schacon7@dxc.com',
-                ciudad: '0001',
-                noTelefono: '3111968134'
-              },
-              hn: {
-                departamento: '',
-                municipio: '',
-                colonia: '',
-                escolaridad: ''
-              },
-              cr: {
-                escolaridad: '' 
-              }
+            },
+            pa: {
+            correo: 'schacon7@dxc.com',
+            ciudad: '_0001',
+            noTelefono: '3111968134'
+            },
+            hn: {
+            departamento: '',
+            municipio: '',
+            colonia: '',
+            escolaridad: ''
+            },
+            cr: {
+            escolaridad: '' 
+            }
         }
     },
     CRE002: {
