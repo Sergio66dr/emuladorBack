@@ -6,11 +6,56 @@ const path = require("path");
 const respuesta = (req, res) => {
   const ambiente = 'lab.cam';
   var fullUrl = `https://mbaas.${ambiente}.davivienda.com/catalogo/v1${req.originalUrl}`;
-  if ( req.originalUrl === '/data/ING001PROD/visible?pais=CR&lenguaje=ES&canal=2&property=status' ) {
-    fullUrl = `https://mbaas.${ambiente}.davivienda.com/catalogo/v1/data/ING001/visible?pais=CR&lenguaje=ES&canal=2&property=status`;
+  if ( req.originalUrl.indexOf('ING001') !== -1 ) {
+    return res.json(
+      [
+        {
+        "condiciones": [],
+        "descripcion": "Crédito de consumo con aprobación en línea",
+        "status": "visible",
+        "data": {
+          "workflow": "CRECAM"
+        },
+        "tipo": "workflow",
+        "titulo": "Crédito Móvil",
+        "imagen": "asset_IMG_ING001_001"
+      }, {
+        "status": "visible",
+        "condiciones": [],
+        "imagen": "asset_IMG_ING001_002",
+        "titulo": "Cuenta Móvil",
+        "tipo": "workflow",
+        "data": {
+          "workflow": "CTACAM"
+        },
+        "descripcion": "Ábrala desde su celular sin costo y comience a usarla de inmediato"
+      }, {
+        "titulo": "Tarjeta Móvil",
+        "tipo": "urlExterna",
+        "data": {
+          "urlExterna": {
+            "urlExterna": "https://crediquick.apptividad.net/DAVICR_Autoatencion_QA/Apptividad.Ozono.WebApp/Home/IndexDeepLinkWithSSOT?pSSOT=9CE0EC2D-47E8-47DC-BB06-CA83E0DF5E6F&pModelId=PRIV_DAVI_AUTO_ATENCION;;1"
+          }
+        },
+        "condiciones": [],
+        "imagen": "asset_IMG_ING001_003",
+        "status": "visible",
+        "descripcion": "Solicítela y recíbala en su domicilio"
+      }, {
+        "condiciones": [],
+        "status": "visible",
+        "titulo": "Depósitos a Plazo",
+        "tipo": "postMessage",
+        "descripcion": "Abra un Depósito a Plazo 100% Digital",
+        "imagen": "asset_IMG_ING001_004",
+        "data": {
+          "postMessage": "op_cdt"
+        }
+      }]
+    );
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_SIM001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/VALIDACIONES_SIM001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       simboloMoneda: "L",
       ingresosMensuales: {
@@ -35,25 +80,25 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_SIM001?pais=CR&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/VALIDACIONES_SIM001?pais=CR&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       "simboloMoneda": "₡"
     }]);
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_SIM001?pais=SV&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/VALIDACIONES_SIM001?pais=SV&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       simboloMoneda: "$"
     }]);
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_SIM001?pais=PA&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/VALIDACIONES_SIM001?pais=PA&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       simboloMoneda: "$"
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=HN') {
+  if ( false && req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=HN') {
     return res.json([{
       titulo: "Seleccione las condiciones de su crédito:",
       ingresosMensuales: {
@@ -77,7 +122,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=CR') {
+  if ( false && req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=CR') {
     return res.json([{
       titulo: "Seleccione las condiciones de su crédito:",
       rango: {
@@ -96,13 +141,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_SIM001?pais=SV&modulo=CRECAM&lenguaje=ES&limit=-1') {
-    return res.json([{
-      simboloMoneda: "$"
-    }]);
-  }
-
-  if ( req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=SV') {
+  if ( false && req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=SV') {
     return res.json([{
       titulo: "Seleccione las condiciones de su crédito:",
       rango: {
@@ -121,7 +160,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=PA') {
+  if ( false && req.originalUrl === '/data/i18n_CRE001?lenguaje=ES&pais=PA') {
     return res.json([{
       titulo: "Seleccione las condiciones de su crédito:",
       rango: {
@@ -140,7 +179,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=HN') {
+  if ( false && req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=HN') {
     return res.json([{
       "titulo": "Las condiciones de su crédito móvil que desea solicitar son:",
       "valor": "Valor:",
@@ -156,7 +195,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=PA') {
+  if ( false && req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=PA') {
     return res.json([{
       "titulo": "Las condiciones de su crédito móvil que desea solicitar son:",
       "valor": "Valor:",
@@ -172,7 +211,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=SV') {
+  if ( false && req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=SV') {
     return res.json([{
       "titulo": "Las condiciones de su crédito móvil que desea solicitar son:",
       "valor": "Valor:",
@@ -188,7 +227,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=CR') {
+  if ( false && req.originalUrl === '/data/i18n_CRE002?lenguaje=ES&pais=CR') {
     return res.json([{
       "titulo": "Las condiciones de su crédito móvil que desea solicitar son:",
       "valor": "Valor:",
@@ -203,8 +242,8 @@ const respuesta = (req, res) => {
       }
     }]);
   }
-
-  if ( req.originalUrl === '/data/MSG_RESULTADO_SIMULACION?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  
+  if ( false && req.originalUrl === '/data/MSG_RESULTADO_SIMULACION?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       "tooltip": "La información mostrada es ''Preliminar''",
       "pieDePagina": "Tengan en cuenta que las condiciones del crédito pueden variar por sus ingresos, deudas que tenga en el sistema financiero y políticas del banco",
@@ -215,7 +254,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/BEN001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/BEN001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([
       {
       "asset": "asset_SVG_BEN001_ESTADISTICA",
@@ -289,7 +328,7 @@ const respuesta = (req, res) => {
   ]);
   }
 
-  if ( req.originalUrl === '/data/VALIDACIONES_BEN001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
+  if ( false && req.originalUrl === '/data/VALIDACIONES_BEN001?pais=HN&modulo=CRECAM&lenguaje=ES&limit=-1') {
     return res.json([{
       "titulo": "Adquiera su crédito móvil en menos de 10 minutos y acceda a los siguientes beneficios:",
       "detalles": [],
@@ -304,7 +343,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=HN') {
+  if ( false && req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=HN') {
     return res.json([{
       boton: {
         label: "Continuar"
@@ -312,7 +351,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=PA') {
+  if ( false && req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=PA') {
     return res.json([{
       boton: {
         label: "Continuar"
@@ -320,7 +359,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=SV') {
+  if ( false && req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=SV') {
     return res.json([{
       boton: {
         label: "Continuar"
@@ -328,7 +367,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if ( req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=CR') {
+  if ( false && req.originalUrl === '/data/i18n_BEN001?lenguaje=ES&pais=CR') {
     return res.json([{
       boton: {
         label: "Continuar"
@@ -336,7 +375,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  if (req.originalUrl === '/data/i18n_CRE006?lenguaje=ES&pais=HN') {
+  if ( false && req.originalUrl === '/data/i18n_CRE006?lenguaje=ES&pais=HN') {
     return res.json([{
       "plazo": {
         "etiqueta": "Plazo:",
@@ -352,7 +391,8 @@ const respuesta = (req, res) => {
       "encabezadoRetanqueo": "Tenga en cuenta que el monto preaprobado, se debitará del saldo del credito vigente",
       "tasaInteresCredito": {
         "etiqueta": "Tasa:",
-        "plazo": "Mensual"
+        "plazo": "Mensual",
+        "plazoPreaprobado": "Anual"
       },
       "comisionDesembolso": "Comisión de desembolso:",
       "montoDesembolsar": "Monto a desembolsar:",
@@ -360,8 +400,7 @@ const respuesta = (req, res) => {
     }]);
   }
 
-  
-  if (req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=HN') {
+  if ( false && req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=HN') {
     return res.json([
       {
         "encabezado": "Felicitaciones, estamos próximos a desembolsar su crédito",
@@ -388,7 +427,7 @@ const respuesta = (req, res) => {
     ]);
   }
 
-  if (req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=SV') {
+  if ( false && req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=SV') {
     return res.json([
       {
         "encabezado": "Felicitaciones, su crédito ha sido desembolsado",
@@ -399,7 +438,7 @@ const respuesta = (req, res) => {
     ]);
   }
 
-  if (req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=PA') {
+  if ( false && req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=PA') {
     return res.json([
       {
         "encabezado": "Felicitaciones, estamos próximos a desembolsar su crédito",
@@ -410,7 +449,7 @@ const respuesta = (req, res) => {
     ]);
   }
 
-  if (req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=CR') {
+  if ( false && req.originalUrl === '/data/i18n_CRE012?lenguaje=ES&pais=CR') {
     return res.json([
       {
         "encabezado": "Felicitaciones, estamos próximos a desembolsar su crédito",
@@ -418,6 +457,24 @@ const respuesta = (req, res) => {
           "continuar": "Continuar"
         }
       }
+    ]);
+  }
+
+  if ( false && req.originalUrl === '/data/CONFIG_COMPRESS_BIOMETRIA') {
+    return res.json([{
+      "config": {
+        "sizeBase64": 512000,
+        "sizeFile": 500,
+        "step": 0.05
+      }
+    }]);
+  }
+
+  if (req.originalUrl === '/data/INITILIZER_scripts') {
+    return res.json([
+      {
+      script: 'assetScriptTagginPlan'
+    }
     ]);
   }
 
@@ -432,16 +489,6 @@ const respuesta = (req, res) => {
     return res.json([{
       "width": 990,
       "height": 1165
-    }]);
-  }
-
-  if ( req.originalUrl === '/data/CONFIG_COMPRESS_BIOMETRIA') {
-    return res.json([{
-      "config": {
-        "sizeBase64": 512000,
-        "sizeFile": 500,
-        "step": 0.05
-      }
     }]);
   }
 

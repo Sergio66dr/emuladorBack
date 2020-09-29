@@ -51,7 +51,8 @@ module.exports = {
                 escolaridad: ''
               },
               cr: {
-                escolaridad: '' 
+                escolaridad: '' ,
+                precarga: "{ingresosMensuales: '500000', ingresosMensualesUSD: '', moneda: 'CRC', fuenteDeIngresos: 'AEPR', antiguedadLaboral: {dia: '10', mes: '10', anio: '2000'}, nivelEducativo: '1', profesion: '001', ocupacion: '1', nombreEmpresa: 'sdfsdfsd', condicionVivienda: '2', mensualidadAlquiler: '', tieneHijos: false, menosDe21: '10', masDe21: '', deudaFueraSistemaFinanciero: true, beneficiario: {nombre: 'gertert', apellido: 'rtrtrt', tipoIdentificacion: 'N', numeroIdentificacionCEDULANACIONAL: '11-1111-1111', numeroIdentificacionDIMEX: '', parentesco: '2'}, recibioAyuda: false, codigoVendedor: '5000', autorizacionInformacionCrediticia: true, politicaPrivacidad: true}"
               }
         }
     },

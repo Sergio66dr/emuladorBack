@@ -56,7 +56,7 @@
     {
         height: 5px;
         width: 3px;
-        border-radius: 3px;  
+        border-radius: 3px;
         background-color: $color__primary;
         position: absolute;
         top: 7px;
@@ -68,7 +68,7 @@
             content: '';
             height: 5px;
             width: 3px;
-            border-radius: 3px;  
+            border-radius: 3px;
             background-color: $color__primary;
             position: absolute;
             top: 82px;
@@ -153,4 +153,62 @@
 {
     0%{transform:rotate(0deg);}
     100%{transform:rotate(360deg);}
+}
+
+.minimal
+{
+    .clockLoader
+    {
+        border: 15px solid;
+        height: 181px;
+        width: 181px;
+        &--light
+        {
+          border-color: white;
+            &__numeral
+            {
+                background-color: transparent !important;
+                &:before
+                {
+                    background-color: transparent !important;
+                }
+            }
+
+        }
+        &__center
+        {
+            background-color: white !important;
+            border: 2px solid transparent !important;
+            width: 15px;
+            height: 15px;
+        }
+        &__numeral
+        {
+            background-color: transparent !important;
+        }
+    }
+    .clockLoader:after
+    {
+      top: 90px;
+      left: 83px;
+      height: 80px;
+      width: 15px;
+      border-radius: 4px;
+      @include prefix((
+          transform-origin: 50% 0,
+          animation: grdAiguille 2.4s linear infinite
+      ), webkit moz o ms);
+    }
+    .clockLoader:before
+    {
+      top: 90px;
+      left: 83px;
+      height: 40px;
+      width: 15px;
+      border-radius: 4px;
+      @include prefix((
+          transform-origin: 50% 0,
+          animation: ptAiguille 72s linear infinite
+      ), webkit moz o ms);
+    }
 }
