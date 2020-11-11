@@ -34,10 +34,10 @@ module.exports = {
             },
             hn: {
                 departamento: '01',
-                municipio: '001',
-                colonia: '184',
-                direccion: 'cedro 566',
-                referencia: 'a un lado del parque'
+                municipio: '002',
+                colonia: '999',
+                direccion: '',
+                referencia: ''
             }
         }
     },

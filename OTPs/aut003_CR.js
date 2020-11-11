@@ -13,7 +13,7 @@ module.exports = {
         status: 1,
         payload: {
             "aliado":"LM",
-            "canal":"1",
+            "canal":"2",
             "idModulo":"MNUING",
             "lenguaje":"ES",
             "pais":"CR",
@@ -25,30 +25,9 @@ module.exports = {
         payload: {
             clienteExistente: true,
             cuentas: [{
-                valAliasProducto: 'Mi producto',
-                valCodigoProducto: 'HCL',
-                valCodigoSubProducto: 'HCL002',
-                valNumeroProducto: '0000012345'
+                valNumeroProducto: 'undefined'
             }, {
-                "valAliasProducto": "1 CUENTAS DE AHORRO MOVIL",
-                "valCodigoProducto": "CAMO",
-                "valCodigoSubProducto": "CAHC",
-                "valNumeroProducto": "777977006586"
-            }, {
-                "valAliasProducto": "2 CUENTAS DE AHORRO MOVIL",
-                "valCodigoProducto": "CAMO",
-                "valCodigoSubProducto": "CAHC",
-                "valNumeroProducto": "777977006586"
-            }, {
-                "valAliasProducto": "3 CUENTAS DE AHORRO MOVIL",
-                "valCodigoProducto": "CAMO",
-                "valCodigoSubProducto": "CAHC",
-                "valNumeroProducto": "777977006586"
-            }, {
-                "valAliasProducto": " 4 CUENTAS DE AHORRO MOVIL",
-                "valCodigoProducto": "CAMO",
-                "valCodigoSubProducto": "CAHC",
-                "valNumeroProducto": "777977006586"
+                valNumeroProducto: 'CR50010402846609106111'
             }]
         }
     }

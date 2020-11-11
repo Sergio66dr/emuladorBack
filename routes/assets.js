@@ -1,26 +1,31 @@
 var express = require('express');
 const request = require('request');
+const env = require('../environtment');
 var router = express.Router();
 const path = require('path');
 
 router.get('/:assets_id', (req, res) => {
-  var fullUrl = 'https://mbaas.lab.cam.davivienda.com/catalogo/v1'+ req.originalUrl;
+  var fullUrl = `${env.asset}${req.originalUrl}`;
 
-  if ( req.originalUrl === '/asset/assetScriptTagginPlan') {
-    return res.send(`var getPayload = (formulario, paises) => {
-      const form = formulario.getRawValue();
-      return {
-        documento: {
-          tipo: form.tipoDocumento,
-          no: form.numeroDoc
-        },
-        pais: {
-          nombre: paises.filter( item => item.value === form.pais)[0].label,
-          codigo: form.pais
-        }
-      };
-    };`)
-  }
+  // if( req.originalUrl === '/asset/assetInitialStyle.minify.css') {
+  //   fullUrl = 'https://mbaas.desa.cam.davivienda.com/catalogo/v1'+ req.originalUrl;
+  //   // return res.send(``);
+  // }
+
+  // if( req.originalUrl === '/asset/assetForbiddenStyle.minify.css') {
+  //   fullUrl = 'https://mbaas.desa.cam.davivienda.com/catalogo/v1'+ req.originalUrl;
+  //   // return res.send(``);
+  // }
+
+  // if( req.originalUrl === '/asset/assetMenuStyle.minify.css') {
+  //   fullUrl = 'https://mbaas.desa.cam.davivienda.com/catalogo/v1'+ req.originalUrl;
+  //   // return res.send(``);
+  // }
+
+  // if( req.originalUrl === '/asset/assetCamStyle.minify.css') {
+  //   fullUrl = 'https://mbaas.desa.cam.davivienda.com/catalogo/v1'+ req.originalUrl;
+  //   // return res.send(``);
+  // }
   
   request(fullUrl, { json: true }, (err, res2, body) => {
     if ( !res2 ) {

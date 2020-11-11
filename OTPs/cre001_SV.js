@@ -25,7 +25,7 @@ module.exports = {
     status: 1,
     payload: {
       sv: {
-        nit: "1231-240483-569-8",
+        nit: "",
         esCliente: true,
         correo: "",
         departamento: "1",

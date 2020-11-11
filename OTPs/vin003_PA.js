@@ -25,6 +25,10 @@ module.exports = {
                 actividadComercial: '1',
                 empresa: 'pepe y toño'
             }
-        }},VIN005: {status: 1,payload: {}
+        }
+    }
+    ,VIN005: {
+        status: 1,
+        payload: {}
     }
 };

@@ -25,6 +25,7 @@ module.exports = {
         payload: {
             preguntas: [{
               pregunta: {
+                textoPregunta: '¿Una pregunta?',
                 idPregunta: '1',
                 respuestas: [{
                   idRespuesta: '1',

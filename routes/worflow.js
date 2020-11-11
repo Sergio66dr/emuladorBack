@@ -25,6 +25,11 @@ router.post('/workflow', (req, res) => {
   console.log(n + 1);
   n = n + 1;
   var paso = req.body.stepId;
+  if ( paso === 'RET000' ) {
+    datos[req.body.payload.stepId].payload.retoma = req.body.payload.retoma;
+    // persistir(req.body.payload.stepID, req.body.payload.retoma);
+    paso = req.body.payload.stepId
+  }
   var response = {
     data: {
       status: datos[datos.workflow[paso]].status,

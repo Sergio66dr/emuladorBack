@@ -7,7 +7,7 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'AUT001',
-        AUT001: 'VIN006'
+        AUT001: 'ING001'
     },
     ING001: {
         status: 1,
@@ -25,7 +25,7 @@ module.exports = {
         payload: {
             esCliente: false,
             esFatca: true,
-            codigoVendedor: '123456789',
+            codigoVendedor: '',
             SV: {
                 DECLARACION_JURADA: {
                     codOrigenPrincipal: '1'

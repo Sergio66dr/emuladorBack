@@ -23,7 +23,7 @@ module.exports = {
         status: 1,
         payload: {
             hn: {
-                actividadComercial: '1',
+                actividadComercial: '11',
                 antiguedadLaboral: {
                     anio: '2019',
                     mes: '02',

@@ -7,11 +7,33 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CRE006',
-        CRE006: 'CRE007',
+        CVI001: 'CRE006',
+        CRE006: 'AUT001',
+        AUT001: 'CRE007',
         CRE007: 'CRE008',
         CRE008: 'CRE009',
         CRE009: 'CRE010',
         CRE010: 'CRE011',
+    },
+    AUT001: {
+        status: 1,
+        payload: {
+            esCliente: false,
+            esFatca: true,
+            codigoVendedor: '',
+            SV: {
+                DECLARACION_JURADA: {
+                    codOrigenPrincipal: '1'
+                }
+            },
+            PA: {},
+            CR: {},
+            HN: {},
+            sv: {},
+            hn: {},
+            cr: {},
+            pa: {}
+        }
     },
     ING001: {
         status: 1,
@@ -106,5 +128,22 @@ module.exports = {
             tieneProducto: true,
             esCliente: true
          }
-    }
+    },
+    CVI001: {
+        status: 1,
+        payload: {
+            crypto: {
+                metodo: "encriptacionClaveA",
+                credencial : `-----BEGIN PUBLIC KEY-----
+                MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi0/ajmKQ6P3+lInTZvRp
+                l8NBxUikVzz1ZaqJVlW6cy6rXkms2TYwawHJp6Uat4VoMj7+jCFxs7daOcQOLWA2
+                6KMKP+C8uSzdy6tgKN/CwkalDPU/+kC/ImEHwa7i3FFnXsBeJN5Md7my0MOhqYR6
+                vpiGtFu99YvRzBkOsj53ZT7Fya/EgEFrAmudfnNg7BmALO0lgXUKwGBZbg5h4pSk
+                ss06SQdNwvrpC0dRBBnww0nOXQmnEljNIfcJ1kCXyYO3GKVNkyzW+gQCpkB+xPxM
+                4+m4WWo93xKbI9SOXaIxhDu19Y5V7cbm2BunVaIvTNAtQuoamUN3arfg3d9mO8/y
+                BQIDAQAB
+          -----END PUBLIC KEY-----`
+            }
+        }
+    },
 };

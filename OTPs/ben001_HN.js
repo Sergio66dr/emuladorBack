@@ -23,7 +23,7 @@ module.exports = {
     BEN001: {
         status: 1,
         payload: {
-            esCreditoPreaprobado: false,
+            esCreditoPreaprobado: true,
             esCliente: false,
             esFatca: false,
             codigoVendedor: [{ label: '2', value: '2'}]
