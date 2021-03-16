@@ -22,7 +22,7 @@ module.exports = {
     AUT001: {
         status: 1,
         payload: {
-            esCliente: true,
+            esCliente: false,
             esFatca: false,
             codigoVendedor: '',
             SV: {},

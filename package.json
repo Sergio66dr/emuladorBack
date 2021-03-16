@@ -3,19 +3,29 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www || node ./bin/www"
+    "start": "nodemon ./bin/www || node ./bin/www",
+    "camQa": "nodemon ./bin/www -c qa -z CAM || node ./bin/www -c qa -z CAM",
+    "camDev": "nodemon ./bin/www -c desa -z CAM || node ./bin/www -c desa -z CAM",
+    "camProd": "nodemon ./bin/www -c prod -z CAM || node ./bin/www -c prod -z CAM",
+    "coQa": "nodemon ./bin/www -c qa -z CO || node ./bin/www -c qa -z CO -z CO",
+    "coDev": "nodemon ./bin/www -c desa -z CO || node ./bin/www -c desa -z CO",
+    "coProd": "nodemon ./bin/www -c prod -z CO || node ./bin/www -c prod -z CO"
   },
   "dependencies": {
+    "command-line-args": "^5.1.1",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "helmet": "^3.19.0",
+    "html-minifier": "^4.0.0",
     "http-errors": "~1.6.3",
     "ionic": "^3.20.1",
     "ipware": "^2.0.0",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "node-forge": "^0.10.0",
     "request": "^2.81.0",
     "uuid": "^3.4.0"
   }

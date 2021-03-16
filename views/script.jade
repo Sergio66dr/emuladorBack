@@ -1,0 +1,64 @@
+extends layout
+
+block content
+
+  div(class="container")
+    div(class="card border-primary mb-3" style="max-width: 100%")
+      div(class="card-header")
+        legend() #{title}
+      div(class="card-body")
+        form(action="#{url}" method="post")
+            div(class="form-row")
+              div(class="form-group col-md-2")
+                label(for="type") Type:
+                select(class="custom-select" id="type" name="type")
+                  option(value="PUT" selected) PUT
+                  option(value="POST") POST
+                  option(value="DELETE") DELETE
+              div(class="form-group col-md-10")
+                label(for="kind") kind
+                input(type="text" class="form-control" id="kind" name="kind" placeholder="kind")
+            div(class="form-row")
+              div(class="form-group col-md-4")
+                label(for="pais") Pais:
+                select(class="custom-select" id="pais" name="pais")
+                  option(value="" selected) N/A
+                  option(value="CO") COLOMBIA
+                  option(value="CR") COSTA RICA
+                  option(value="SV") EL SALVADOR
+                  option(value="HN") HONDURAS
+                  option(value="PA") PANAMA
+              div(class="form-group col-md-4")
+                label(for="modulo") Modulo:
+                select(class="custom-select" id="modulo" name="modulo")
+                  option(value="" selected) N/A
+                  option(value="CTACAM") CTACAM
+                  option(value="CRECAM") CRECAM
+                  option(value="LIBCAM") LIBCAM
+              div(class="form-group col-md-4")
+                label(for="aliado") Aliado:
+                select(class="custom-select" id="aliado" name="aliado")
+                  option(value="" selected) N/A
+            div(class="form-row")
+              div(class="form-group col-md-6")
+                label() Canal:
+                div(class="custom-control custom-radio")
+                  input(type="radio" id="customRadio1" name="canal" class="custom-control-input" value="1")
+                  label(class="custom-control-label" for="customRadio1") APP
+                div(class="custom-control custom-radio")
+                  input(type="radio" id="customRadio2" name="canal" class="custom-control-input" value="2")
+                  label(class="custom-control-label" for="customRadio2") WEB
+                div(class="custom-control custom-radio")
+                  input(type="radio" id="customRadio5" name="canal" class="custom-control-input" value="" checked)
+                  label(class="custom-control-label" for="customRadio5") N/A
+              div(class="form-group col-md-6")
+                label() Lenguaje:
+                div(class="custom-control custom-radio")
+                  input(type="radio" id="customRadio3" name="lenguaje" class="custom-control-input" value="ES")
+                  label(class="custom-control-label" for="customRadio3") Español
+                div(class="custom-control custom-radio")
+                  input(type="radio" id="customRadio4" name="lenguaje" class="custom-control-input" value="" checked)
+                  label(class="custom-control-label" for="customRadio4") N/A
+            div(class="btn-group" role="group" aria-label="Basic example")
+              input(type="submit" value="Descargar Script" class="btn btn-outline-primary")
+              input(type="reset" value="Limpiar" class="btn btn-outline-primary")

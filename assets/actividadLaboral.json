@@ -1,0 +1,34 @@
+[
+    {
+        "value": "A",
+        "label": "Ama de casa"
+    },
+    {
+        "label": "Servidor publico",
+        "value": "D"
+    },
+    {
+        "value": "E",
+        "label": "Empleado"
+    },
+    {
+        "value": "I",
+        "label": "Independiente"
+    },
+    {
+        "label": "Pensionado",
+        "value": "P"
+    },
+    {
+        "value": "R",
+        "label": "Religioso"
+    },
+    {
+        "label": "Socio/ Renstista de capital",
+        "value": "S"
+    },
+    {
+        "value": "T",
+        "label": "Estudiante"
+    }
+]

@@ -54,7 +54,7 @@ module.exports = {
             plazo: '36.66',
             tasaInteres: '12.66',
             ki: {
-                capitalInteres: '1',
+                capitalIntereses: '1',
                 tasaInteresNominal: '12',
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
@@ -73,7 +73,7 @@ module.exports = {
             plazo: '36.66',
             tasaInteres: '12.66',
             ki: {
-                capitalInteres: '1',
+                capitalIntereses: '1',
                 tasaInteresNominal: '12',
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
@@ -92,7 +92,7 @@ module.exports = {
             plazo: '36.66',
             tasaInteres: '12.66',
             ki: {
-                capitalInteres: '1',
+                capitalIntereses: '1',
                 tasaInteresNominal: '12',
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',

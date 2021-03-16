@@ -1,0 +1,980 @@
+[
+  {
+    "correoElectronico": {
+      "type": "input",
+      "name": "correoElectronico",
+      "inputType": "email",
+      "value": "",
+      "maxValue": 40,
+      "failBorder": true,
+      "label": "¿Cuál es su correo electrónico?",
+      "allowCharacter": "1234567890",
+      "placeholder": "",
+      "readonly": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        },
+        {
+          "validator": "Validators",
+          "type": "pattern",
+          "params": "^(([^<>()[\\]\\.,;:\\s@\"]+(\\.[^<>()[\\]\\.,;:\\s@\"]+)*)|(\".+\"))@(([^<>()[\\]\\.,;:\\s@\"]+\\.)+[^<>()[\\]\\.,;:\\s@\"]{2,4})$"
+        }
+      ]
+    },
+    "celular": {
+      "allowCharacter": "1234567890",
+      "label": "¿Cuál es su número de celular?",
+      "placeholder": "",
+      "type": "input",
+      "name": "celular",
+      "inputType": "text",
+      "readonly": true,
+      "disabled": false,
+      "maxValue": 10,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        },
+        {
+          "validator": "Validators",
+          "type": "minLength",
+          "params": 10
+        },{
+          "validator": "Validators",
+          "type": "pattern",
+          "params": "^(300|301|302|303|304|305|310|311|312|313|314|315|316|317|318|319|320|321|322|323|324|330|333|350|351)(?!.*?(1111111|2222222|3333333|4444444|5555555|6666666|7777777|8888888|9999999|0000000)).*$"
+        }
+      ]
+    },
+    "direccion": {
+      "label": "¿Cuál es su dirección de residencia?",
+      "type": "formAddress",
+      "name": "direccion",
+      "readonly": true,
+      "failBorder": true,
+      "children": [
+        {
+          "data": "catCUENTA_TIPO_VIA",
+          "name": "tipoVia",
+          "placeholder": "Seleccione"
+        },
+        {
+          "name": "viaPrincipal"
+        },
+        {
+          "name": "viaSecundaria"
+        },
+        {
+          "name": "viaComplemento"
+        },
+        {
+          "name": "referencia",
+          "label": "Torre / Piso / Apartamento / Otro",
+          "placeholder": ""
+        }
+      ],
+      "tooltip": {
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg",
+        "text": "Ingrese una dirección en Colombia."
+      },
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "ciudad": {
+      "name": "ciudad",
+      "label": "¿En cuál ciudad?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz,áéíóú",
+      "type": "predictiveList",
+      "data": "geography.getCitiesByCountry",
+      "dataParams": "169",
+      "functions": {
+        "setValue": "dane",
+        "setLabel": "name",
+        "filter": "name"
+      },
+      "value": "",
+      "disabled": false,
+      "readonly": false,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "actividadLaboral": {
+      "type": "select",
+      "name": "actividadLaboral",
+      "options": "actividades",
+      "placeholder": "Seleccione una opción",
+      "label": "¿Cuál es su actividad laboral actual?",
+      "functions": {
+        "setValue": "value",
+        "setLabel": "label",
+        "filter": "label"
+      },
+      "valueSelect": "value",
+      "optionShow": "label",
+      "disabled": false,
+      "value": "",
+      "readonly": false,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "ingresos": {
+      "label": "¿Cuál es el valor de sus ingresos como actividad laboral?",
+      "placeholder": "",
+      "restrict": "1234567890",
+      "type": "inputMoney",
+      "mskMoney": true,
+      "name": "ingresos",
+      "inputType": "text",
+      "maxValue": 12,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        },
+        {
+          "validator": "Validators",
+          "type": "min",
+          "params": 10000
+        }
+      ]
+    },
+    "esResidenciaFiscalExt": {
+      "name": "esResidenciaFiscalExt",
+      "type": "radioButton",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Tiene país de residencia fiscal diferente a Colombia y Estados Unidos?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "SiResidenciaFiscal",
+          "value": true,
+          "label": "Si"
+        },
+        {
+          "name": "NoResidenciaFiscal",
+          "value": false,
+          "label": "No"
+        }
+      ],
+      "tooltip": {
+        "text": "Marque Si, si usted tiene obligaciones fiscales o tributarias en países diferentes a Colombia y Estados Unidos.",
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg"
+      }
+    },
+    "esFatca": {
+      "type": "radioButton",
+      "name": "esFatca",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Está usted sujeto a tributación fiscal en los Estados Unidos, es decir es impactado por la ley FATCA?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "SiDeclara",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "NoDeclara",
+          "label": "No",
+          "value": false
+        }
+      ],
+      "tooltip": {
+        "text": "Ley para cumplimiento fiscal de cuentas en el extranjero, cuyo objetivo es identificar las personas con obligaciones tributarias en Estados Unidos y que mantienen activos financieros en instituciones financieras fuera de este país.",
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg"
+      }
+    },
+    "nombreEmpresa": {
+      "label": "¿Cuál es el nombre de su empresa?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "nombreEmpresa",
+      "inputType": "text",
+      "maxValue": 100,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "origenFondos": {
+      "label": "Declaró que el origen de mis recursos provienen de mi actividad económica u otros ingresos que he reportado.",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "origenFondos",
+      "mskMoney": true,
+      "inputType": "text",
+      "maxValue": 100,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "cargo": {
+      "label": "¿Qué cargo desempeña en la empresa?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "cargo",
+      "inputType": "text",
+      "maxValue": 100,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "verificacionNombre": {
+      "label": "Verifique si su nombre aparece igual que en la declaración de impuestos.",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "verificacionNombre",
+      "inputType": "text",
+      "maxValue": 50,
+      "readonly": true,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "direccionUSA": {
+      "label": "¿Cuál es su dirección?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "direccionUSA",
+      "inputType": "text",
+      "maxValue": 50,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "codigoPostal": {
+      "label": "¿Cuál es el código postal?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "codigoPostal",
+      "inputType": "text",
+      "maxValue": 50,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "esObjetoInvestigacionJudicial": {
+      "type": "radioButton",
+      "label": "¿He sido o estoy siendo objeto de investigaciones judiciales y/o administrativas en el país o en el extranjero?",
+      "name": "esObjetoInvestigacionJudicial",
+      "radioButtons": [
+        {
+          "name": "Si",
+          "value": true,
+          "label": "SI"
+        },
+        {
+          "name": "No",
+          "value": false,
+          "label": "NO"
+        }
+      ],
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "declaracionAceptacion": {
+      "type": "checkButtonOpts",
+      "name": "declaracionAceptacion",
+      "checkedBox": false,
+      "checkLabel": {
+        "initLabel": "Declaro que he leído y acepto las manifestaciones y autorizaciones",
+        "actionLabel": "aquí contenidas",
+        "endLabel": ""
+      },
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "requiredTrue"
+        }
+      ]
+    },
+    "telefono": {
+      "type": "formPhone",
+      "name": "telefonoEmpresa",
+      "label": "¿Cuál es el teléfono de su oficina? (Opcional)",
+      "children": [
+        {
+          "name": "indicativo",
+          "label": "",
+          "placeholder": "Ind.",
+          "maxValue": 1,
+          "onlyNumbers": true,
+          "failBorder": true
+        },
+        {
+          "name": "numero",
+          "label": "",
+          "placeholder": "Número",
+          "maxValue": 7,
+          "onlyNumbers": true,
+          "failBorder": true
+        },
+        {
+          "name": "extension",
+          "label": "",
+          "placeholder": "Ext.",
+          "maxValue": 6,
+          "onlyNumbers": true,
+          "failBorder": true
+        }
+      ],
+      "placeholder": "",
+      "failBorder": true,
+      "validation": [{
+        "validator": "Validators",
+        "type": "required"
+      }]
+    },
+    "pais": {
+      "name": "codigoPais",
+      "isHidden": false,
+      "label": "",
+      "failBorder": true,
+      "type": "predictiveList",
+      "placeholder": "",
+      "data": "geography.getCountries",
+      "functions": {
+        "setValue": "dane",
+        "setLabel": "name",
+        "filter": "name"
+      },
+      "disabled": false,
+      "readonly": false,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "numIdFiscal": {
+      "label": " ¿Cuál es el número de identificación fiscal en el país indicado (TIN)?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNOPQRSTUVWYXZabcdefghijklmnopqrstuvwxyz1234567890",
+      "type": "input",
+      "name": "numIdFiscal",
+      "inputType": "text",
+      "maxValue": 20,
+      "minValue": 1,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "nombreDeclaracionFatca": {
+      "name": "nombreDeclaracionFatca",
+      "label": "Verifique si su nombre aparece igual que en la declaración de impuestos.",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNOPQRSTUVWYXZabcdefghijklmnopqrstuvwxyz 1234567890",
+      "type": "input",
+      "inputType": "text",
+      "failBorder": true,
+      "readonly": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "numeroTIN": {
+      "name": "numeroTIN",
+      "label": "¿Cuál es su número de seguro social en Estados Unidos? (TIN)",
+      "placeholder": "",
+      "restrict": "0123456789",
+      "type": "input",
+      "maxValue": 9,
+      "inputType": "text",
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "codigoPostalFatca": {
+      "name": "codigoPostalFatca",
+      "label": "¿Cuál es el código postal?",
+      "placeholder": "",
+      "restrict": "1234567890",
+      "type": "input",
+      "maxValue": 5,
+      "inputType": "text",
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "ciudadFatca": {
+      "label": "¿Cuál es su ciudad y estado?",
+      "name": "ciudadUS",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz,áéíóú ",
+      "type": "input",
+      "value": "",
+      "disabled": false,
+      "readonly": false,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "direccionFatca": {
+      "name": "direccionFatca",
+      "label": "¿Cuál es su dirección?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNOPQRSTUVWYXZabcdefghijklmnopqrstuvwxyz 1234567890",
+      "type": "input",
+      "inputType": "text",
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "clasificacionFatca": {
+      "name": "clasificacionFatca",
+      "label": "¿Cuál es su clasificación tributaria federal en Estados Unidos?.",
+      "type": "select",
+      "value": "Individuo/Empresario por cuenta propia o LLC de un solo miembro",
+      "options": [{
+        "value":"Individuo/Empresario por cuenta propia o LLC de un solo miembro",
+        "label":"Individuo/Empresario por cuenta propia o LLC de un solo miembro"
+      }],
+      "placeholder": "Seleccione",
+      "failBorder": true,
+      "functions": {
+        "setValue": "value",
+        "setLabel": "label",
+        "filter": "label"
+      },
+      "optionShow": "label",
+      "disabled": false,
+      "readonly": false,
+      "valueSelect": "value",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "esReconocidoPublicamente": {
+      "type": "radioButton",
+      "name": "esReconocidoPublicamente",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Es usted reconocido públicamente?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "esReconocidoPublicamente",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "esReconocidoPublicamente",
+          "label": "No",
+          "value": false
+        }
+      ]
+    },
+    "esRepresentanteDeOrganizacion": {
+      "type": "radioButton",
+      "name": "esRepresentanteDeOrganizacion",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Es usted representante legal de una organización internacional?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "esRepresentanteDeOrganizacion",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "esRepresentanteDeOrganizacion",
+          "label": "No",
+          "value": false
+        }
+      ]
+    },
+    "esPoliticamenteExpuesto": {
+      "type": "radioButton",
+      "name": "esPoliticamenteExpuesto",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Es usted una persona políticamente expuesta?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "esPoliticamenteExpuesto",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "esPoliticamenteExpuesto",
+          "label": "No",
+          "value": false
+        }
+      ]
+    },
+    "esFamilarConCaracteristicas": {
+      "type": "radioButton",
+      "name": "esFamilarConCaracteristicas",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Es usted familiar de una persona con las características anteriores?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "esFamilarConCaracteristicas",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "esFamilarConCaracteristicas",
+          "label": "No",
+          "value": false
+        }
+      ]
+    },
+    "parentesco": {
+      "type": "select",
+      "name": "parentesco",
+      "options": "catACTPN_PARENTESCO",
+      "label": "Parentesco:",
+      "functions": {
+        "setValue": "value",
+        "setLabel": "label",
+        "filter": "label"
+      },
+      "valueSelect": "value",
+      "optionShow": "label",
+      "disabled": false,
+      "placeholder": "Seleccione una opción",
+      "value": "",
+      "readonly": false,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "nombresPariente": {
+      "label": "Nombres:",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "nombresPariente",
+      "inputType": "text",
+      "maxValue": 30,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "primerApellidoPariente": {
+      "label": "Primer apellido:",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "primerApellidoPariente",
+      "inputType": "text",
+      "maxValue": 20,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "segundoApellidoPariente": {
+      "label": "Segundo apellido:",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "segundoApellidoPariente",
+      "inputType": "text",
+      "maxValue": 20,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "cargoPersonaExpuesta": {
+      "label": "¿Qué cargo tiene?",
+      "placeholder": "",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZabcdefghijklmnñopqrstuvwxyz 1234567890áéíóú",
+      "type": "input",
+      "name": "cargoPersonaExpuesta",
+      "inputType": "text",
+      "maxValue": 50,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "fechaVinculacionAlCargo": {
+      "type": "inputCalendar",
+      "name": "fechaVinculacionAlCargo",
+      "failBorder": true,
+      "label": "¿Fecha de vinculación al cargo?",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "fechaDesvinculacionAlCargo": {
+      "type": "inputCalendar",
+      "name": "fechaDesvinculacionAlCargo",
+      "failBorder": true,
+      "label": "¿Fecha de desvinculación al cargo? (Si aplica)",
+      "validation": []
+    },
+    "otp": {
+      "label": "Ingrese el código de confirmación que hemos enviado a su celular para continuar.",
+      "allowCharacter": "1234567890",
+      "placeholder": "",
+      "type": "input",
+      "name": "otp",
+      "inputType": "text",
+      "readonly": false,
+      "disabled": false,
+      "maxValue": 8,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        },
+        {
+          "validator": "Validators",
+          "type": "minLength",
+          "params": 8
+        }
+      ],
+      "textTooltip": "El celular o correo electrónico al que le enviamos este código, es el mismo que actualmente utilizamos para enviarle la información de los movimientos de sus cuentas y productos."
+    },
+    "otraFuenteIngresos": {
+      "type": "radioButton",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "name": "otraFuenteIngresos",
+      "label": "¿Tiene otra fuente mensual de ingresos?",
+      "placeholder": "",
+      "radioButtons": [
+        {
+          "name": "SI",
+          "value": true,
+          "label": "SI"
+        },
+        {
+          "name": "NO",
+          "value": false,
+          "label": "NO"
+        }
+      ]
+    },
+    "sumaOtrosIngresos": {
+      "name": "sumaOtrosIngresos",
+      "label": "¿Cuánto suman esos ingresos?",
+      "placeholder": "",
+      "maxValue": 12,
+      "restrict": "1234567890",
+      "type": "inputMoney",
+      "mskMoney": true,
+      "inputType": "text",
+      "failBorder": true,
+      "validation": []
+    },
+    "provienenOtrosIngresos": {
+      "type": "input",
+      "name": "provienenOtrosIngresos",
+      "inputType": "text",
+      "maxValue": 50,
+      "value": "",
+      "failBorder": true,
+      "label": "Cuéntenos de donde provienen dichos ingresos:",
+      "restrict": "ABCDEFGHIJKLMNÑOPQRSTUVWYXZ abcdefghijklmnñopqrstuvwxyzáéíóú",
+      "placeholder": "",
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    },
+    "valorTotalGastos": {
+      "type": "inputMoney",
+      "name": "valorTotalGastos",
+      "mskMoney": true,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Cuál es el valor total de sus gastos mensuales?",
+      "placeholder": "",
+      "maxValue": 12,
+      "restrict": "1234567890"
+    },
+    "valorTotalBienes": {
+      "type": "inputMoney",
+      "name": "valorTotalBienes",
+      "mskMoney": true,
+      "maxValue": 15,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Cuál es el valor total de sus bienes?",
+      "placeholder": "",
+      "restrict": "1234567890",
+      "tooltip": {
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg",
+        "text": "Incluya el valor de sus bienes, muebles, inmuebles, depósitos de ahorro e inversiones, entre otros."
+      }
+    },
+    "valorTotalDeudas": {
+      "type": "inputMoney",
+      "name": "valorTotalDeudas",
+      "mskMoney": true,
+      "maxValue": 15,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ],
+      "label": "¿Cuál es el valor total de sus deudas?",
+      "placeholder": "",
+      "restrict": "1234567890"
+    },
+    "operacionesExtranjeras": {
+      "type": "radioButton",
+      "isHidden": false,
+      "validation": [],
+      "name": "operacionesExtranjeras",
+      "label": "¿Realiza operaciones y/o tiene productos financieros en Moneda Extranjera?",
+      "tooltip": {
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg",
+        "text": "Marque Sí, si usted realiza actividades en moneda extranjera tales como:importaciones, exportaciones, préstamos, pagos de servicios, inversiones, giros o remesas."
+      },
+      "radioButtons": [
+        {
+          "name": "Si",
+          "label": "Si",
+          "value": true
+        },
+        {
+          "name": "No",
+          "label": "No",
+          "value": false
+        }
+      ]
+    },
+    "tipoOperaciones": {
+      "type": "formGroupCheck",
+      "columns": true,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required",
+          "label": "Este campo es requerido."
+        }
+      ],
+      "name": "tipoOperaciones",
+      "label": "¿Qué tipo de transacciones internacionales realiza?",
+      "checkButtons": [
+        {
+          "name": "importacion",
+          "label": "Importación",
+          "value": "importacion",
+          "id": 1
+        },
+        {
+          "name": "exportacion",
+          "label": "Exportación",
+          "value": "exportacion",
+          "id": 2
+        },
+        {
+          "name": "prestamos",
+          "label": "Préstamos",
+          "value": "prestamos",
+          "id": 3
+        },
+        {
+          "name": "inversiones",
+          "label": "Inversiones",
+          "value": "inversiones",
+          "id": 4
+        },
+        {
+          "name": "remesas",
+          "label": "Remesas",
+          "value": "remesas",
+          "id": 5
+        },
+        {
+          "name": "giros",
+          "label": "Giros",
+          "value": "giros",
+          "id": 6
+        },
+        {
+          "name": "productos",
+          "label": "Productos",
+          "value": "productos",
+          "id": 7
+        },
+        {
+          "name": "pagoServicios",
+          "label": "Pago de servicios",
+          "value": "pagoServicios",
+          "id": 8
+        }
+      ]
+    },
+    "valorOperaciones": {
+      "maxValue": 15,
+      "label": "¿Cuál es el valor aproximado (en dólares) de dichas transacciones?",
+      "placeholder": "",
+      "allowCharacter": "1234567890",
+      "tooltip": {
+        "img": "./assets/img/layout/icon-dv-asktooltip.svg",
+        "text": "Estime el valor mensual en dólares de las actividades que realiza en moneda extranjera."
+      },
+      "type": "inputMoney",
+      "name": "valorOperaciones",
+      "mskMoney": true,
+      "dollars": true,
+      "inputType": "text",
+      "disabled": false,
+      "failBorder": true,
+      "validation": [
+        {
+          "validator": "Validators",
+          "type": "required"
+        }
+      ]
+    }
+  }
+]

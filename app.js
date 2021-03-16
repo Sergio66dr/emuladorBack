@@ -5,6 +5,9 @@ const cors = require('cors');
 const helmet = require('helmet');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyParser = require('body-parser');
+
+var datos = require('./datos');
 
 var workflowRouter = require('./routes/worflow');
 var assetsRouter = require('./routes/assets');
@@ -12,9 +15,11 @@ var dataRouter = require('./routes/data');
 var dataFilter = require('./routes/dataFilter');
 var jwks = require('./routes/jwks');
 var ip = require('./routes/ip');
-var upload = require('./routes/upload');
+var upload = require('./routes/upload')(datos);
 var files = require('./routes/files');
 var loggerR = require('./routes/logger');
+var crypto = require('./routes/crypto')(datos);
+
 var app = express();
 
 // view engine setup
@@ -26,10 +31,13 @@ app.disable('x-powered-by');
 app.use(helmet.noCache())
 app.use(helmet({ frameguard: false }))
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+
+app.use(bodyParser.json({limit: '500mb'}));
+app.use(bodyParser.urlencoded({limit: '500mb', extended: true}));
+
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'resource')));
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -38,6 +46,7 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('/emulador', express.static(path.join(__dirname, 'public')));
 app.use('/api', workflowRouter);
 app.use('/asset', assetsRouter);
 app.use('/data', dataRouter);
@@ -47,6 +56,7 @@ app.use('/dataFilter', dataFilter);
 app.use('/upload', upload);
 app.use('/files', files);
 app.use('/logger', loggerR);
+app.use('/crypto/', crypto);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

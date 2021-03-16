@@ -43,7 +43,7 @@ module.exports = {
             },
             esCreditoPreaprobado: true,
             aplicaRetanqueo: true,
-            saldoCreditoVigente: 1000000,
+            saldoCreditoVigente: 10000,
             montoDesembolsar: '55.99',
             comisionDesembolso: 99.01
          }

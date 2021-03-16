@@ -13,11 +13,11 @@ module.exports = {
         status: 1,
         payload: {
             "aliado":"LM",
-            "canal":"2",
+            "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
             "pais":"HN",
-            "zona": true
+            "zona": false
         }
     },
     BEN001: {

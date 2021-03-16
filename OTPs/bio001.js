@@ -7,7 +7,7 @@ module.exports = {
         APPBOOT: 'ING001',
         ING001: 'BIO001',
         BIO001: 'BIO002',
-        BIO002: 'BIO001',
+        BIO002: 'BIO003',
         BIO003: 'BIO004',
         BIO004: 'ING001'
     },

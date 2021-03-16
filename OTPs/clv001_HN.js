@@ -6,7 +6,7 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CVI001',
-        CVI001: 'ING001',
+        CVI001: 'CVI002',
         CVI002: 'ING001'
     },
     ING001: {

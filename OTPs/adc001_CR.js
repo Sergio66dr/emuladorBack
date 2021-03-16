@@ -8,7 +8,7 @@ module.exports = {
         APPBOOT: 'ING001',
         ING001: 'CRE006',
         CVI001: 'CRE006',
-        CRE006: 'AUT001',
+        CRE006: 'CRE007',
         AUT001: 'CRE007',
         CRE007: 'CRE008',
         CRE008: 'CRE009',

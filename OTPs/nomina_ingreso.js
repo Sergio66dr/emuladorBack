@@ -7,7 +7,7 @@ module.exports = {
     workflow: {
         APPBOOT: "ING001",
         CUE: "CUE001",
-        TMA000: "TMA005",
+        TMA000: "TMA004",
         TMA001: 'CUE030',
         BIO002: 'BIO005',
         BIO005: 'BIO003',
@@ -42,9 +42,22 @@ module.exports = {
             numeroTarjetaCredito: "21615646564654"
         }
     },
-    TMA001: {
+    TMA004: {
         status: 1,
-        payload: {}
+        payload: {
+            crypto: {
+                metodo: "encriptacionClaveA",
+                credencial : `-----BEGIN PUBLIC KEY-----
+                MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi0/ajmKQ6P3+lInTZvRp
+                l8NBxUikVzz1ZaqJVlW6cy6rXkms2TYwawHJp6Uat4VoMj7+jCFxs7daOcQOLWA2
+                6KMKP+C8uSzdy6tgKN/CwkalDPU/+kC/ImEHwa7i3FFnXsBeJN5Md7my0MOhqYR6
+                vpiGtFu99YvRzBkOsj53ZT7Fya/EgEFrAmudfnNg7BmALO0lgXUKwGBZbg5h4pSk
+                ss06SQdNwvrpC0dRBBnww0nOXQmnEljNIfcJ1kCXyYO3GKVNkyzW+gQCpkB+xPxM
+                4+m4WWo93xKbI9SOXaIxhDu19Y5V7cbm2BunVaIvTNAtQuoamUN3arfg3d9mO8/y
+                BQIDAQAB
+          -----END PUBLIC KEY-----`
+            }
+        }
     },
     CUE030: {
         status: 1,

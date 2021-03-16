@@ -1,0 +1,72 @@
+[
+    {
+        "label": "Autopista",
+        "abreviatura": "AUT",
+        "value": "autopista"
+    },
+    {
+        "value": "avenida",
+        "label": "Avenida",
+        "abreviatura": "AV"
+    },
+    {
+        "label": "Avenida Calle",
+        "abreviatura": "AC",
+        "value": "avenida_calle"
+    },
+    {
+        "label": "Avenida Carrera",
+        "abreviatura": "AK",
+        "value": "avenida_carrera"
+    },
+    {
+        "label": "Calle",
+        "abreviatura": "CL",
+        "value": "calle"
+    },
+    {
+        "value": "carrera",
+        "label": "Carrera",
+        "abreviatura": "CR"
+    },
+    {
+        "value": "carretera",
+        "label": "Carretera",
+        "abreviatura": "CRT"
+    },
+    {
+        "value": "circular",
+        "label": "Circular",
+        "abreviatura": "CIR"
+    },
+    {
+        "value": "circunvalar",
+        "label": "Circunvalar",
+        "abreviatura": "CRV"
+    },
+    {
+        "label": "Diagonal",
+        "value": "diagonal",
+        "abreviatura": "DG"
+    },
+    {
+        "value": "manzana",
+        "label": "Manzana",
+        "abreviatura": "MZ"
+    },
+    {
+        "label": "Transversal",
+        "value": "transversal",
+        "abreviatura": "TV"
+    },
+    {
+        "label": "Vía",
+        "value": "via",
+        "abreviatura": "VIA"
+    },
+    {
+        "label": "Otro",
+        "value": "otro",
+        "abreviatura": "OTR"
+    }
+]

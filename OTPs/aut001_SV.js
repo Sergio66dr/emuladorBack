@@ -81,8 +81,8 @@ module.exports = {
 							"100"
 						]
 					},
-					"codCiudad": "1",
-					"codDepartamento": "1",
+					"codCiudad": "5",
+					"codDepartamento": "11",
 					"codMunicipio": "1",
 					"contratoFinDiasHabiles": "5",
 					"direccion": "COL. PROY HAB MANANTIALES COL. DE LA ESPERERANZA POLG. LA 4 AHUACHAPaNAHUACHAPaN",
@@ -219,23 +219,22 @@ module.exports = {
 					]
 				},
 				"DECLARACION_JURADA": {
-					"codActividadEconomica": "0005",
-					"codOrigenPrincipal": "",
+					"codActividadEconomica": "0003",
+					"codOrigenPrincipal": "0003",
 					"montoAbono": " 1000",
 					"montoAbonoEfectivo": "2000",
 					"montoRetiro": "3000",
 					"montoRetiroEfectivo": "4000",
-					"otroOrigen": "",
+					"otroOrigen": "venta de papas",
 					"primerApellido": "HUEZO",
-					"primerNombre": "LILIAN",
-					"segundoApellido": "CACERES",
-					"segundoNombre": "ESTER"
+					"primerNombre": "LILIAN DE LAS ROSAS AZULES",
+					"segundoApellido": "casares",
+					"segundoNombre": "ESTER",
+					"codDepartamento": "11",
+					"codMunicipio": "1",
 				},
 				"FORMULARIO_VINCULACION": {
 					"datosPersonales": {
-						"1": "",
-						"6": "",
-						"7": "",
 						"direccionPersonal": {
 							"barrio": "",
 							"codCiudad": "",
@@ -444,8 +443,8 @@ module.exports = {
 					"ct4": ""
 				}
 			},
-			"esCliente": true,
-			"esFatca": false
+			"esCliente": false,
+			"esFatca": true
         }
     }
 };

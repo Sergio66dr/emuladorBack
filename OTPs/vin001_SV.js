@@ -12,6 +12,16 @@ module.exports = {
     ING001: {
         status: 1,
         payload: {
+            "aliado":"LM",
+            "canal":"1",
+            "idModulo":"MNUING",
+            "lenguaje":"ES",
+            "pais":"SV",
+        }
+    },
+    VIN001: {
+        status: 1,
+        payload: {
             fechaNacimiento: "18/04/1995",
             nombre: "Sergio Rafael Manjarrez Chacón",
             estadoCivil: '',
@@ -29,10 +39,6 @@ module.exports = {
                 noCelular: '3111968134'
             }
         }
-    },
-    VIN001: {
-        status: 1,
-        payload: {}
     },
     VIN005: {
         status: 1,

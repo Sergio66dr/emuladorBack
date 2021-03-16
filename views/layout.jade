@@ -2,5 +2,33 @@ doctype html
 html
   head
     title= title
+    link(rel="stylesheet", href="https://bootswatch.com/4/simplex/bootstrap.css", type="text/css")
   body
+    nav( class="navbar navbar-expand-lg navbar-dark bg-primary" )
+      a(class="navbar-brand") MBAAS
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+      div(class="collapse navbar-collapse" id="navbarColor01")
+        ul(class="navbar-nav mr-auto")
+          li(class="nav-item dropdown")
+            a(class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") GScript
+            div(class="dropdown-menu")
+              a(class="dropdown-item" href="http://localhost:3001/data/Script") Data
+              a(class="dropdown-item" href="http://localhost:3001/asset/Script") Asset
+          li(class="nav-item")
+            a( class="nav-link" href="#Feature") Features
+          li(class="nav-item")
+            a(class="nav-link" href="#About") About
+          li(class="nav-item dropdown")
+            a(class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") Dropdown
+            div(class="dropdown-menu")
+              a(class="dropdown-item" href="#") Action
+              a(class="dropdown-item" href="#") Another action
+              a(class="dropdown-item" href="#") Something else here
+              div(class="dropdown-divider")
+              a(class="dropdown-item" href="#") Separated link
+    br  
     block content
+    script(type="text/javascript", src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js")
+    script(type="text/javascript", src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js")
+    script(type="text/javascript", src="https://bootswatch.com/_assets/js/custom.js")

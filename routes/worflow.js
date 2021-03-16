@@ -51,7 +51,7 @@ router.post('/workflow', (req, res) => {
   //   if ( n > 3) {
   //     n = 0;
   //   }
-  setTimeout(() => res.status(200).json(response), 1);
+  res.status(200).json(response)
   // }
   // n = n + 1;
 });

@@ -1,0 +1,220 @@
+[
+  {
+    "titulo": "Confirme o actualice sus datos",
+    "mensaje": "Estos son los datos que tenemos registrados, si están correctos confírmelos, de lo contrario puede actualizarlos:",
+    "continuar": "Confirmar",
+    "atras": "",
+    "actulizacionCompleta": "Si desea actualizar sus datos completos, ingrese <b><a href=''>aquí</a></b>",
+    "form": [
+      {
+        "confKey": "celular",
+        "conf": {}
+      },
+      {
+        "confKey": "correoElectronico",
+        "conf": {}
+      },
+      {
+        "confKey": "direccion",
+        "conf": {}
+      },
+      {
+        "confKey": "ciudad",
+        "conf": {
+          "name": "codCiudad",
+          "readonly": true
+        }
+      },
+      {
+        "confKey": "actividadLaboral",
+        "conf": {
+          "readonly": true
+        }
+      },
+      {
+        "confKey": "nombreEmpresa",
+        "conf": {
+          "hideIf": {
+            "parentField": "actividadLaboral",
+            "values": [
+              "",
+              "A",
+              "P",
+              "T"
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "cargo",
+        "conf": {
+          "hideIf": {
+            "parentField": "actividadLaboral",
+            "values": [
+              "",
+              "A",
+              "P",
+              "T",
+              "D",
+              "R",
+              "S"
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "direccion",
+        "conf": {
+          "name": "direccionEmpresa",
+          "label": "¿Cuál es la dirección de su oficina?",
+          "hideIf": {
+            "parentField": "actividadLaboral",
+            "values": [
+              "",
+              "A",
+              "P",
+              "T"
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "ciudad",
+        "conf": {
+          "name": "ciudadEmpresa",
+          "label": "¿En qué ciudad está ubicada su oficina?",
+          "hideIf": {
+            "parentField": "actividadLaboral",
+            "values": [
+              "",
+              "A",
+              "P",
+              "T"
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "telefono",
+        "conf": {
+          "name": "telefonoEmpresa",
+          "label": "¿Cuál es el teléfono de su oficina? (Opcional)",
+          "hideIf": {
+            "parentField": "actividadLaboral",
+            "values": [
+              "",
+              "A",
+              "P",
+              "T"
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "ingresos",
+        "conf": {
+          "readonly": true
+        }
+      },
+      {
+        "confKey": "esResidenciaFiscalExt",
+        "conf": {}
+      },
+      {
+        "confKey": "pais",
+        "conf": {
+          "name": "codPaisResidenciaExt",
+          "label": "¿En qué país?",
+          "hideIf": {
+            "parentField": "esResidenciaFiscalExt",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "numIdFiscal",
+        "conf": {
+          "hideIf": {
+            "parentField": "esResidenciaFiscalExt",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "esFatca",
+        "conf": {}
+      },
+      {
+        "confKey": "nombreDeclaracionFatca",
+        "conf": {
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "clasificacionFatca",
+        "conf": {
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "direccionFatca",
+        "conf": {
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "ciudadUS",
+        "conf": {
+          "name": "ciudadFatca",
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "codigoPostalFatca",
+        "conf": {
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      },
+      {
+        "confKey": "numeroTIN",
+        "conf": {
+          "hideIf": {
+            "parentField": "esFatca",
+            "values": [
+              false
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

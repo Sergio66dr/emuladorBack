@@ -1,0 +1,36 @@
+<div class='customForm'>
+    <div class='customForm__row customForm__row--center'>
+        <h2 class='times'>DECLARACIÓN JURADA</h2>
+    </div>
+    <div class='customForm__row customForm__row--start'> <span class='mr4 times'>Yo</span> <span class='upper mr4 times'>{{SV.DECLARACION_JURADA.primerNombre}} {{SV.DECLARACION_JURADA.segundoNombre}} {{SV.DECLARACION_JURADA.primerApellido}} {{SV.DECLARACION_JURADA.segundoApellido}}</span> <span class='times'>declaro bajo juramento:</span> </div>
+    <div class='customForm__row customForm__row--spaceBetween'>    <span class='times'><strong>Actividad Económica:</strong></span> <span class='upper twoThirds times'>{{SV.DECLARACION_JURADA.codActividadEconomica}}</span> </div>
+    <div class='customForm__row'style="display: none;"> </div>
+    <div class='customForm__row'style="display: none;"> <span class='times'><strong>Procedencia de los fondos</strong></span> </div>
+    <div class='customForm__row customForm__row--spaceBetween' style="display: none;"> <span class='half times'>¿Origen principal:</span> <span class='upper underline half times'>{{SV.DECLARACION_JURADA.codOrigenPrincipal}}</span> </div>
+    <div class='customForm__row customForm__row--spaceBetween' style="display: none;"> <span class='half times'>Otro origen (especifique):</span> <span class='upper underline half times'>{{SV.DECLARACION_JURADA.otroOrigen}}</span> </div>
+    <div class='customForm__row'> <span class='times'><strong>Movimiento (US$) de fondos proyectados mensuales:</strong></span> </div>
+    <div class='customForm__row customForm__row--spaceBetween'>
+        <div class='twoThirds'>
+          <table>
+              <tr>
+                <td class='times'>Monto total de abonos a realizar</td>
+                <td class='alingRight times'>{{SV.DECLARACION_JURADA.montoAbono}}</td>
+              </tr>
+              <tr>
+                <td class='times'>¿De este total cuánto será en efectivo?</td>
+                <td class='alingRight times'>{{SV.DECLARACION_JURADA.montoAbonoEfectivo}}</td>
+              </tr>
+              <tr>
+                <td class='times'>Monto total de retiros a realizar</td>
+                <td class='alingRight times'>{{SV.DECLARACION_JURADA.montoRetiro}}</td>
+              </tr>
+              <tr>
+                <td class='times'>¿De este total cuánto será en efectivo?</td>
+                <td class='alingRight times'>{{SV.DECLARACION_JURADA.montoRetiroEfectivo}}</td>
+              </tr>
+          </table>
+        </div>
+    </div>
+    <div class='customForm__row customForm__row--start'>Declaro que toda la información proporcionada es verídica, así mismo que los fondos provienen de actividades lícitas y que cumplo con las leyes de la República.</div>
+    <div class='customForm__row'></div>
+    </div>
