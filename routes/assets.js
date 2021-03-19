@@ -59,11 +59,22 @@ const centroAmerica = [
   { type: 'xPUT', kind: 'assetMenuStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},//fs.readFileSync('./assets/assetMenuStyle.minify.css', 'utf8')},
   { type: 'xPUT', kind: 'assetForbiddenStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')} //fs.readFileSync('./assets/assetForbiddenStyle.minify.css', 'utf8')}
   ,
+
+  // fake
+
+  { type: "xPUT", kind: "asset_IMG_ING001_001", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_002", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_003", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_004", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+
   // Libranza
   { type: "xPUT", kind: "assetImagenRechazo", data: fs.readFileSync('./assets/rechazo.txt', 'utf8')},
   { type: "xPUT", kind: "asset_IMG_ING001_005", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
   { type: "xPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
   { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetTerminosCondiciones_SeguroVidaDesempleo.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html') },
+  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html') },
   
 
   // pdf416
@@ -224,7 +235,7 @@ router.get("/Script/:index", respuestaScript);
 
 // catalogo
 router.get('/:assets_id', (req, res) => {
-  var fullUrl = `${env.asset}${req.originalUrl}`;
+  var fullUrl = `http://localhost:5021/catalogo/v1${req.originalUrl}`;
 
   if ( req.originalUrl === "/asset/astACTPN_AREAS_GEOGRAFICAS?pais=CO&modulo=ACTPN&lenguaje=ES&kind=actpn") {
     return res.send("{}");
