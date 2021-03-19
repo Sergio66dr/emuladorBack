@@ -9,7 +9,35 @@ module.exports = {
         BIO001: 'BIO002',
         BIO002: 'BIO003',
         BIO003: 'BIO004',
-        BIO004: 'ING001'
+        BIO004: 'BIO005',
+        BIO005: 'ING001'
+    },
+    BIO005:{
+        status: 1,
+        payload: {
+            codigo:'',
+            descripcion:'',
+            preguntas:[
+                {
+                    orden:1,
+                    tipoPregunta:'',
+                    pregunta:{
+                        idPregunta:'',
+                        textoPregunta:'',
+                        respuestas:[
+                            {
+                                textoRespuesta:'',
+                                idRespuesta:'',
+                                coordenadaRespuesta:''
+                            }
+                        ]
+                    }
+                }
+               
+
+            ]
+        }
+            
     },
     ING001: {
         status: 1,
@@ -18,7 +46,7 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"SV",
+            "pais":"CR",
             "zona": true
         }
     },

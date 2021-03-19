@@ -1,5 +1,5 @@
 
 module.exports = {
-    data: 'http://localhost:5021/catalogo/v1/data/',
-    asset: 'http://localhost:5021/catalogo/v1/asset/'
+    data: 'https://mbaas.lab.cam.davivienda.com/catalogo/v1/data/',
+    asset: 'https://mbaas.lab.cam.davivienda.com/catalogo/v1/asset/'
 };
