@@ -30,8 +30,8 @@ module.exports = {
                 noTelefono: ''
             },
             cr: {
-                telefono: '85556565',
-                correo: 's.manjarrez@gmail.com',
+                telefono: '185556565',
+                correo: '@@s.manjarrez@gmail.com',
                 escolaridad: '',
                 empresas: [{
                     nombre: 'empresa 2',

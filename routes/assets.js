@@ -73,8 +73,11 @@ const centroAmerica = [
   { type: "xPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
   { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetTerminosCondiciones_SeguroVidaDesempleo.html', 'utf8') },
   { "type": "PUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html') },
-  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html') },
+  { "type": "PUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
+  { "type": "PUT", "kind":"assetImagenMiniAdd", data: fs.readFileSync('./assets/addMini.txt', 'utf8') },
+  { "type": "PUT", "kind":"assetImagenMiniRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
+  { "type": "PUT", "kind":"assetImagenBigRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
   
 
   // pdf416
