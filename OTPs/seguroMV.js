@@ -6,47 +6,54 @@ module.exports = {
     token: 'eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbWJhYXMuZGVzYS5jby5kYXZpdmllbmRhLmNvbS9hdXRoL3YxL2tleXN0b3JlLy53ZWxsLWtub3duL2p3a3MuanNvbiIsImtpZCI6IjE1Njc3MzYzNzAifQ.eyJhdWQiOiJEQVY6Q0xPVUQ6QVVUSCIsImV4cCI6MTU2ODY0OTM5NCwiaWF0IjoxNTY4NjQ4Nzk0LCJpc3MiOiJEQVY6Q0xPVUQ6QVVUSCIsInN1YiI6IjI2NmE1NzEwLWQ4OTktMTFlOS05NjFjLTQ3Nzc2MTFlOTA5NSIsInVzZSI6ImEiLCJwcm9kdWN0IjoiTU5VSU5HX1NWXzQ4IiwianRpIjoiMjkxZWExYTAtZDg5OS0xMWU5LTkzYzktMWQ1OWYzY2Q2OTczIn0.ZkeBZi1bELE7hDRIndfsRlPIPa14Hm_zxxiZ1MkT7EOqspbQucDaUIA594YAmV4f-zHDWqRRzxwrx7CB-2KaxNJaebwLrDlj3cIksnLZGaZ9n9wiQdmHmoZbuFTNhQimBQvKRZCMuemkPYMHrXkIyu967P23gQ-1U5iD-mSX-Teqg37f71nOYDX7H_FNqc8W9SRWfuoT0ZakyoF20DdjaIt8kkI3mCmrC7k5VEFYHDgj-6wDgwAE3vPjvwD2Y2QHPBnGiLnk6Nnu91LnGPweTX908uQG81tgi97uxFzl3jY1ciGf1E4pTEqmhygfZm5jMbxcbF12F0xY9rC-fhiT1w',
     workflow: {
         APPBOOT: 'ING001',
-        ING001: 'CRE002',
-        CRE002: 'CRE001'
+        ING001: 'SEG001',
+        SEG001: 'CUE003'
     },
     ING001: {
         status: 1,
         payload: {
-            aliado: 'ML',
-            canal: '1',
-            idModulo: 'cam',
-            lenguaje: 'ES',
-            pais: 'PA',
-            zona: true
+            "aliado":"LM",
+            "canal":"1",
+            "idModulo":"MNUING",
+            "lenguaje":"ES",
+            "pais":"CR"
         }
     },
-    CRE001: {
+    CUE003: {
         status: 1,
         payload: {
-            valorDeseado: 500000,
-            maxValorDeseado: 10000000,
-            minValorDeseado: 500000,
-            plazo: 12,
-            minPlazo: 12,
-            maxPlazo: 96
-        }
-    },
-    CRE002: {
-        status: 1,
-        payload: {
-            tasaInteresAnual: 27.42,
-            meses: 24,
-            valor: 10_000,
-            cuotaMensual: 476.86,
-            detallesCuota: {
-                cuotaTotal: '100',
-                seguroDesempleo: '200',
-                seguroDeudor: '300',
-                cuotaCredito: '400',
-                capitalInteres: '500',
-                seguroVida: '600',
-                daviviendaAsistencia: '700'
+            esCliente: false,
+            esFatca: false,
+            codigoVendedor: [{ label: '2', value: '2'}],
+            hn: {
+                referenciaFamiliar: {
+                    nombre: 'Sergio Rafael',
+                    telefono: '5912627'
+                },
+                referenciaPersonal: {
+                    nombre: 'Sergio Rafael1',
+                    telefono: '5912111'
+                }
             }
         }
-    }
+    },
+    SEG001: {
+        status: 1,
+        payload: {
+            sumaAsegurada: '150000',
+            primaMensual: '150',
+            cuentas: [{
+                "valCodigoProducto": "",
+                "valCodigoSubProducto": "3498",
+                "valAliasProducto": "Cuenta Ahorro",
+                "valNumeroProducto": "1001"
+            },
+            {
+                "valCodigoProducto": "3",
+                "valCodigoSubProducto": "3497",
+                "valAliasProducto": "Cuenta Digital",
+                "valNumeroProducto": "1007"
+            }]
+        }
+    },
 };

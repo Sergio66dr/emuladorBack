@@ -75,6 +75,7 @@ const centroAmerica = [
   { "type": "PUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
   { "type": "PUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
   { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_SEGURO_MOMENTOS_DE_VIDA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/momentos.html', 'utf8') },
   { "type": "PUT", "kind":"assetImagenMiniAdd", data: fs.readFileSync('./assets/addMini.txt', 'utf8') },
   { "type": "PUT", "kind":"assetImagenMiniRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
   { "type": "PUT", "kind":"assetImagenBigRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
