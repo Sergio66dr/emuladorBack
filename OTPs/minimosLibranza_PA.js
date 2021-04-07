@@ -26,7 +26,8 @@ module.exports = {
             pa: {
                 correo: 'schacon7@dxc.com',
                 ciudad: '0',
-                noTelefono: '3111968134'
+                noTelefono: '3111968134',
+                tipoDocu: 'E'
             },
             cr: {
                 escolaridad: '' 

@@ -12,8 +12,9 @@ module.exports = {
         AUT001: 'CRE007',
         CRE007: 'CRE008',
         CRE008: 'CRE009',
-        CRE009: 'CRE010',
         CRE010: 'CRE011',
+        CRE009: 'CRE125',
+        CRE125: 'CRE010',
     },
     AUT001: {
         status: 1,
@@ -54,7 +55,9 @@ module.exports = {
             cuota: '11111.99',
             montoAprobado: '2222.99',
             comision: '33.99',
-            plazo: '36.66',
+            comisionDesembolso: '15.258',
+            montoSolicitado: '158.000',
+            plazo: '36',
             tasaInteres: '12.66',
             ki: {
                 capitalInteres: '1',
@@ -62,6 +65,13 @@ module.exports = {
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
                 seguroDesempleo: '9999.99'
+            },
+            detallesCuota: {
+                cuotaTotal: '125.1254',
+                seguroDesempleo: '153.125',
+                capitalInteres: '120.125',
+                seguroVida: '120.125',
+                daviviendaAsistencia: '25.890'
             }
          }
     },
@@ -73,7 +83,9 @@ module.exports = {
             cuota: '11111.99',
             montoAprobado: '2222.99',
             comision: '33.99',
-            plazo: '36.66',
+            comisionDesembolso: '15.258',
+            montoSolicitado: '158.000',
+            plazo: '36',
             tasaInteres: '12.66',
             ki: {
                 capitalInteres: '1',
@@ -81,6 +93,13 @@ module.exports = {
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
                 seguroDesempleo: '9999.99'
+            },
+            detallesCuota: {
+                cuotaTotal: '125.1254',
+                seguroDesempleo: '153.125',
+                capitalInteres: '120.125',
+                seguroVida: '120.125',
+                daviviendaAsistencia: '25.890'
             }
          }
     },
@@ -92,7 +111,9 @@ module.exports = {
             cuota: '11111.99',
             montoAprobado: '2222.99',
             comision: '33.99',
-            plazo: '36.66',
+            comisionDesembolso: '15.258',
+            montoSolicitado: '158.000',
+            plazo: '36',
             tasaInteres: '12.66',
             ki: {
                 capitalInteres: '1',
@@ -100,6 +121,13 @@ module.exports = {
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
                 seguroDesempleo: '9999.99'
+            },
+            detallesCuota: {
+                cuotaTotal: '125.1254',
+                seguroDesempleo: '153.125',
+                capitalInteres: '120.125',
+                seguroVida: '120.125',
+                daviviendaAsistencia: '25.890'
             }
          }
     },
@@ -111,7 +139,9 @@ module.exports = {
             cuota: '11111.99',
             montoAprobado: '2222.99',
             comision: '33.99',
-            plazo: '36.66',
+            comisionDesembolso: '15.258',
+            montoSolicitado: '158.000',
+            plazo: '36',
             tasaInteres: '12.66',
             ki: {
                 capitalInteres: '1',
@@ -119,14 +149,46 @@ module.exports = {
                 tasaInteresEfectiva: '10',
                 seguroDeuda: '45.99',
                 seguroDesempleo: '9999.99'
+            },
+            detallesCuota: {
+                cuotaTotal: '125.1254',
+                seguroDesempleo: '153.125',
+                capitalInteres: '120.125',
+                seguroVida: '120.125',
+                daviviendaAsistencia: '25.890'
             }
+         }
+    },
+    CRE125:    {
+        status: 1,
+        payload: {
+            montoAprobado: '1510',
+            montoSolicitado: '1500',
+            cuota: 150,
+            detallesCuota: {
+                capitalInteres: 1,
+                seguroDesempleo: 2,
+                seguroVida: 3,
+                daviviendaAsistencia: 4,
+                cuotaTotal: 10
+            },
+            plazo: 24,
+            tasaInteres: 0.11,
+            comisionDesembolso: '13',
+            esCliente: true,
+            tieneProducto: true
          }
     },
     CRE010: {
         status: 1,
         payload: {
             tieneProducto: true,
-            esCliente: true
+            esCliente: true,
+            aceptoSeguro: true,
+            seguros: [{
+                tipo: '',
+                estatus: true
+            }]
          }
     },
     CVI001: {
