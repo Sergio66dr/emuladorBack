@@ -7,7 +7,7 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CRE005',
-        CRE005: 'CRE006'
+        CRE005: 'ING001'
     },
     ING001: {
         status: 1,
@@ -22,21 +22,11 @@ module.exports = {
     CRE005: {
         status: 1,
         payload: {
-            esCliente: true,
-            tieneProductos: false,
-            valor: '22500',
-            meses: '12'
-        },
-        message: 'MSG_CVI_004'
-    },
-    CRE006: {
-        status: 2,
-        payload: {
             usuario: true,
             tieneProductos: false,
             valor: '22500',
             meses: '12'
         },
-        message: 'MSG_CVI_004'
+        message: ''
     }
 };

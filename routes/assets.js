@@ -69,24 +69,20 @@ const centroAmerica = [
 
   // Libranza
   { type: "xPUT", kind: "assetImagenRechazo", data: fs.readFileSync('./assets/rechazo.txt', 'utf8')},
-  { type: "xPUT", kind: "asset_IMG_ING001_005", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
-  { type: "xPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_005", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_Categoria_producto_creditomovilcondescuentodirecto.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_CR_Categoriadeproducto_Estadosdesolicitudes.png', 'base64')},
   { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetTerminosCondiciones_SeguroVidaDesempleo.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_TERMINOS_CONDICIONES_SEGURO_MOMENTOS_DE_VIDA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/momentos.html', 'utf8') },
-  { "type": "PUT", "kind":"assetImagenMiniAdd", data: fs.readFileSync('./assets/addMini.txt', 'utf8') },
-  { "type": "PUT", "kind":"assetImagenMiniRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
-  { "type": "PUT", "kind":"assetImagenBigRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
-  
-
-  // pdf416
-  // 27 de Febrero 2021
-  { type: 'xPUT', kind: 'asset_CONTRATO_CUENTA_AHORROS?pais=SV&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/CONTRATO_CUENTA_AHORROS.html', 'utf8') },
-  { type: 'xPUT', kind: 'asset_CONTRATO_CUENTA_AHORROS?pais=SV&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/CONTRATO_CUENTA_AHORROS.html', 'utf8') },
-  { type: 'xPUT', kind: 'asset_CONTRATO_BANCA_ELECTRONICA?pais=SV&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/BANCA.html', 'utf8') },
-  { type: 'xPUT', kind: 'asset_CONTRATO_BANCA_ELECTRONICA?pais=SV&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/BANCA.html', 'utf8') }
+  { "type": "xPUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
+  { "type": "xPUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
+  { "type": "xPUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
+  { "type": "xPUT", "kind":"asset_TERMINOS_CONDICIONES_SEGURO_MOMENTOS_DE_VIDA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/momentos.html', 'utf8') },
+  { "type": "xPUT", "kind":"assetImagenMiniAdd", data: fs.readFileSync('./assets/addMini.txt', 'utf8') },
+  { "type": "xPUT", "kind":"assetImagenMiniRemove", data: fs.readFileSync('./assets/removeMini.txt', 'utf8') },
+  { "type": "xPUT", "kind":"assetImagenBigRemove", data: fs.readFileSync('./assets/removeBig.txt', 'utf8') },
+  { "type": "xPUT", "kind":"assetImagenBigAdd", data: fs.readFileSync('./assets/addBig.txt', 'utf8') },
+  { "type": "xPUT", "kind":"assetImagenSaveData", data: fs.readFileSync('./assets/saveData.txt', 'utf8') },
+  { "type": "POST", "kind":"assetImagenGreenMarkCheck", data: fs.readFileSync('./assets/greenMarkCheck.txt', 'utf8') },
+  { "type": "POST", "kind":"assetImagenRedMarkCheck", data: fs.readFileSync('./assets/redMarkCheck.txt', 'utf8') }
 ];
 
 const ClientePN = [];
@@ -191,7 +187,7 @@ const cargarCatalogoMiddleware = (req, res, next) => {
   }
 
   mbaas = mbaas.map( (item, index) => ({ ...item, time: index * 2500}));
-  // mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
+  mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
   req.MBAAS = {
     mbaas: mbaas.map( item => {
       item.port = item.ambiente;
