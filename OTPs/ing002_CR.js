@@ -23,10 +23,18 @@ module.exports = {
     PCL001: {
         status: 1,
         payload: {
+            catalogo: {
+                "aliado":"LM",
+                "canal":"1",
+                "modulo":"LIBCAM",
+                "lenguaje":"ES",
+                "pais":"CR",
+            },
             documento: {
-                tipo: '',
-                numero: ''
-            }
+                numero: '303570359',
+                tipo: 'C'
+            },
+            esZonaPrivada: false
         }
     },
     VIN005: {

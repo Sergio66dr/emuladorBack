@@ -37,7 +37,14 @@ module.exports = {
         payload: {
             valor: 50000,
             meses: 12,
-            cuotaMensual: 450
+            cuotaMensual: 450,
+            detallesCuota: {
+                cuotaTotal: 100,
+                seguroDesempleo: 200,
+                capitalInteres: 300,
+                seguroVida: 400,
+                daviviendaAsistencia: 500
+            }
         }
     }
 };

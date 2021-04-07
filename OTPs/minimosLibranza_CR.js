@@ -34,10 +34,10 @@ module.exports = {
                 correo: '@@s.manjarrez@gmail.com',
                 escolaridad: '',
                 empresas: [{
-                    nombre: 'empresa 2',
-                    nit: '2',
+                    valNombreEmpresa: 'empresa 2',
+                    valNitEmpresa: '2',
                     fecInicioLaboral: new Date(),
-                    cargo: 'JEFE',
+                    valCargo: 'JEFE',
                     flagPrincipal: true
                 }],
                 AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA: {
