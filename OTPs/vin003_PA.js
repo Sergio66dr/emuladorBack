@@ -15,7 +15,8 @@ module.exports = {
             "aliado":"LM","canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"PA",
+            zona: true
         }
     },
     VIN003: {

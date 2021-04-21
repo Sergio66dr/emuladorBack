@@ -16,7 +16,8 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"PA",
+            zona: true
         }
     },
     VIN005: {
@@ -25,6 +26,10 @@ module.exports = {
     },
     VIN006: {
         status: 1,
-        payload: {}
+        payload: {
+            pa: {
+                actividadComercial: '07'
+            }
+        }
     }
 };

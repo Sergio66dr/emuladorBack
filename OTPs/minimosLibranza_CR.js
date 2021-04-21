@@ -21,43 +21,42 @@ module.exports = {
         }
     },
     CRE110: {
-        status: 1,
+        status: 2,
         payload: {
+            fecha: new Date(),
             esZonaPublica: true,
-            pa: {
-                correo: '',
-                ciudad: '',
-                noTelefono: ''
-            },
             cr: {
-                telefono: '185556565',
-                correo: '@@s.manjarrez@gmail.com',
-                escolaridad: '',
-                empresas: [{
-                    valNombreEmpresa: 'empresa 2',
-                    valNitEmpresa: '2',
-                    fecInicioLaboral: new Date(),
-                    valCargo: 'JEFE',
-                    flagPrincipal: true
-                }],
                 AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA: {
-                    fecha: new Date(),
-                    fecha2: new Date(),
-                    usuarioAutorizado: {
-                        nombre: 'Sergio Rafael',
-                        apellido: 'Manjarrez Chacon',
-                        numeroDocumento: '54546546516546546',
-                        tipoDocumento: 'IFE'
-                    },
+                    fecha: "2021-04-14T15:14:49.295-06:00",
+                    fecha2: "2021-04-14T15:14:49.295-06:00",
                     usuario: {
-                        nombre: 'Sergio RafaelXX',
-                        apellido: 'Manjarrez ChaconXXX',
-                        numeroDocumento: '54546546516546546XX',
-                        tipoDocumento: 'CIC'
+                        apellido: "MONGE  MORA",
+                        nombre: "JORGE  LUIS",
+                        numeroDocumento: "9-0029-0986",
+                        tipoDocumento: "C"
+                    },
+                    usuarioAutorizado: {
+                        apellido: "MONGE MORA",
+                        nombre: "JORGE LUIS",
+                        numeroDocumento: "9-0029-0986",
+                        tipoDocumento: "C"
                     }
-                }
-            }
-        }
+                },
+                correo: "s.manjarrez@dxc.com..",
+                empresas: [{
+                    fecInicioLaboral: "",
+                    flagPrincipal: "",
+                    valCargo: "",
+                    valNitEmpresa: "122132132321332",
+                    valNombreEmpresa: "EMPRESA ABX S.A."
+                }],
+                escolaridad: "",
+                indicativoCelular: "",
+                telefono: "654"
+            },
+            esCreditoPreaprobado: false
+        },
+        message: 'MSG_CRE_018'
     },
     CRE002: {
         status: 1,
