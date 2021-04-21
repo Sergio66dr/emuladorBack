@@ -14,7 +14,7 @@ const respuesta = (req, res) => {
     return res.json([]);;
   }
 
-  const catalogo = JSON.parse(fs.readFileSync('./catalogo/CATALOGO.CAM.txt', 'utf8'));
+  const catalogo = JSON.parse(fs.readFileSync(`./catalogo/${env.catalogo}`, 'utf8'));
   let catFilt = catalogo.filter(item => item.kind == kind);
   catFilt = catFilt.filter( item => 
       item.params.pais === query.pais && 
@@ -173,10 +173,10 @@ obtenerCatalogo = (nombre) => (req, res) => {
 }
 
 // Carga de catalogo
-router.get("/archivo_CAM", obtenerCatalogo('CATALOGO.CAM.txt'))
-router.get("/archivo_CO", obtenerCatalogo('CATALOGO.CO.txt'))
-router.post("/archivo_CAM", writeCatalogo('CATALOGO.CAM.txt'))
-router.post("/archivo_CO", writeCatalogo('CATALOGO.CO.txt'))
+router.get("/archivo_CAM", obtenerCatalogo(env.catalogo))
+// router.get("/archivo_CO", obtenerCatalogo('CATALOGO.CO.txt'))
+router.post("/archivo_CAM", writeCatalogo(env.catalogo))
+// router.post("/archivo_CO", writeCatalogo('CATALOGO.CO.txt'))
 router.get("/FullJson", (req, res) => res.json(datosPrueba))
 
 // Generacion de Scripts
