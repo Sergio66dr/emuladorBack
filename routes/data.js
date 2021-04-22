@@ -9,16 +9,12 @@ const respuesta = (req, res) => {
   const kind = req.params.kind;
   const filtro = req.params.filtro;
   const query = req.query;
-  
-  if ( req.originalUrl.indexOf('ING001/visible') !== -1 ) {
-    return res.json([{"condiciones":[],"descripcion":"Crédito de consumo con aprobación en línea","status":"visible","data":{"workflow":"CRECAM"},"tipo":"workflow","titulo":"Crédito Móvil","imagen":"asset_IMG_ING001_001"},{"status":"visible","condiciones":[],"imagen":"asset_IMG_ING001_002","titulo":"Cuenta Móvil","tipo":"workflow","data":{"workflow":"CTACAM"},"descripcion":"Ábrala desde su celular sin costo y comience a usarla de inmediato"},{"titulo":"Tarjeta Móvil","tipo":"urlExterna","data":{"urlExterna":{"urlExterna":"https://crediquick.apptividad.net/DAVICR_Autoatencion_QA/Apptividad.Ozono.WebApp/Home/IndexDeepLinkWithSSOT?pSSOT=9CE0EC2D-47E8-47DC-BB06-CA83E0DF5E6F&pModelId=PRIV_DAVI_AUTO_ATENCION;;1"}},"condiciones":[],"imagen":"asset_IMG_ING001_003","status":"visible","descripcion":"Solicítela y recíbala en su domicilio"},{"condiciones":[],"status":"visible","titulo":"Depósitos a Plazo","tipo":"postMessage","descripcion":"Abra un Depósito a Plazo 100% Digital","imagen":"asset_IMG_ING001_004","data":{"postMessage":"op_cdt"}},{"tipo":"workflow","imagen":"asset_IMG_ING001_005","status":"visible","data":{"workflow":"LIBCAM"},"titulo":"Crédito con Deducción de Planilla","condiciones":[],"descripcion":"Préstamo Personal con aprobación en línea y descontado de planilla"},{"tipo":"workflow","imagen":"asset_IMG_ING001_006","status":"visible","data":{"workflow":"TRACKCAM"},"titulo":"Estado de Solicitudes","condiciones":[],"descripcion":""}]);
-  }
 
   if ( req.originalUrl.indexOf('null') !== -1 ) {
     return res.json([]);;
   }
 
-  const catalogo = JSON.parse(fs.readFileSync('./catalogo/CATALOGO.CAM.txt', 'utf8'));
+  const catalogo = JSON.parse(fs.readFileSync(`./catalogo/${env.catalogo}`, 'utf8'));
   let catFilt = catalogo.filter(item => item.kind == kind);
   catFilt = catFilt.filter( item => 
       item.params.pais === query.pais && 
@@ -177,10 +173,10 @@ obtenerCatalogo = (nombre) => (req, res) => {
 }
 
 // Carga de catalogo
-router.get("/archivo_CAM", obtenerCatalogo('CATALOGO.CAM.txt'))
-router.get("/archivo_CO", obtenerCatalogo('CATALOGO.CO.txt'))
-router.post("/archivo_CAM", writeCatalogo('CATALOGO.CAM.txt'))
-router.post("/archivo_CO", writeCatalogo('CATALOGO.CO.txt'))
+router.get("/archivo_CAM", obtenerCatalogo(env.catalogo))
+// router.get("/archivo_CO", obtenerCatalogo('CATALOGO.CO.txt'))
+router.post("/archivo_CAM", writeCatalogo(env.catalogo))
+// router.post("/archivo_CO", writeCatalogo('CATALOGO.CO.txt'))
 router.get("/FullJson", (req, res) => res.json(datosPrueba))
 
 // Generacion de Scripts

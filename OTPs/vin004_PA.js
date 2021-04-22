@@ -16,7 +16,8 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"PA",
+            zona: true
         }
     },
     VIN004: {

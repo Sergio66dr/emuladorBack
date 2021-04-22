@@ -17,13 +17,14 @@ module.exports = {
             "idModulo":"MNUING",
             "lenguaje":"ES",
             "pais":"SV",
+            zona: true,
             catalogo: {
                 "aliado":"LM",
-                "canal":"2",
+                "canal":"1",
                 "modulo":"MNUING",
                 "lenguaje":"ES",
                 "pais":"SV"
-            }
+            },
         }
     },
     VIN002: {
@@ -31,11 +32,12 @@ module.exports = {
         payload: {
             catalogo: {
                 "aliado":"LM",
-                "canal":"2",
-                "modulo":"CRECAM",
+                "canal":"1",
+                "modulo":"CTACAM",
                 "lenguaje":"ES",
                 "pais":"SV"
             },
+            
             "estadoCivil": "6",
             "expedicion": {
                 "ciudad": "",
@@ -62,6 +64,7 @@ module.exports = {
                     "municipio": ""
                 }
             }
+              
         }
     },
     VIN005: {

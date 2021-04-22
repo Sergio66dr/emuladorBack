@@ -13,11 +13,13 @@ const CO = { qa: qa_co, desa: desa_co, prod: prod_co };
 
 const optionDefinitions = [
   { name: 'environment', alias: 'c', type: String },
-  { name: 'port', alias: 'p', type: Number, defaultOption: '3000' },
-  { name: 'pais', alias: 'z', type: String, defaultOption: 'CAM' }
+  { name: 'json', alias: 'j', type: String, defaultOption: '{}' }
 ]
-const options = commandLineArgs(optionDefinitions);
+let options = commandLineArgs(optionDefinitions);
+options = JSON.parse(options.json);
+options.catalogo = 'CATALOGO.' + (options.catalogo || 'CAM') + '.txt';
+console.log(options);
 
-console.log('Ambiente:', `${options.pais}:::${options.environment}`);
-
-module.exports = { CAM, CO }[options.pais][options.environment];
+const env = { CAM, CO }[options.pais][options.environment];
+env.catalogo = options.catalogo;
+module.exports = env;
