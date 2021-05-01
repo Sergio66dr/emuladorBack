@@ -16,13 +16,14 @@ module.exports = {
             "canal":"2",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"SV"
+            "pais":"SV",
+            zona: true
         }
     },
     CUE005: {
         status: 1,
         payload: {
-            codigoVendedor: [{ label: '2', value: '2'}]
+            codSubProducto: '0'
         }
     },
     VIN006: {

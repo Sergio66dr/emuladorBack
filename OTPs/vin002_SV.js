@@ -23,7 +23,8 @@ module.exports = {
                 "canal":"1",
                 "modulo":"MNUING",
                 "lenguaje":"ES",
-                "pais":"SV"
+                "pais":"SV",
+                zona: true
             },
         }
     },

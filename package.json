@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www || node ./bin/www",
-    "camQa": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\"} || node ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\"}",
-    "camDev": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"} || node ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
-    "camProd": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"} || node ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"prod\\\"}",
+    "camQa": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\"}",
+    "camDev": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
+    "camProd": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
 
-    "LIBCAM": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAM\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAM\\\"}",
-    "REGULATORIOS": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"REGULATORIOS\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"REGULATORIOS\\\"}",
-    "MENU": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENU\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENU\\\"}",
-    "MENUPROD": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENUPROD\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENUPROD\\\"}",
+    "LIBCAM": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAM\\\"}",
+    "FIXES": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXES\\\"}",
+    "REGULATORIOS": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"REGULATORIOS\\\"}",
+    "MENU": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENU\\\"}",
+    "MENUPROD": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENUPROD\\\"}",
 
     "coQa": "nodemon ./bin/www -c qa -z CO || node ./bin/www -c qa -z CO -z CO",
     "coDev": "nodemon ./bin/www -c desa -z CO || node ./bin/www -c desa -z CO",

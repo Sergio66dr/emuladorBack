@@ -1,1 +1,7 @@
-﻿
+﻿.formGroup__errorText--show {
+    width: 100%;
+    margin-top: 0.25rem;
+    font: 12.8px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #ed1c27 !important;
+    text-align: start !important;
+}

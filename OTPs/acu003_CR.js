@@ -17,20 +17,25 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"CR"
+            "pais":"CR",
+            zona: true
         }
     },
     CUE006: {
         status: 1,
         payload: {
-            producto: '5',
-            numCuenta: '34343',
-            numCuentaColones: '34343',
-            numCuentaDolares: '34343',
-            numIbanColones: '34343',
-            numIbanDolares: '34343',
-            fechaHora: new Date(),
-            aplicaCV: true
+            producto: '122',
+            numCuenta: '1111111',
+            numCuentaColones: 22222222,
+            numCuentaDolares: '3333333',
+            numIbanColones: 444444444,
+            numIbanDolares: '5555555555',
+            callbackUrl: {
+                error: 'https://www.google.com.mx',
+                success: 'https://www.google.com.mx'
+            },
+            aplicaCV: false,
+            fechaHora: new Date()
         }
     },
     VIN006: {
