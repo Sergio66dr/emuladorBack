@@ -21,11 +21,12 @@ module.exports = {
         }
     },
     CRE110: {
-        status: 2,
+        status: 1,
         payload: {
             fecha: new Date(),
-            esZonaPublica: true,
+            esZonaPublica: false,
             cr: {
+                indicativoCelular: '50',
                 AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA: {
                     fecha: "2021-04-14T15:14:49.295-06:00",
                     fecha2: "2021-04-14T15:14:49.295-06:00",
@@ -51,8 +52,7 @@ module.exports = {
                     valNombreEmpresa: "EMPRESA ABX S.A."
                 }],
                 escolaridad: "",
-                indicativoCelular: "",
-                telefono: "654"
+                telefono: ""
             },
             esCreditoPreaprobado: false
         },

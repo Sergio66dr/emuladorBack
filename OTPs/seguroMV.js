@@ -42,18 +42,20 @@ module.exports = {
         payload: {
             sumaAsegurada: '150000',
             primaMensual: '150',
-            cuentas: [{
-                "valCodigoProducto": "",
-                "valCodigoSubProducto": "3498",
-                "valAliasProducto": "Cuenta Ahorro",
-                "valNumeroProducto": "1001"
-            },
-            {
-                "valCodigoProducto": "3",
-                "valCodigoSubProducto": "3497",
-                "valAliasProducto": "Cuenta Digital",
-                "valNumeroProducto": "1007"
-            }]
+            cuentas: [
+            //     {
+            //     "valCodigoProducto": "",
+            //     "valCodigoSubProducto": "3498",
+            //     "valAliasProducto": "Cuenta Ahorro",
+            //     "valNumeroProducto": "1001"
+            // },
+            // {
+            //     "valCodigoProducto": "3",
+            //     "valCodigoSubProducto": "3497",
+            //     "valAliasProducto": "Cuenta Digital",
+            //     "valNumeroProducto": "1007"
+            // }
+            ]
         }
     },
 };

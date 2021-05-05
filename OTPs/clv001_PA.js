@@ -6,7 +6,7 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CVI001',
-        CVI001: 'ING001'
+        CVI001: 'VIN006'
     },
     ING001: {
         status: 1,
@@ -38,7 +38,8 @@ module.exports = {
         }
     },
     VIN006: {
-        status: 1,
-        payload: {}
+        status: 2,
+        payload: {},
+        message: 'MSG_CVI_004'
     }
 };

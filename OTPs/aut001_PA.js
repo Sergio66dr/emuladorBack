@@ -16,7 +16,14 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA"
+            "pais":"PA",
+            catalogo: {    
+                "aliado":"LM",
+                "canal":"1",
+                "modulo":"MNUING",
+                "lenguaje":"ES",
+                "pais":"PA"
+            }
         }
     },
     AUT001: {
@@ -29,7 +36,7 @@ module.exports = {
                 "lenguaje":"ES",
                 "pais":"PA"
             },
-            esCliente: false,
+            esCliente: !true,
             esFatca: false,
             codigoVendedor: '',
             SV: {},

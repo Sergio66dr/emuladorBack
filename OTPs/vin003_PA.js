@@ -23,7 +23,7 @@ module.exports = {
         status: 1,
         payload: {
             pa: {
-                actividadComercial: '1',
+                actividadComercial: '0001',
                 empresa: 'pepe y toño'
             }
         }

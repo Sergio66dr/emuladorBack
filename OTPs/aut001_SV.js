@@ -17,7 +17,8 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"SV"
+            "pais":"SV",
+			zona: true
         }
     },
     CUE003: {
@@ -27,6 +28,8 @@ module.exports = {
     AUT001: {
         status: 1,
         payload: {
+			"esCliente": !false,
+			"esFatca": false,
 			codigoVendedor: '',
             "SV": {
 				"CARGO_CUENTA_CASO_MORAL": {
@@ -442,9 +445,7 @@ module.exports = {
 					"ct3": "",
 					"ct4": ""
 				}
-			},
-			"esCliente": false,
-			"esFatca": true
+			}
         }
     }
 };
