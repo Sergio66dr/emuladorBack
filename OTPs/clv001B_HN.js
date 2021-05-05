@@ -6,7 +6,8 @@ module.exports = {
     workflow: {
         APPBOOT: 'ING001',
         ING001: 'CVI001',
-        CVI001: 'ING001'
+        CVI001: 'CVI002',
+        CVI002: 'ING001'
     },
     ING001: {
         status: 1,
@@ -15,14 +16,13 @@ module.exports = {
             "canal":"2",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"PA",
+            "pais":"HN",
             zona: true
         }
     },
     CVI001: {
         status: 1,
         payload: {
-            usuarioBancaElectronica: '123456789',
             crypto: {
                 metodo: "encriptacionClaveA",
                 credencial : `-----BEGIN PUBLIC KEY-----
@@ -36,6 +36,14 @@ module.exports = {
           -----END PUBLIC KEY-----`
             }
         }
+    },
+    CVI002: {
+        status: 2,
+        payload: {
+            usuario: 'Sergio Rafael',
+            usuarios: ['hola', 'mundo', 'como', 'estas', '?']
+        },
+        message: 'MSG_CVI_001'
     },
     VIN006: {
         status: 1,
