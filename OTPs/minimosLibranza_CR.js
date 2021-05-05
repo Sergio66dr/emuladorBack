@@ -26,7 +26,7 @@ module.exports = {
             fecha: new Date(),
             esZonaPublica: false,
             cr: {
-                indicativoCelular: '50',
+                indicativoCelular: '0507',
                 AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA: {
                     fecha: "2021-04-14T15:14:49.295-06:00",
                     fecha2: "2021-04-14T15:14:49.295-06:00",
@@ -43,7 +43,7 @@ module.exports = {
                         tipoDocumento: "C"
                     }
                 },
-                correo: "s.manjarrez@dxc.com..",
+                correo: "s.manjarrez@dxc.com",
                 empresas: [{
                     fecInicioLaboral: "",
                     flagPrincipal: "",
@@ -52,7 +52,7 @@ module.exports = {
                     valNombreEmpresa: "EMPRESA ABX S.A."
                 }],
                 escolaridad: "",
-                telefono: ""
+                telefono: "6654561321"
             },
             esCreditoPreaprobado: false
         },
