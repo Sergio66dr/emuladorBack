@@ -10,8 +10,9 @@ module.exports = {
         CRE006: 'CRE007',
         CRE007: 'CRE008',
         CRE008: 'CRE009',
-        CRE009: 'CRE010',
         CRE010: 'CRE011',
+        CRE009: 'CRE125',
+        CRE125: 'CRE010',
     },
     ING001: {
         status: 1,
@@ -98,6 +99,23 @@ module.exports = {
                 seguroDeuda: '45.99',
                 seguroDesempleo: '9999.99'
             }
+         }
+    },
+    CRE125:    {
+        status: 1,
+        payload: {
+            montoSolicitado: '5165',
+            cuota: 150,
+            detallesCuota: {
+                seguroDesempleo: 2,
+                cuotaTotal: 476.86,
+                cuotaCredito: 7,
+                seguroDeudor: 9
+            },
+            plazo: 24,
+            tasaInteres: 0.274,
+            esCliente: true,
+            tieneProducto: true
          }
     },
     CRE010: {
