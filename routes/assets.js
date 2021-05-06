@@ -88,25 +88,29 @@ const centroAmerica = [
 
   // { "type": "xPOST", "kind":"asset_MANIFESTACIONES_AUTORIZACIONES?pais=PA&lenguaje=ES&modulo=LIBCAM", data: fs.readFileSync('./assets/documento.html', 'utf8') },
 
-  { "type": "xPOST", "kind":"assetImagenFrontEjemploPantalla?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenFrontGuiasCamara?pais=CR&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/CR/costarica_front_marco.png', 'base64') },
-  { "type": "xPOST", "kind":"assetImagenBackEjemploPantalla?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenBackGuiasCamara?pais=CR&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/CR/costarica_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenFrontEjemploPantalla?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenFrontGuiasCamara?pais=CR&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/CR/costarica_front_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenBackEjemploPantalla?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenBackGuiasCamara?pais=CR&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/CR/costarica_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenEjemploFoto?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/foto.svg', 'base64') },
 
-  { "type": "xPOST", "kind":"assetImagenFrontEjemploPantalla?pais=PA&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenFrontGuiasCamara?pais=PA&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/PA/panama_front_marco.png', 'base64') },
-  { "type": "xPOST", "kind":"assetImagenBackEjemploPantalla?pais=PA&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenBackGuiasCamara?pais=PA&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/PA/panama_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenFrontEjemploPantalla?pais=PA&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenFrontGuiasCamara?pais=PA&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/PA/panama_front_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenBackEjemploPantalla?pais=PA&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenBackGuiasCamara?pais=PA&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/PA/panama_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenEjemploFoto?pais=PA&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/foto.svg', 'base64') },
 
-  { "type": "xPOST", "kind":"assetImagenFrontEjemploPantalla?pais=SV&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenFrontGuiasCamara?pais=SV&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/SV/elsalvador_front_marco.png', 'base64') },
-  { "type": "xPOST", "kind":"assetImagenBackEjemploPantalla?pais=SV&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenBackGuiasCamara?pais=SV&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/SV/elsalvador_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenFrontEjemploPantalla?pais=SV&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenFrontGuiasCamara?pais=SV&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/SV/elsalvador_front_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenBackEjemploPantalla?pais=SV&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenBackGuiasCamara?pais=SV&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/SV/elsalvador_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenEjemploFoto?pais=SV&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/foto.svg', 'base64') },
 
-  { "type": "xPOST", "kind":"assetImagenFrontEjemploPantalla?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenFrontGuiasCamara?pais=HN&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/HN/honduras_front_marco.png', 'base64') },
-  { "type": "xPOST", "kind":"assetImagenBackEjemploPantalla?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
-  { "type": "POST", "kind":"assetImagenBackGuiasCamara?pais=HN&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/HN/honduras_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenFrontEjemploPantalla?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenFrontGuiasCamara?pais=HN&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/HN/honduras_front_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenBackEjemploPantalla?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
+  // { "type": "PUT", "kind":"assetImagenBackGuiasCamara?pais=HN&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/HN/honduras_back_marco.png', 'base64') },
+  // { "type": "xPUT", "kind":"assetImagenEjemploFoto?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/foto.svg', 'base64') }
 ];
 
 const ClientePN = [];

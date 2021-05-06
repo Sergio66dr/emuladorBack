@@ -7,6 +7,9 @@
     "camQa": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\"}",
     "camDev": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
     "camProd": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
+
+    "FIXESREMO": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXESREMO\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXESREMO\\\"}",
+    "LIBCAMREMO": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAMREMO\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAMREMO\\\"}",
     "LIBCAM": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAM\\\"}",
     "CAM": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"CAM\\\"}",
     "FIXES": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXES\\\"}",
