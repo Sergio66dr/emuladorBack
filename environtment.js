@@ -14,10 +14,10 @@ const CO = { qa: qa_co, desa: desa_co, prod: prod_co };
 const optionDefinitions = [
   { name: 'environment', alias: 'c', type: String },
   { name: 'json', alias: 'j', type: String, defaultOption: '{}' }
-]
-//let options = commandLineArgs(optionDefinitions);
-let options = { pais: 'CAM', environment: 'qa', catalogo: 'CATALOGO.ARREGLOS.txt' };
-//options.catalogo = 'CATALOGO.' + (options.catalogo || 'CAM') + '.txt';
+];
+let options = commandLineArgs(optionDefinitions);
+options = JSON.parse(options.json);
+options.catalogo = 'CATALOGO.' + (options.catalogo || 'CAM') + '.txt';
 console.log(options);
 
 const env = { CAM, CO }[options.pais][options.environment];

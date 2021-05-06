@@ -26,7 +26,7 @@ module.exports = {
         payload: {
             tieneCuentaDigital: true,
             esCliente: false,
-            cuentasExistentes: ['53']
+            cuentasExistentes: ['53','51']
         }
     },
     BIO001: {
