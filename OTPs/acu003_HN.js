@@ -25,6 +25,7 @@ module.exports = {
         status: 1,
         payload: {
             producto: '120',
+            nombreCliente: 'Jose',
             numCuenta: '1111111',
             numCuentaColones: 22222222,
             numCuentaDolares: '3333333',
