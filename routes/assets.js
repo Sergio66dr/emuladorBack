@@ -111,6 +111,20 @@ const centroAmerica = [
   // { "type": "xPUT", "kind":"assetImagenBackEjemploPantalla?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_2.svg', 'base64') },
   // { "type": "PUT", "kind":"assetImagenBackGuiasCamara?pais=HN&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/HN/honduras_back_marco.png', 'base64') },
   // { "type": "xPUT", "kind":"assetImagenEjemploFoto?pais=HN&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/foto.svg', 'base64') }
+  // AUTORIZACIONES LIBRANZA CR
+  { "type": "PUT", "kind":"asset_autorizacionPrestamoDeduccionDePlanilla?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui1" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_pagare?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui2" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_contratoMercantil?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui3" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_solicitudUnificadaDeSeguros?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui4" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_seguroMomentosDeVida?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui5" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_declaracionJuradaDeOtrasDeudas?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui6" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_folletoExplicativo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui7" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_concentimientoInformado?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui8" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_publicidadYPromociones?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui9" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  // AUTORIZACIONES LIBRANZA CR
+  { "type": "PUT", "kind":"asset_elPagare?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui11" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_contratoAsegurabilidad?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui22" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "PUT", "kind":"asset_contratoProductosYServiciosBancarios?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui33" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
 ];
 
 const ClientePN = [];

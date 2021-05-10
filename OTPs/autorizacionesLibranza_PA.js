@@ -17,7 +17,7 @@ module.exports = {
                 lenguaje: 'ES',
                 canal: '1',
                 aliado: 'N/A',
-                pais: 'CR'
+                pais: 'PA'
             },
             seguros: [{
                 nombre: "SMV",

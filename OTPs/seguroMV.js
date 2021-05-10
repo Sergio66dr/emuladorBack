@@ -40,21 +40,21 @@ module.exports = {
     SEG001: {
         status: 1,
         payload: {
-            sumaAsegurada: '150000',
+            sumaAsegurada: '150000.123456789',
             primaMensual: '150',
             cuentas: [
-            //     {
-            //     "valCodigoProducto": "",
-            //     "valCodigoSubProducto": "3498",
-            //     "valAliasProducto": "Cuenta Ahorro",
-            //     "valNumeroProducto": "1001"
-            // },
-            // {
-            //     "valCodigoProducto": "3",
-            //     "valCodigoSubProducto": "3497",
-            //     "valAliasProducto": "Cuenta Digital",
-            //     "valNumeroProducto": "1007"
-            // }
+                {
+                "valCodigoProducto": "",
+                "valCodigoSubProducto": "3498",
+                "valAliasProducto": "Cuenta Ahorro",
+                "valNumeroProducto": "1001"
+            },
+            {
+                "valCodigoProducto": "3",
+                "valCodigoSubProducto": "3497",
+                "valAliasProducto": "Cuenta Digital",
+                "valNumeroProducto": "1007"
+            }
             ]
         }
     },
