@@ -22,39 +22,37 @@ module.exports = {
     },
     CRE110: {
         status: 1,
-        payload: {
-            fecha: new Date(),
-            esZonaPublica: false,
-            cr: {
-                indicativoCelular: '0507',
-                AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA: {
-                    fecha: "2021-04-14T15:14:49.295-06:00",
-                    fecha2: "2021-04-14T15:14:49.295-06:00",
-                    usuario: {
-                        apellido: "MONGE  MORA",
-                        nombre: "JORGE  LUIS",
-                        numeroDocumento: "9-0029-0986",
-                        tipoDocumento: "C"
+        "payload": {
+            "cr": {
+                "AUTORIZACION_CONSULTA_INFORMACION_CREDITICIA": {
+                    "fecha": "2021-05-12T11:28:24.557-06:00",
+                    "fecha2": "2021-05-12T11:28:24.557-06:00",
+                    "usuario": {
+                        "apellido": "FONSECA  ARTAVIA",
+                        "nombre": "IVONNE  SUSANA",
+                        "numeroDocumento": "02-0630-0742",
+                        "tipoDocumento": "C"
                     },
-                    usuarioAutorizado: {
-                        apellido: "MONGE MORA",
-                        nombre: "JORGE LUIS",
-                        numeroDocumento: "9-0029-0986",
-                        tipoDocumento: "C"
+                    "usuarioAutorizado": {
+                        "apellido": "FONSECA ARTAVIA",
+                        "nombre": "IVONNE SUSANA",
+                        "numeroDocumento": "02-0630-0742",
+                        "tipoDocumento": "C"
                     }
                 },
-                correo: "s.manjarrez@dxc.com",
-                empresas: [{
-                    fecInicioLaboral: "",
-                    flagPrincipal: "",
-                    valCargo: "",
-                    valNitEmpresa: "122132132321332",
-                    valNombreEmpresa: "EMPRESA ABX S.A."
+                "correo": "daviviendatester@gmail.com",
+                "empresas": [{
+                    "fecInicioLaboral": "",
+                    "flagPrincipal": "",
+                    "valCargo": "",
+                    "valNitEmpresa": "130999",
+                    "valNombreEmpresa": "ASOCIACION DE SERVICIOS MEDICOS COSTARRICENCES"
                 }],
-                escolaridad: "",
-                telefono: "6654561321"
+                "indicativoCelular": "506",
+                "telefono": null
             },
-            esCreditoPreaprobado: false
+            "esCreditoPreaprobado": false,
+            "esZonaPublica": false
         },
         message: 'MSG_CRE_018'
     },

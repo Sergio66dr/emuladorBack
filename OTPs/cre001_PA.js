@@ -23,35 +23,14 @@ module.exports = {
     CRE004: {
         status: 1,
         payload: {
-            sv: {
-                fechaNacimiento: {
-                         dia: '',
-                         mes: '',
-                         anio: ''
-                },
-                estadoFamiliar: '',
-                nacionalidad: '',
-                sexo: '',
-                correo: '',
-                noTelefono: '',
-                departamento: '',
-                municipio: '',
-                escolaridad: ''
+            "pa": {
+                "ciudad": "0024",
+                "correo": "MGARIBALDI@PROVEEDORES.DAVIVIENDA.COM.PA",
+                "noTelefono": "67616869",
+                "tipoDocu": "CED"
             },
-            pa: {
-            correo: 'schacon7@dxc.com',
-            ciudad: '0',
-            noTelefono: '3111968134'
-            },
-            hn: {
-            departamento: '',
-            municipio: '',
-            colonia: '',
-            escolaridad: ''
-            },
-            cr: {
-            escolaridad: '' 
-            }
+            "esCreditoPreaprobado":false,
+            "esZonaPublica":false
         }
     },
     CRE002: {

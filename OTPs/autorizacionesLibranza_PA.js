@@ -5,11 +5,11 @@ module.exports = {
     // TOKEN DE PRESENTACION CLIENTE
     token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE1MTU0NzAwNzYsImV4cCI6MTU0NjkxOTY3NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0._A7pY7lDS3-43R68XFLPUSspUVmyi9fleksPzLifcqI',
     workflow: {
-        APPBOOT: 'CRE180',
-        CRE180: 'CRE011',
+        APPBOOT: 'AUT004',
+        AUT004: 'CRE011',
         CRE011: 'ING001'
     },
-    CRE180: {
+    AUT004: {
         status: 1,
         payload: {
             catalogo: {

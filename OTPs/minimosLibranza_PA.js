@@ -23,16 +23,14 @@ module.exports = {
     CRE110: {
         status: 1,
         payload: {
-            pa: {
-                correo: 'schacon7@dxc.com',
-                ciudad: '0',
-                noTelefono: '6111968134',
-                indicativoCelular: '002322',
-                tipoDocu: 'E'
+            "pa": {
+                "ciudad": "0024",
+                "correo": "MGARIBALDI@PROVEEDORES.DAVIVIENDA.COM.P.....A",
+                "noTelefono": "67616869",
+                "tipoDocu": "CED"
             },
-            cr: {
-                escolaridad: '' 
-            }
+            "esCreditoPreaprobado":false,
+            "esZonaPublica":false
         }
     },
     CRE002: {
