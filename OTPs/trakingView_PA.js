@@ -43,12 +43,32 @@ module.exports = {
         listaEtapas: [{
           valOrden: '0',
           valCodigo: 'GOOD',
-          valNombreEtapa: 'Una Etapa bien hecha',
+          valNombreEtapa: 'Crédito pre aprobado',
           flagStatus: 0
         }, {
           valOrden: '1',
           valCodigo: 'STOP',
-          valNombreEtapa: 'Una Etapa bien en progreso',
+          valNombreEtapa: 'Descargar Carta de Autorización de descuento directo',
+          flagStatus: 0
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'Adjuntar Carta de Autorización de descuento directo',
+          flagStatus: 0
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'En validación Banco Carta',
+          flagStatus: 1
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'Crédito desembolsado',
+          flagStatus: 1
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'sss Crédito desembolsado',
           flagStatus: 1
         }]
       }

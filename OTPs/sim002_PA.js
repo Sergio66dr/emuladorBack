@@ -35,7 +35,7 @@ module.exports = {
         payload: {
             tasaInteresAnual: 27.42,
             meses: 24,
-            valor: 10_000,
+            valor: 10000000,
             cuotaMensual: 476.86,
             detallesCuota: {
                 cuotaTotal: '100',

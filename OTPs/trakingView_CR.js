@@ -23,7 +23,7 @@ module.exports = {
       montoAprobado: '1499.99',
       montoSolicitado: "1500",
       fechaSolicitud: new Date(),
-      comisioDesembolso: '0.55',
+      comisionDesembolso: '0.55',
       plazo: 36,
       cuota: 150,
       detallesCuota: {
@@ -43,12 +43,27 @@ module.exports = {
         listaEtapas: [{
           valOrden: '0',
           valCodigo: 'GOOD',
-          valNombreEtapa: 'Una Etapa bien hecha',
+          valNombreEtapa: 'Frima electrónica de documentos',
           flagStatus: 0
         }, {
           valOrden: '1',
           valCodigo: 'STOP',
-          valNombreEtapa: 'Una Etapa bien en progreso',
+          valNombreEtapa: 'En análisis de Crédito',
+          flagStatus: 0
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'Credito aprobado',
+          flagStatus: 0
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'Firma física de documentos',
+          flagStatus: 1
+        }, {
+          valOrden: '1',
+          valCodigo: 'STOP',
+          valNombreEtapa: 'Credito desembolsado',
           flagStatus: 1
         }]
       }

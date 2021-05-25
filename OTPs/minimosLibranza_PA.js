@@ -25,8 +25,8 @@ module.exports = {
         payload: {
             "pa": {
                 "ciudad": "0024",
-                "correo": "MGARIBALDI@PROVEEDORES.DAVIVIENDA.COM.P.....A",
-                "noTelefono": "67616869",
+                "correo": "", // "MGARIBALDI@PROVEEDORES.DAVIVIENDA.COM.P.....A",
+                "noTelefono": "", // "67616869",
                 "tipoDocu": "CED"
             },
             "esCreditoPreaprobado":false,

@@ -24,7 +24,7 @@ module.exports = {
         payload: {
             esCliente: true,
             tieneProductos: false,
-            valor: '22500',
+            valor: '144000000',
             meses: '12',
             cuotaMensual: "1111",
             detallesCuota: {

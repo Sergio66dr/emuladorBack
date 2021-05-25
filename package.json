@@ -7,7 +7,6 @@
     "camQa": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\"}",
     "camDev": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
     "camProd": "nodemon ./bin/www {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"desa\\\"}",
-
     "FIXESREMO": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXESREMO\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"FIXESREMO\\\"}",
     "LIBCAMREMO": "nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAMREMO\\\"} || node ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAMREMO\\\"}",
     "LIBCAM": "cls && nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LIBCAM\\\"}",
@@ -16,6 +15,7 @@
     "REGULATORIOS": "cls && nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"REGULATORIOS\\\"}",
     "MENU": "cls && nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENU\\\"}",
     "MENUPROD": "cls && nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"MENUPROD\\\"}",
+    "LHC": "cls && nodemon ./bin/www -j {\\\"pais\\\":\\\"CAM\\\",\\\"environment\\\":\\\"qa\\\",\\\"catalogo\\\":\\\"LHC\\\"}",
     "coQa": "nodemon ./bin/www -c qa -z CO || node ./bin/www -c qa -z CO -z CO",
     "coDev": "nodemon ./bin/www -c desa -z CO || node ./bin/www -c desa -z CO",
     "coProd": "nodemon ./bin/www -c prod -z CO || node ./bin/www -c prod -z CO"

@@ -26,7 +26,7 @@ module.exports = {
             catalogo: {
                 "aliado":"LM",
                 "canal":"1",
-                "modulo":"CTACAM",
+                "modulo":"LIBCAM",
                 "lenguaje":"ES",
                 "pais":"CR",
             },

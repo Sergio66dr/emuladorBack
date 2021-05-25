@@ -25,6 +25,7 @@ module.exports = {
         payload: {
             esCliente: false,
             esFatca: false,
+            zonaPublica: true,
             codigoVendedor: [{ label: '2', value: '2'}]
         }
     },

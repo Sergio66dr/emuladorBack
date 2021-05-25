@@ -11,6 +11,372 @@ module.exports = {
     },
     AUT004: {
         status: 1,
+        payload: {catalogo: {
+            modulo: 'LIBCAM',
+            lenguaje: 'ES',
+            canal: '1',
+            aliado: 'N/A',
+            pais: 'CR'
+        },
+            "cr": {
+                "AUTORIZACION_CONSULTA_DE_INFORMACION_CREDITICIA": {
+                    "cliente": {
+                        "cargo": "1 ",
+                        "nombreCompleto": "STEPHANNY MICHELLE ROJAS MASIS",
+                        "nombreEmpresaCliente": {
+                            "nombre": "nombreempresa ",
+                            "numeroEmpleados": "",
+                            "fechaInicio": "1999 - 10 - 10 ",
+                            "direccion": "",
+                            "codigoCiudad": "",
+                            "codigoDepartamento": "",
+                            "codigoMunicipio": "",
+                            "codigoPais": "",
+                            "referenciaDireccion": "",
+                            "nombreColonia": "",
+                            "esPrincipal": false,
+                            "tipoContrato": "",
+                            "actividadEmpresa": "",
+                            "codigo": "",
+                            "nit": "123.3434 .34 ",
+                            "telefono": {
+                                "extension": "",
+                                "indicativo": "",
+                                "numero": ""
+                            }
+                        },
+                        "numeroId": "01-1185-0138",
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "fechaDelDia": "",
+                        "horaDelDia": ""
+                    },
+                    "otraIdentificacion": {},
+                    "seguro": {}
+                },
+                "CONTRATO_DE_PRESTAMO_MERCANTIL": {
+                    "aceptacion": {
+                        "Referencia": "",
+                        "fechaO": ""
+                    },
+                    "aceptacionjd": {
+                        "anioDesc": "",
+                        "diaDesc": "",
+                        "mesDesc": ""
+                    },
+                    "banco": {
+                        "valFirma": ""
+                    },
+                    "cliente": {
+                        "empresa": {
+                            "nombre": "nombreempresa ",
+                            "numeroEmpleados": "",
+                            "fechaInicio": "1999 - 10 - 10 ",
+                            "direccion": "",
+                            "codigoCiudad": "",
+                            "codigoDepartamento": "",
+                            "codigoMunicipio": "",
+                            "codigoPais": "",
+                            "referenciaDireccion": "",
+                            "nombreColonia": "",
+                            "esPrincipal": false,
+                            "tipoContrato": "",
+                            "actividadEmpresa": "",
+                            "codigo": "",
+                            "nit": "123.3434 .34 ",
+                            "telefono": {
+                                "extension": "",
+                                "indicativo": "",
+                                "numero": ""
+                            }
+                        },
+                        "nombreCompleto": "STEPHANNY MICHELLE ROJAS MASIS",
+                        "numeroId": "01-1185-0138",
+                        "residencia": {
+                            "ciudadDesc": "",
+                            "departamentoDesc": "3",
+                            "direccion": "CARTAGO CENTRAL DULCE NOMBRE",
+                            "distritoDesc": ""
+                        },
+                        "tipo": "",
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "Referencia": "",
+                        "comisionMin": "",
+                        "comisionTasaMax": "",
+                        "cuotaInicial": "",
+                        "cuotaQuincenal": "",
+                        "cuotaSeguros": "",
+                        "cuotaTotal": "",
+                        "diaPago": "",
+                        "fechaPrimerPago": "",
+                        "fechaUltimoPago": "",
+                        "montoDesc": "",
+                        "montoDesembolso": "",
+                        "plazoMesesDesc": "valor",
+                        "tasaDiferencial": "",
+                        "tasaEfectiva": "",
+                        "tasaNominal": "",
+                        "tipoTasa": ""
+                    }
+                },
+                "DECLARACION_JURADA_DE_OTRAS_DEUDAS": {
+                    "aceptacion": {
+                        "fechaO": ""
+                    },
+                    "cliente": {
+                        "marcaDeudas": "",
+                        "nombreCompleto": "",
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "Referencia": ""
+                    },
+                    "deudas": {
+                        "dcj_cuota": "",
+                        "dcj_entidad": "",
+                        "dcj_fechavenc": "",
+                        "dcj_frec": "",
+                        "dcj_monto": ""
+                    },
+                    "seguro": {
+                        "idTomador": "",
+                        "tomador": ""
+                    }
+                },
+                "FOLLETO_EXPLICATIVO": {
+                    "aceptacion": {
+                        "fechaO": ""
+                    },
+                    "cliente": {
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "Referencia": "",
+                        "montoDesembolso": ""
+                    }
+                },
+                "LIBRANZA_CARTA_DE_AUTORIZACION_DE_DEBITO_PLANILLA": {
+                    "aceptacionjd": {
+                        "anioDesc": "",
+                        "diaDesc": "",
+                        "mesDesc": ""
+                    },
+                    "cliente": {
+                        "nombreCompleto": "",
+                        "numeroId": "",
+                        "tipoId": "",
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "referencia": ""
+                    },
+                    "seguro": {
+                        "fechaInicio": "",
+                        "tomador": ""
+                    }
+                },
+                "PAGARE": {
+                    "cliente": {
+                        "estadoCivil": "C",
+                        "letrasId": "",
+                        "nombreCompleto": "STEPHANNY MICHELLE ROJAS MASIS",
+                        "numeroId": "01-1185-0138",
+                        "profesionDesc": "228",
+                        "residencia": {
+                            "ciudadDesc": "",
+                            "departamentoDesc": "3",
+                            "distritoDesc": ""
+                        },
+                        "valFirma": ""
+                    },
+                    "credito": {
+                        "Referencia": "",
+                        "comision": "valor",
+                        "comisionMin": "valor",
+                        "comisionTasaMax": "valor",
+                        "cuotaTotal": "valor",
+                        "cuotaTotalDesc": "valor",
+                        "fechaDelDia": "",
+                        "montoDesc": "valor",
+                        "montoDesembolso": "",
+                        "numCuotas": "valor",
+                        "plazoMesesDesc": "valor",
+                        "tasaDiferencia": "valor",
+                        "tasaReferencia": "valor"
+                    }
+                },
+                "SOLICITUD_DE_ASEGURAMIENTO_UNIFICADA_SEGURO_COLECTIVO": {},
+                "SOLICITUD_SEGURO_COLECTIVO_MOMENTOS_DE_VIDA_ASEGURADO": {
+                    "aceptacion": {
+                        "anioDesc": "",
+                        "diaDesc": "",
+                        "mesDesc": "",
+                        "municipioDesc": ""
+                    },
+                    "aseguradora": {
+                        "cobertura": "",
+                        "nombre": "",
+                        "suma": "",
+                        "vigencia": ""
+                    },
+                    "beneficiario": {
+                        "calidad": "",
+                        "nombreCompleto": "",
+                        "numeroId": "",
+                        "parantesco": "",
+                        "porcentaje": "",
+                        "tipoId": ""
+                    },
+                    "cliente": {
+                        "anioFechaNac": "",
+                        "cargo": "",
+                        "diaFechaNac": "",
+                        "direccionPostal": "",
+                        "email": "",
+                        "estadoCasado": "",
+                        "estadoDivorciado": "",
+                        "estadoSeparado": "",
+                        "estadoSoltero": "",
+                        "estadoUnionLibre": "",
+                        "estadoViudo": "",
+                        "generoF": "",
+                        "generoM": "",
+                        "lugarNacimiento": "",
+                        "mesFechaNac": "",
+                        "movil": "",
+                        "nacionalidad": "",
+                        "nombreCompleto": "",
+                        "nombreEmpresa": "",
+                        "numeroId": "",
+                        "otrosMedioNotificacion": "",
+                        "primerApellido": "",
+                        "primerNombre": "",
+                        "profesionDesc": "",
+                        "residencia": {
+                            "ciudadDesc": "",
+                            "direccionExacta": "",
+                            "distritoDesc": ""
+                        },
+                        "segundoApellido": "",
+                        "segundoNombre": "",
+                        "telefono": "",
+                        "tipoIdCI": "",
+                        "tipoIdCJ": "",
+                        "tipoIdCR": "",
+                        "valFirma": ""
+                    },
+                    "cobertura": {
+                        "enfermedad": {
+                            "prima": "",
+                            "sumaAsegurada": "",
+                            "tasaAnual": ""
+                        },
+                        "incapacidad": {
+                            "prima": "",
+                            "sumaAsegurada": "",
+                            "tasaAnual": ""
+                        },
+                        "momentos": {
+                            "prima": "",
+                            "sumaAsegurada": "",
+                            "tasaAnual": ""
+                        },
+                        "muerte": {
+                            "prima": "",
+                            "sumaAsegurada": "",
+                            "tasaAnual": ""
+                        },
+                        "muerteAc": {
+                            "prima": "",
+                            "sumaAsegurada": "",
+                            "tasaAnual": ""
+                        }
+                    },
+                    "credito": {
+                        "Referencia": "",
+                        "fechaAprobacion": "",
+                        "planillaLibranza": "",
+                        "planillaTarjetaHabiente": ""
+                    },
+                    "medioPago": {
+                        "anioVencimiento": "",
+                        "diaVencimiento": "",
+                        "mesVencimiento": "",
+                        "numeroProducto": "",
+                        "tipoCA": "",
+                        "tipoDS": "",
+                        "tipoTC": ""
+                    },
+                    "seguro": {
+                        "anioFinVigencia": "",
+                        "anioFinVigenciaProp": "",
+                        "anioInicioVigencia": "",
+                        "anioInicioVigenciaProp": "",
+                        "diaFinVigencia": "",
+                        "diaFinVigenciaProp": "",
+                        "diaInicioVigencia": "",
+                        "diaInicioVigenciaProp": "",
+                        "duracionSeguro": "",
+                        "idTomador": "",
+                        "marcaConozco": "",
+                        "marcaExplicacion": "",
+                        "mesFinVigencia": "",
+                        "mesFinVigenciaProp": "",
+                        "mesInicioVigenciaProp": "",
+                        "monedaColones": "",
+                        "monedaDolares": "",
+                        "numeroPoliza": "",
+                        "periodicidadA": "",
+                        "periodicidadM": "",
+                        "periodicidadO": "",
+                        "periodicidadPagar": "",
+                        "tomador": "",
+                        "valorMaximoSeguro": "",
+                        "valorOtrasCobertura": ""
+                    }
+                }
+            },
+            "cuentas": [
+                {
+                    "valAliasProducto": "CUENTA DE AHORRO",
+                    "valCodigoProducto": "0102",
+                    "valCodigoSubProducto": "0102001",
+                    "valNumeroProducto": "0102001200300400",
+                    "valMonedaProducto": "CRC"
+                },
+                {
+                    "valAliasProducto": "CUENTA CORRIENTE",
+                    "valCodigoProducto": "0103",
+                    "valCodigoSubProducto": "0103001",
+                    "valNumeroProducto": "0103001200300400",
+                    "valMonedaProducto": "CRC"
+                },
+                {
+                    "valAliasProducto": "CUENTA DE AHORRO",
+                    "valCodigoProducto": "0104",
+                    "valCodigoSubProducto": "0104001",
+                    "valNumeroProducto": "0104001200300400",
+                    "valMonedaProducto": "CRC"
+                }
+            ],
+            "esCliente": true,
+            "pa": {
+                "ASEGURABILIDAD": "",
+                "PAGARE": "",
+                "PRODUCTOS_Y_SERVICIOS_BANCARIOS": ""
+            },
+            "seguros": {
+                "aplica": "",
+                "nombre": ""
+            },
+            "tieneProductos": ""
+        }
+    },
+    AUT0024: {
+        status: 1,
         payload: {
             catalogo: {
                 modulo: 'LIBCAM',

@@ -26,26 +26,27 @@ module.exports = {
             catalogo: {
                 "aliado":"LM",
                 "canal":"1",
-                "modulo":"CTACAM",
+                "modulo":"LIBCAM",
                 "lenguaje":"ES",
                 "pais":"PA",
             },
-            fechaNacimiento: "18/04/1995",
+            fechaNacimiento: "19/02/1994",
             nombre: "Sergio Rafael Manjarrez Chacón",
             estadoCivil: '',
             expedicion: {
                 ciudad:'',
                 departamento: '',
                 municipio: '',
-                fechaExpedicion: "18/05/2013",
-                fechaVencimiento: "18/05/2023"
+                fechaExpedicion: "", // "18/05/2013",
+                fechaVencimiento: "" // "18/05/2023"
             },
             pa: {
-                departamento: '0001',
-                ciudad: '0001',
-                celular: '3111301121',
-                correo: 'schacon7@dxc.com'
-            }
+                departamento: '', // '0001',
+                ciudad: '', // '0001',
+                celular: '67777777', // '3111301121',
+                correo: 'am@dx.com', // 'schacon7@dxc.com'
+            },
+            nit: ""
         }
     },
     VIN005: {

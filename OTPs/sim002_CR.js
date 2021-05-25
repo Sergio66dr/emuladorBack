@@ -35,9 +35,9 @@ module.exports = {
     CRE002: {
         status: 1,
         payload: {
-            valor: 50000,
+            valor: 50000.35,
             meses: 12,
-            cuotaMensual: 450,
+            cuotaMensual: 450.099,
             detallesCuota: {
                 cuotaTotal: 100,
                 seguroDesempleo: 200,

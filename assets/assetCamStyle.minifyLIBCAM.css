@@ -10,12 +10,6 @@ mbaas-acu003 * .formGroup>label.formGroup__label--apertura {
     font-weight: normal !important;
 }
 
-/* @media (min-width: 992px) {
-  .formContainer__columnContainer .formColumn {
-    width: 55% !important;
-  }
-} */
-
-.formColumn--small label + h2 {
-  white-space: nowrap;
+.formColumn--small label + h2{
+    white-space: nowrap;
 }
