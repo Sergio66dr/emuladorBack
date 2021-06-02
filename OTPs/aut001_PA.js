@@ -36,7 +36,7 @@ module.exports = {
                 "lenguaje":"ES",
                 "pais":"PA"
             },
-            esCliente: !true,
+            esCliente: true,
             esFatca: false,
             codigoVendedor: '',
             SV: {},

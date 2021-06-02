@@ -28,8 +28,8 @@ module.exports = {
     AUT001: {
         status: 1,
         payload: {
-			"esCliente": !false,
-			"esFatca": false,
+			"esCliente": false,
+			"esFatca": !false,
 			codigoVendedor: '',
             "SV": {
 				"CARGO_CUENTA_CASO_MORAL": {

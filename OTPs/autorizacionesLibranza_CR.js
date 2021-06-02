@@ -368,10 +368,10 @@ module.exports = {
                 "PAGARE": "",
                 "PRODUCTOS_Y_SERVICIOS_BANCARIOS": ""
             },
-            "seguros": {
-                "aplica": "",
-                "nombre": ""
-            },
+            "seguros": [{
+                "aplica": true,
+                "nombre": "SMV"
+            }],
             "tieneProductos": ""
         }
     },

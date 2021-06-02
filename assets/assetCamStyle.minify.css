@@ -19,3 +19,7 @@ mbaas-acu003 * .formGroup>label.formGroup__label--apertura {
 .formColumn--small label + h2 {
   white-space: nowrap;
 }
+
+.formColumn--small label + h2 .tooltip__message.tooltip__message--text {
+  white-space: break-spaces;
+}

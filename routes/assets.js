@@ -26,33 +26,33 @@ const centroAmerica = [
   // prueba
   { type: 'xPOST', kind: 'assetPruebaGenerar?pais=PA&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetsCuentaCargoCasoMora.html', 'utf8')},
   // SCSS
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=SV&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
 
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=PA&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
 
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minifyCRECAM.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minifyLIBCAM.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minifyCRECAM.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=CR&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minifyLIBCAM.css', 'utf8')},
 
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=CRECAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=CTACAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetCamStyle.minify.css?pais=HN&modulo=LIBCAM&lenguaje=ES', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
 
-  { type: 'PUT', kind: 'assetInitialStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetMenuStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
-  { type: 'PUT', kind: 'assetForbiddenStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')}
+  { type: 'xPUT', kind: 'assetInitialStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetMenuStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')},
+  { type: 'xPUT', kind: 'assetForbiddenStyle.minify.css', data: fs.readFileSync('./assets/assetCamStyle.minify.css', 'utf8')}
   ,
 
   // fake
 
-  // { type: "xPUT", kind: "asset_IMG_ING001_001", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
-  // { type: "xPUT", kind: "asset_IMG_ING001_002", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
-  // { type: "xPUT", kind: "asset_IMG_ING001_003", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
-  // { type: "xPUT", kind: "asset_IMG_ING001_004", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_001", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_002", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_003", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
+  { type: "xPUT", kind: "asset_IMG_ING001_004", data: "data:image/png;base64,"+fs.readFileSync('./assets/blob_http___localhost_4201_f7aa3956-3b11-4a42-a673-f9a4fbba95d9.png', 'base64')},
 
 
   // Regulatorios
@@ -62,7 +62,7 @@ const centroAmerica = [
   { type: "qaPUT", kind: "assetImagenRechazo", data: fs.readFileSync('./assets/rechazo.txt', 'utf8')},
   { type: "qaPUT", kind: "asset_IMG_ING001_005", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_Categoria_producto_creditomovilcondescuentodirecto.png', 'base64')},
   { type: "qaPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_CR_Categoriadeproducto_Estadosdesolicitudes.png', 'base64')},
-  { type: "PUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/otroSeguro.html', 'utf8') },
+  { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/otroSeguro.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
@@ -86,7 +86,7 @@ const centroAmerica = [
   { "type": "qaPUT", "kind":"assetImagenCancelarMenuItem", data: fs.readFileSync('./assets/cancelarMenuItem.txt', 'utf8') },
   { "type": "qaPUT", "kind":"assetDescuentoDirectoPrestamoPersonal?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
 
-  // { "type": "xPOST", "kind":"asset_MANIFESTACIONES_AUTORIZACIONES?pais=PA&lenguaje=ES&modulo=LIBCAM", data: fs.readFileSync('./assets/documento.html', 'utf8') },
+  { "type": "xPOST", "kind":"asset_MANIFESTACIONES_AUTORIZACIONES?pais=PA&lenguaje=ES&modulo=LIBCAM", data: fs.readFileSync('./assets/documento.html', 'utf8') },
 
   // { "type": "xPUT", "kind":"assetImagenFrontEjemploPantalla?pais=CR&lenguaje=ES", data: "data:image/svg+xml;base64,"+fs.readFileSync('./assets/guiasBiometria/cedula_1.svg', 'base64') },
   // { "type": "PUT", "kind":"assetImagenFrontGuiasCamara?pais=CR&lenguaje=ES", data: "data:image/png;base64,"+fs.readFileSync('./assets/guiasBiometria/CR/costarica_front_marco.png', 'base64') },
@@ -126,7 +126,16 @@ const centroAmerica = [
   { "type": "xOK", "kind":"asset_elPagare?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetElPagareLIBCAMPA.html', 'utf8') },
   { "type": "xPUT", "kind":"asset_contratoAsegurabilidad?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui22" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
   { "type": "PUT", "kind":"asset_contratoProductosYServiciosBancarios?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetContratoProductosServicios2021(Protección de Datos).html', 'utf8') },
-  { "type": "xPUT", "kind":"asset_LHC", data: fs.readFileSync('./assets/lhc.html', 'utf8') }
+  { "type": "xPUT", "kind":"asset_LHC", data: fs.readFileSync('./assets/lhc.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetsCartaCondicionesMinimas?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCartaCondicionesMinimasv2.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetsCartaCondicionesMinimas?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCartaCondicionesMinimasv3.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetsCuentaCargoCasoMora?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCuentaCargoCasoMorav2.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetsCuentaCargoCasoMora?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCuentaCargoCasoMorav3.html', 'utf8') },
+
+  // { "type": "xPUT", "kind":"assetsFormularioDeVinculacion?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsFormularioDeVinculacion.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetsFormularioDeVinculacion?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsFormularioDeVinculacion.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') },
+  // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') }
 ];
 
 const ClientePN = [];
@@ -231,7 +240,7 @@ const cargarCatalogoMiddleware = (req, res, next) => {
   }
 
   mbaas = mbaas.map( (item, index) => ({ ...item, time: index * 2500}));
-  mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
+  // mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
   req.MBAAS = {
     mbaas: mbaas.map( item => {
       item.port = item.ambiente;

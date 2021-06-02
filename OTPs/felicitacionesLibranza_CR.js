@@ -23,6 +23,7 @@ module.exports = {
     CRE250: {
         status: 1,
         payload: {
+            status: 'PREAP',
             valorCredito: 150000,
             moduloProducto: 'LIBCAM',
             plazoCredito: 12,
