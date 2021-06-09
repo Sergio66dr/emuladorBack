@@ -333,7 +333,7 @@ module.exports = {
                     "valorSolicitado": 1000
                 }
             },
-            "esCliente": true,
+            "esCliente": false,
             "esFatca": false
         },
         "status": 1,

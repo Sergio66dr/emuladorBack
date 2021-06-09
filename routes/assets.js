@@ -125,7 +125,7 @@ const centroAmerica = [
   // AUTORIZACIONES LIBRANZA PA
   { "type": "xOK", "kind":"asset_elPagare?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetElPagareLIBCAMPA.html', 'utf8') },
   { "type": "xPUT", "kind":"asset_contratoAsegurabilidad?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui22" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
-  { "type": "PUT", "kind":"asset_contratoProductosYServiciosBancarios?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetContratoProductosServicios2021(Protección de Datos).html', 'utf8') },
+  { "type": "xPUT", "kind":"asset_contratoProductosYServiciosBancarios?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetContratoProductosServicios2021(Protección de Datos).html', 'utf8') },
   { "type": "xPUT", "kind":"asset_LHC", data: fs.readFileSync('./assets/lhc.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetsCartaCondicionesMinimas?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCartaCondicionesMinimasv2.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetsCartaCondicionesMinimas?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCartaCondicionesMinimasv3.html', 'utf8') },
@@ -136,6 +136,7 @@ const centroAmerica = [
   // { "type": "xPUT", "kind":"assetsFormularioDeVinculacion?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsFormularioDeVinculacion.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') }
+  { "type": "PUT", "kind":"asset_CONTRATO_DE_CREDITO_MOVIL?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/asset_CONTRATO_DE_CREDITO_MOVIL.html', 'utf8') }
 ];
 
 const ClientePN = [];
@@ -240,7 +241,7 @@ const cargarCatalogoMiddleware = (req, res, next) => {
   }
 
   mbaas = mbaas.map( (item, index) => ({ ...item, time: index * 2500}));
-  // mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
+  mbaas.map( (item) => setTimeout( () => requestMBAASs(item) ,item.time));
   req.MBAAS = {
     mbaas: mbaas.map( item => {
       item.port = item.ambiente;
