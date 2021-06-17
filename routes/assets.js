@@ -62,7 +62,7 @@ const centroAmerica = [
   { type: "qaPUT", kind: "assetImagenRechazo", data: fs.readFileSync('./assets/rechazo.txt', 'utf8')},
   { type: "qaPUT", kind: "asset_IMG_ING001_005", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_Categoria_producto_creditomovilcondescuentodirecto.png', 'base64')},
   { type: "qaPUT", kind: "asset_IMG_ING001_006", data: "data:image/png;base64,"+fs.readFileSync('./assets/PA_CR_Categoriadeproducto_Estadosdesolicitudes.png', 'base64')},
-  { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/otroSeguro.html', 'utf8') },
+  // { type: "xPUT", kind: "assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/otroSeguro.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_AUTORIZACION_INFORMACION_CREDITICIA?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/datosMinimosCR_LIBRANZA.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_POLITICA_PRIVACIDAD?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/DatosMinimos_Libranza_CR_PolíticadePrivacidad.html', 'utf8') },
   { "type": "qaPUT", "kind":"asset_TERMINOS_CONDICIONES_PRODUCTO?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/ingreso_TerminosCondiciones_LIBRANZA.html', 'utf8') },
@@ -120,11 +120,16 @@ const centroAmerica = [
   { "type": "xOK", "kind":"asset_declaracionJuradaDeOtrasDeudas?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/declaracionJuradadeOtrasDeudasLIBCAM.html', 'utf8') },
   { "type": "xOK", "kind":"asset_contratoMercantil?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetContrato MercantilLICAM.html', 'utf8') },
 
-  { "type": "xPUT", "kind":"asset_solicitudUnificadaDeSeguros?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui4" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
-  { "type": "xPUT", "kind":"asset_seguroMomentosDeVida?pais=CR&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui5" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  // { "type": "PUT", "kind":"assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES&canal=2", data: fs.readFileSync('./assets/CG_SEGURO DE VIDA COLECTIVO SALDO DEUDORES TRANQUILIDAD PLENA VIDA + PROTECCION CREDITICIAvf.htm', 'utf8') },
+  // { "type": "PUT", "kind":"assetTerminosCondiciones_SeguroMomentosVida?pais=CR&modulo=LIBCAM&lenguaje=ES&canal=2", data: fs.readFileSync('./assets/CG_SEGURO COLECTIVO DE VIDA MOMENTOS DE VIDA (COLONES -DOLARES) vf.htm', 'utf8') },
+  // { "type": "PUT", "kind":"assetTerminosCondiciones_SeguroVidaDesempleo?pais=CR&modulo=LIBCAM&lenguaje=ES&canal=1", data: fs.readFileSync('./assets/prueba.html', 'utf8') },
+  // { "type": "PUT", "kind":"assetTerminosCondiciones_SeguroMomentosVida?pais=CR&modulo=LIBCAM&lenguaje=ES&canal=1", data: fs.readFileSync('./assets/prueba2.html', 'utf8') },
+
+  { "type": "xPUT", "kind":"asset_solicitudUnificadaDeSeguros?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/CG_SEGURO DE VIDA COLECTIVO SALDO DEUDORES TRANQUILIDAD PLENA VIDA + PROTECCION CREDITICIAvf.htm', 'utf8') },
+  { "type": "xPUT", "kind":"asset_seguroMomentosDeVida?pais=CR&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/CG_SEGURO COLECTIVO DE VIDA MOMENTOS DE VIDA (COLONES -DOLARES) vf.htm', 'utf8') },
   // AUTORIZACIONES LIBRANZA PA
   { "type": "xOK", "kind":"asset_elPagare?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetElPagareLIBCAMPA.html', 'utf8') },
-  { "type": "xPUT", "kind":"asset_contratoAsegurabilidad?pais=PA&modulo=LIBCAM&lenguaje=ES", data: "Un desarrollador Estuvo aqui22" }, //fs.readFileSync('./assets/descuentoDirectoPrestamoPersonal.html', 'utf8') },
+  { "type": "xPUT", "kind":"asset_contratoAsegurabilidad?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/CG_SEGURO DE VIDA COLECTIVO SALDO DEUDORES TRANQUILIDAD PLENA VIDA + PROTECCION CREDITICIAvf.htm', 'utf8') },
   { "type": "xPUT", "kind":"asset_contratoProductosYServiciosBancarios?pais=PA&modulo=LIBCAM&lenguaje=ES", data: fs.readFileSync('./assets/assetContratoProductosServicios2021(Protección de Datos).html', 'utf8') },
   { "type": "xPUT", "kind":"asset_LHC", data: fs.readFileSync('./assets/lhc.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetsCartaCondicionesMinimas?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsCartaCondicionesMinimasv2.html', 'utf8') },
@@ -136,7 +141,7 @@ const centroAmerica = [
   // { "type": "xPUT", "kind":"assetsFormularioDeVinculacion?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetsFormularioDeVinculacion.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CTACAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') },
   // { "type": "xPUT", "kind":"assetFormularioW9?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/assetFormularioW9.html', 'utf8') }
-  { "type": "PUT", "kind":"asset_CONTRATO_DE_CREDITO_MOVIL?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/asset_CONTRATO_DE_CREDITO_MOVIL.html', 'utf8') }
+  { "type": "xPUT", "kind":"asset_CONTRATO_DE_CREDITO_MOVIL?pais=SV&modulo=CRECAM&lenguaje=ES", data: fs.readFileSync('./assets/asset_CONTRATO_DE_CREDITO_MOVIL.html', 'utf8') }
 ];
 
 const ClientePN = [];

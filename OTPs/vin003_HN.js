@@ -16,27 +16,28 @@ module.exports = {
             "canal":"1",
             "idModulo":"MNUING",
             "lenguaje":"ES",
-            "pais":"HN"
+            "pais":"HN",
+            zona: true
         }
     },
     VIN003: {
         status: 1,
         payload: {
-            hn: {
-                actividadComercial: '11',
-                antiguedadLaboral: {
-                    anio: '2019',
-                    mes: '02',
-                    dia: '27'
-                },
-                direccionEmpresa: {
-                    departamento: '02',
-                    municipio: '003',
-                    colonia: '999',
-                    direccion: 'yyyy',
-                    referencia: 'zzz'
-                }
-            }
+            // hn: {
+            //     actividadComercial: '11',
+            //     antiguedadLaboral: {
+            //         anio: '2019',
+            //         mes: '02',
+            //         dia: '27'
+            //     },
+            //     direccionEmpresa: {
+            //         departamento: '02',
+            //         municipio: '003',
+            //         colonia: '999',
+            //         direccion: 'yyyy',
+            //         referencia: 'zzz'
+            //     }
+            // }
         }
     },
     VIN005: {

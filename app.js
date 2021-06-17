@@ -19,6 +19,7 @@ var postMessage = require('./routes/postMessage')
 var upload = require('./routes/upload')(datos);
 var files = require('./routes/files');
 var loggerR = require('./routes/logger');
+var pdf = require('./routes/pdf');
 var crypto = require('./routes/crypto')(datos);
 
 var app = express();
@@ -59,6 +60,7 @@ app.use('/upload', upload);
 app.use('/files', files);
 app.use('/logger', loggerR);
 app.use('/crypto/', crypto);
+app.use('/pdf', pdf);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

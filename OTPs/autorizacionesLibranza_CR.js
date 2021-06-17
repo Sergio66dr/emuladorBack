@@ -19,32 +19,32 @@ module.exports = {
             pais: 'CR'
         },
             "cr": {
+                "LIBRANZA_CARTA_DE_AUTORIZACION_DE_DEBITO_PLANILLA": {
+                    "aceptacionjd": {
+                        "anioDesc": "2021",
+                        "diaDesc": "18",
+                        "mesDesc": "04" // se envia descripcion o codigo para catalogo
+                    },
+                    "cliente": {
+                        "nombreCompleto": "GABRIELA MAROTO CASTRO",
+                        "numeroId": "01-1191-0662", // se envia enmascarado??
+                        "tipoId": "Cédula de identidad", // se envia descripcion o codigo para catalogo
+                        "valFirma": "FIRMADO ELECTRÓNICAMENTE" // se envia cadena de parametros
+                    },
+                    "credito": {
+                        "referencia": "personal libranza" // se envia cadena de parametros
+                    },
+                    "seguro": {
+                        "fechaInicio": "10 de diciembre de 2020", // se envia formateada
+                        "tomador": "LOS PATITOS S.A." // se envia descripcion o codigo para catalogo
+                    }
+                },
+                
                 "AUTORIZACION_CONSULTA_DE_INFORMACION_CREDITICIA": {
                     "cliente": {
-                        "cargo": "1 ",
+                        "cargo": "CARGADOR",
                         "nombreCompleto": "STEPHANNY MICHELLE ROJAS MASIS",
-                        "nombreEmpresaCliente": {
-                            "nombre": "nombreempresa ",
-                            "numeroEmpleados": "",
-                            "fechaInicio": "1999 - 10 - 10 ",
-                            "direccion": "",
-                            "codigoCiudad": "",
-                            "codigoDepartamento": "",
-                            "codigoMunicipio": "",
-                            "codigoPais": "",
-                            "referenciaDireccion": "",
-                            "nombreColonia": "",
-                            "esPrincipal": false,
-                            "tipoContrato": "",
-                            "actividadEmpresa": "",
-                            "codigo": "",
-                            "nit": "123.3434 .34 ",
-                            "telefono": {
-                                "extension": "",
-                                "indicativo": "",
-                                "numero": ""
-                            }
-                        },
+                        "nombreEmpresaCliente": "PEPE y TONIO",
                         "numeroId": "01-1185-0138",
                         "valFirma": ""
                     },
@@ -52,8 +52,15 @@ module.exports = {
                         "fechaDelDia": "",
                         "horaDelDia": ""
                     },
-                    "otraIdentificacion": {},
-                    "seguro": {}
+                    "otraIdentificacion": {
+                        nombreCompleto: 'XXXXXXXXXXXX',
+                        numeroId: '111111',
+                        tipo: 'D'
+                    },
+                    "seguro": {
+                        idTomador: "123456",
+                        tomador: "YO LO TOMO"
+                    }
                 },
                 "CONTRATO_DE_PRESTAMO_MERCANTIL": {
                     "aceptacion": {
@@ -156,26 +163,6 @@ module.exports = {
                     "credito": {
                         "Referencia": "",
                         "montoDesembolso": ""
-                    }
-                },
-                "LIBRANZA_CARTA_DE_AUTORIZACION_DE_DEBITO_PLANILLA": {
-                    "aceptacionjd": {
-                        "anioDesc": "",
-                        "diaDesc": "",
-                        "mesDesc": ""
-                    },
-                    "cliente": {
-                        "nombreCompleto": "",
-                        "numeroId": "",
-                        "tipoId": "",
-                        "valFirma": ""
-                    },
-                    "credito": {
-                        "referencia": ""
-                    },
-                    "seguro": {
-                        "fechaInicio": "",
-                        "tomador": ""
                     }
                 },
                 "PAGARE": {

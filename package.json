@@ -38,6 +38,13 @@
     "node-forge": "^0.10.0",
     "nodemon": "^2.0.7",
     "request": "^2.81.0",
-    "uuid": "^3.4.0"
+    "uuid": "^3.4.0",
+    
+    "jsreport-phantom-pdf": "^2.6.1",
+    "jsreport-core": "^2.10.1",
+    "jsreport-handlebars": "^2.1.0",
+    "jsreport-jsrender": "^2.1.1",
+    "handlebars": "^4.7.7",
+    "phantomjs-prebuilt": "^2.1.16"
   }
 }

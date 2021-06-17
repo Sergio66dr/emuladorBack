@@ -17,7 +17,7 @@ module.exports = {
                 alido: null,
                 modulo: 'CRECAM',
                 lenguaje: 'ES',
-                canal: '1'
+                canal: '2'
             },
             nombre: "Chtistian Enue Zura Gallardo",
             documento: {

@@ -17,7 +17,7 @@ module.exports = {
         pais: "CR",
         canal: "1",
         lenguaje: "ES",
-        modulo: "TRACKCAM",
+        modulo: "TRACAM",
         aliado: "N/A",
       },
       montoAprobado: '1499.99',
@@ -39,11 +39,11 @@ module.exports = {
       noSolicitud: '123456789',
       estadoSolicitud: {
         codEscenario: '0',
-        encabezado: 'Encabezado bien chido',
+        encabezado: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
         listaEtapas: [{
           valOrden: '0',
           valCodigo: 'GOOD',
-          valNombreEtapa: 'Frima electrónica de documentos',
+          valNombreEtapa: 'Firma electrónica de documentos',
           flagStatus: 0
         }, {
           valOrden: '1',
